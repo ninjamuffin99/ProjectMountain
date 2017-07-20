@@ -16,6 +16,7 @@ HX_DECLARE_CLASS1(flixel,FlxObject)
 HX_DECLARE_CLASS1(flixel,FlxSprite)
 HX_DECLARE_CLASS1(flixel,FlxState)
 HX_DECLARE_CLASS2(flixel,group,FlxTypedGroup)
+HX_DECLARE_CLASS2(flixel,text,FlxText)
 HX_DECLARE_CLASS2(flixel,util,IFlxDestroyable)
 
 
@@ -72,8 +73,10 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::flixel::FlxState_obj
 		::Array< ::Dynamic> _tiles;
 		 ::ObjectPool _pool;
 		bool _change;
-		int _score;
+		 ::flixel::group::FlxTypedGroup _UIGroup;
+		Float _score;
 		int _startDistance;
+		 ::flixel::text::FlxText _scoreText;
 		bool _resetPlatforms;
 		 ::flixel::FlxSprite _stumps;
 		void create();
@@ -83,6 +86,9 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::flixel::FlxState_obj
 
 		void setupPlayer();
 		::Dynamic setupPlayer_dyn();
+
+		void setupUI();
+		::Dynamic setupUI_dyn();
 
 		void setupPlatforms();
 		::Dynamic setupPlatforms_dyn();
@@ -104,6 +110,9 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::flixel::FlxState_obj
 
 		void update(Float elapsed);
 
+		void updateUI();
+		::Dynamic updateUI_dyn();
+
 		void updatePlayer();
 		::Dynamic updatePlayer_dyn();
 
@@ -122,6 +131,9 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::flixel::FlxState_obj
 
 		void setAnimations();
 		::Dynamic setAnimations_dyn();
+
+		void positionText();
+		::Dynamic positionText_dyn();
 
 };
 

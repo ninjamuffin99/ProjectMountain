@@ -5183,6 +5183,7 @@
    <depend name="include/flixel/FlxCamera.h"/>
    <depend name="include/flixel/FlxCameraFollowStyle.h"/>
    <depend name="include/flixel/FlxG.h"/>
+   <depend name="include/flixel/FlxGame.h"/>
    <depend name="include/flixel/FlxObject.h"/>
    <depend name="include/flixel/FlxSprite.h"/>
    <depend name="include/flixel/FlxState.h"/>
@@ -5198,12 +5199,28 @@
    <depend name="include/flixel/math/FlxPoint.h"/>
    <depend name="include/flixel/math/FlxRandom.h"/>
    <depend name="include/flixel/math/FlxRect.h"/>
+   <depend name="include/flixel/system/FlxSound.h"/>
+   <depend name="include/flixel/system/FlxSoundGroup.h"/>
+   <depend name="include/flixel/system/debug/FlxDebugger.h"/>
+   <depend name="include/flixel/system/debug/Window.h"/>
    <depend name="include/flixel/system/debug/log/LogStyle.h"/>
+   <depend name="include/flixel/system/debug/watch/Watch.h"/>
+   <depend name="include/flixel/system/debug/watch/WatchEntryData.h"/>
    <depend name="include/flixel/system/frontEnds/LogFrontEnd.h"/>
+   <depend name="include/flixel/system/frontEnds/SoundFrontEnd.h"/>
+   <depend name="include/flixel/system/frontEnds/WatchFrontEnd.h"/>
+   <depend name="include/flixel/text/FlxText.h"/>
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
    <depend name="include/flixel/util/IFlxPooled.h"/>
    <depend name="include/haxe/IMap.h"/>
    <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/openfl/_legacy/display/DisplayObject.h"/>
+   <depend name="include/openfl/_legacy/display/DisplayObjectContainer.h"/>
+   <depend name="include/openfl/_legacy/display/IBitmapDrawable.h"/>
+   <depend name="include/openfl/_legacy/display/InteractiveObject.h"/>
+   <depend name="include/openfl/_legacy/display/Sprite.h"/>
+   <depend name="include/openfl/_legacy/events/EventDispatcher.h"/>
+   <depend name="include/openfl/_legacy/events/IEventDispatcher.h"/>
   </file>
   <file name="src/flixel/FlxState.cpp" >
    <depend name="include/flixel/FlxBasic.h"/>

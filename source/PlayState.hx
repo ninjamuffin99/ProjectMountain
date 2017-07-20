@@ -4,6 +4,7 @@ import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.group.FlxGroup;
+import flixel.text.FlxText;
 
 class PlayState extends FlxState
 {
@@ -12,7 +13,7 @@ class PlayState extends FlxState
 	
 	private static inline var BASE_SPEED:Int = 250;
 	
-	private static inline var xAcceleration:Int = 1000;
+	private static inline var xAcceleration:Int = 500;
 	
 	private static inline var xDrag:Int = 200;
 	private static inline var yAcceleration:Int = 1400;
@@ -40,8 +41,11 @@ class PlayState extends FlxState
 	
 	private var _change:Bool;
 	
-	private var _score:Int;
+	private var _UIGroup:FlxGroup;
+	private var _score:Float;
 	private var _startDistance:Int;
+	
+	private var _scoreText:FlxText;
 	
 	private var _resetPlatforms:Bool;
 	
@@ -53,9 +57,12 @@ class PlayState extends FlxState
 		FlxG.worldBounds.setSize(TILE_WIDTH * 100000, 1000);
 		FlxG.camera.angle = -15;
 		
+		FlxG.sound.playMusic("assets/music/Oof.ogg");
+		
 		setupBG();
 		setupPlayer();
 		initPlayer();
+		setupUI();
 		
 		_stumps = new Stump();
 		
@@ -84,6 +91,13 @@ class PlayState extends FlxState
 		_ghost = new FlxSprite(_player.x + FlxG.width - TILE_WIDTH, FlxG.height * 0.6);
 		
 		FlxG.camera.follow(_ghost);
+	}
+	
+	private function setupUI():Void
+	{
+		_scoreText = new FlxText(0, 0, TILE_WIDTH * 4, "");
+		_scoreText.alignment = "right";
+		add(_scoreText);
 	}
 	
 	private function setupPlatforms():Void
@@ -124,7 +138,8 @@ class PlayState extends FlxState
 	
 	private inline function initUI():Void
 	{
-		//fillthis in later too!
+		_scoreText.y = 20;
+		_score = 0;
 	}
 	
 	private inline function initPlatforms():Void
@@ -145,7 +160,7 @@ class PlayState extends FlxState
 		
 		initPlayer();
 		
-		//initUI();
+		initUI();
 		
 		initPlatforms();
 		
@@ -204,10 +219,17 @@ class PlayState extends FlxState
 		//playerAnimation();
 		super.update(elapsed);
 		
+		updateUI();
+	}
+	
+	private inline function updateUI():Void
+	{
+		_score += FlxG.elapsed;
+		//_scoreText.text = Std.string(_score);
+		FlxG.watch.add(FlxG.sound.music, "time");
+		positionText();
 		
-		//temp!
 		_ghost.x = _player.x - (TILE_WIDTH * .2) + (FlxG.width * .5);
-		//updateUI();
 	}
 	
 	private inline function updatePlayer():Void
@@ -380,6 +402,11 @@ class PlayState extends FlxState
 	private inline function setAnimations():Void
 	{
 		var line:Int = FlxG.random.int(0, 5) * 6;
+	}
+	
+	private inline function positionText():Void
+	{
+		_scoreText.x = _player.x + FlxG.width - (4 * TILE_WIDTH);
 	}
 	
 }
