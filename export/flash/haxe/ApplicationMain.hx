@@ -135,7 +135,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "18",
+			build: "39",
 			company: "",
 			file: "ProjectMountain",
 			fps: 60,

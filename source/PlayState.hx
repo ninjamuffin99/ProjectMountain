@@ -47,7 +47,7 @@ class PlayState extends FlxState
 	
 	override public function create():Void
 	{
-		FlxG.worldBounds.setSize(FlxG.width * 10000, FlxG.height * 100000);
+		FlxG.worldBounds.setSize(TILE_WIDTH * 100000, 1000);
 		
 		setupBG();
 		setupPlayer();
@@ -110,7 +110,7 @@ class PlayState extends FlxState
 		_player.acceleration.set(xAcceleration, yAcceleration);
 		
 		//this is for later??
-		//setAnimations();
+		setAnimations();
 		
 		_ghost.x = _player.x - (TILE_WIDTH * 0.2) + (FlxG.width * 0.5);
 	}
@@ -124,19 +124,37 @@ class PlayState extends FlxState
 	{
 		_change = false;
 		
-		_edge = (_startDistance - 10) * TILE_WIDTH;
+		_edge = (_startDistance - 1) * TILE_WIDTH;
 		
-		makePlatform(15, 4);
+		makePlatform(15, 1);
 		makePlatform();
 	}
 	
 	private function onReset():Void
 	{
-		//blahblah filfill
+		_resetPlatforms = true;
+		removeBlocks();
+		_resetPlatforms = false;
+		
+		initPlayer();
+		
+		//initUI();
+		
+		initPlatforms();
+		
+		//initBg();
+		
 	}
 	
 	override public function update(elapsed:Float):Void 
 	{
+		
+		if (FlxG.keys.justPressed.R)
+		{
+			onReset();
+			
+			return;
+		}
 		
 		if (_player.y > FlxG.height)
 		{
@@ -242,7 +260,7 @@ class PlayState extends FlxState
 		
 		while (_player.x + FlxG.width > _edge)
 		{
-			//makePlatform();
+			makePlatform();
 		}
 		
 	}
@@ -338,6 +356,11 @@ class PlayState extends FlxState
 		_tiles.push(_block);
 		
 		_collisions.add(_block);
+	}
+	
+	private inline function setAnimations():Void
+	{
+		var line:Int = FlxG.random.int(0, 5) * 6;
 	}
 	
 }
