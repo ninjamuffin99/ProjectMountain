@@ -126,7 +126,7 @@ class PlayState extends FlxState
 		
 		_edge = (_startDistance - 1) * TILE_WIDTH;
 		
-		makePlatform(15, 1);
+		makePlatform(15, 4);
 		makePlatform();
 	}
 	
