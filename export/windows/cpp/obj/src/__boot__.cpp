@@ -610,9 +610,6 @@
 #ifndef INCLUDED_flixel_animation_FlxPrerotatedAnimation
 #include <flixel/animation/FlxPrerotatedAnimation.h>
 #endif
-#ifndef INCLUDED_flixel_FlxObject
-#include <flixel/FlxObject.h>
-#endif
 #ifndef INCLUDED_flixel_FlxG
 #include <flixel/FlxG.h>
 #endif
@@ -628,14 +625,17 @@
 #ifndef INCLUDED_flixel_FlxCamera
 #include <flixel/FlxCamera.h>
 #endif
-#ifndef INCLUDED_flixel_math_FlxRect
-#include <flixel/math/FlxRect.h>
-#endif
 #ifndef INCLUDED_flixel_math_FlxPoint
 #include <flixel/math/FlxPoint.h>
 #endif
 #ifndef INCLUDED_Xml
 #include <Xml.h>
+#endif
+#ifndef INCLUDED_flixel_FlxObject
+#include <flixel/FlxObject.h>
+#endif
+#ifndef INCLUDED_flixel_math_FlxRect
+#include <flixel/math/FlxRect.h>
 #endif
 #ifndef INCLUDED_StringTools
 #include <StringTools.h>
@@ -1366,12 +1366,6 @@
 #ifndef INCLUDED_flixel_IFlxSprite
 #include <flixel/IFlxSprite.h>
 #endif
-#ifndef INCLUDED_flixel_FlxSprite
-#include <flixel/FlxSprite.h>
-#endif
-#ifndef INCLUDED_flixel_FlxGame
-#include <flixel/FlxGame.h>
-#endif
 #ifndef INCLUDED_flixel_system_frontEnds_WatchFrontEnd
 #include <flixel/system/frontEnds/WatchFrontEnd.h>
 #endif
@@ -1408,17 +1402,8 @@
 #ifndef INCLUDED_flixel_system_frontEnds_BitmapFrontEnd
 #include <flixel/system/frontEnds/BitmapFrontEnd.h>
 #endif
-#ifndef INCLUDED_flixel_util_FlxPool_flixel_math_FlxRect
-#include <flixel/util/FlxPool_flixel_math_FlxRect.h>
-#endif
 #ifndef INCLUDED_flixel_util_FlxPool_flixel_math_FlxPoint
 #include <flixel/util/FlxPool_flixel_math_FlxPoint.h>
-#endif
-#ifndef INCLUDED_flixel_util_IFlxPool
-#include <flixel/util/IFlxPool.h>
-#endif
-#ifndef INCLUDED_flixel_util_IFlxPooled
-#include <flixel/util/IFlxPooled.h>
 #endif
 #ifndef INCLUDED_flixel_IFlxBasic
 #include <flixel/IFlxBasic.h>
@@ -1434,6 +1419,21 @@
 #endif
 #ifndef INCLUDED_Type
 #include <Type.h>
+#endif
+#ifndef INCLUDED_Stump
+#include <Stump.h>
+#endif
+#ifndef INCLUDED_flixel_FlxSprite
+#include <flixel/FlxSprite.h>
+#endif
+#ifndef INCLUDED_flixel_util_FlxPool_flixel_math_FlxRect
+#include <flixel/util/FlxPool_flixel_math_FlxRect.h>
+#endif
+#ifndef INCLUDED_flixel_util_IFlxPool
+#include <flixel/util/IFlxPool.h>
+#endif
+#ifndef INCLUDED_flixel_util_IFlxPooled
+#include <flixel/util/IFlxPooled.h>
 #endif
 #ifndef INCLUDED_StringBuf
 #include <StringBuf.h>
@@ -1467,6 +1467,12 @@
 #endif
 #ifndef INCLUDED_IntIterator
 #include <IntIterator.h>
+#endif
+#ifndef INCLUDED_GameClass
+#include <GameClass.h>
+#endif
+#ifndef INCLUDED_flixel_FlxGame
+#include <flixel/FlxGame.h>
 #endif
 #ifndef INCLUDED_EReg
 #include <EReg.h>
@@ -1738,15 +1744,15 @@ hx::RegisterResources( hx::GetResources() );
 ::openfl::_legacy::display::DirectRenderer_obj::__register();
 ::flixel::effects::FlxFlicker_obj::__register();
 ::flixel::animation::FlxPrerotatedAnimation_obj::__register();
-::flixel::FlxObject_obj::__register();
 ::flixel::FlxG_obj::__register();
 ::flixel::math::FlxRandom_obj::__register();
 ::haxe::Log_obj::__register();
 ::flixel::_hx_system::FlxVersion_obj::__register();
 ::flixel::FlxCamera_obj::__register();
-::flixel::math::FlxRect_obj::__register();
 ::flixel::math::FlxPoint_obj::__register();
 ::Xml_obj::__register();
+::flixel::FlxObject_obj::__register();
+::flixel::math::FlxRect_obj::__register();
 ::StringTools_obj::__register();
 ::PlayState_obj::__register();
 ::flixel::FlxBasic_obj::__register();
@@ -1990,8 +1996,6 @@ hx::RegisterResources( hx::GetResources() );
 ::flixel::animation::FlxBaseAnimation_obj::__register();
 ::flixel::FlxSubState_obj::__register();
 ::flixel::IFlxSprite_obj::__register();
-::flixel::FlxSprite_obj::__register();
-::flixel::FlxGame_obj::__register();
 ::flixel::_hx_system::frontEnds::WatchFrontEnd_obj::__register();
 ::flixel::_hx_system::frontEnds::SignalFrontEnd_obj::__register();
 ::flixel::_hx_system::scaleModes::RatioScaleMode_obj::__register();
@@ -2004,15 +2008,17 @@ hx::RegisterResources( hx::GetResources() );
 ::flixel::_hx_system::frontEnds::CameraFrontEnd_obj::__register();
 ::flixel::_hx_system::frontEnds::BitmapLogFrontEnd_obj::__register();
 ::flixel::_hx_system::frontEnds::BitmapFrontEnd_obj::__register();
-::flixel::util::FlxPool_flixel_math_FlxRect_obj::__register();
 ::flixel::util::FlxPool_flixel_math_FlxPoint_obj::__register();
-::flixel::util::IFlxPool_obj::__register();
-::flixel::util::IFlxPooled_obj::__register();
 ::flixel::IFlxBasic_obj::__register();
 ::cpp::vm::Thread_obj::__register();
 ::cpp::vm::Mutex_obj::__register();
 ::cpp::vm::Gc_obj::__register();
 ::Type_obj::__register();
+::Stump_obj::__register();
+::flixel::FlxSprite_obj::__register();
+::flixel::util::FlxPool_flixel_math_FlxRect_obj::__register();
+::flixel::util::IFlxPool_obj::__register();
+::flixel::util::IFlxPooled_obj::__register();
 ::StringBuf_obj::__register();
 ::Reflect_obj::__register();
 ::flixel::FlxState_obj::__register();
@@ -2024,6 +2030,8 @@ hx::RegisterResources( hx::GetResources() );
 ::List_obj::__register();
 ::Lambda_obj::__register();
 ::IntIterator_obj::__register();
+::GameClass_obj::__register();
+::flixel::FlxGame_obj::__register();
 ::EReg_obj::__register();
 ::cpp::vm::Deque_obj::__register();
 ::openfl::_legacy::AssetLibrary_obj::__register();
@@ -2120,14 +2128,14 @@ hx::RegisterResources( hx::GetResources() );
 ::flixel::FlxBasic_obj::__boot();
 ::PlayState_obj::__boot();
 ::StringTools_obj::__boot();
+::flixel::math::FlxRect_obj::__boot();
+::flixel::FlxObject_obj::__boot();
 ::Xml_obj::__boot();
 ::flixel::math::FlxPoint_obj::__boot();
-::flixel::math::FlxRect_obj::__boot();
 ::flixel::FlxCamera_obj::__boot();
 ::flixel::_hx_system::FlxVersion_obj::__boot();
 ::flixel::math::FlxRandom_obj::__boot();
 ::flixel::FlxG_obj::__boot();
-::flixel::FlxObject_obj::__boot();
 ::flixel::animation::FlxPrerotatedAnimation_obj::__boot();
 ::flixel::effects::FlxFlicker_obj::__boot();
 ::openfl::_legacy::display::DirectRenderer_obj::__boot();

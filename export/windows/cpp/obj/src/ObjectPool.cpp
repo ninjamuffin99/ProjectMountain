@@ -86,7 +86,7 @@ void ObjectPool_obj::loadPool(){
 HXLINE(  87)		 ::flixel::FlxSprite block =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,null(),null(),null());
 HXLINE(  88)		block->set_solid(this->_solid);
 HXLINE(  89)		block->set_immovable(true);
-HXLINE(  90)		block->loadGraphic(this->_tileMap,false,this->TILE_WIDTH,this->TILE_HEIGHT,false,null());
+HXLINE(  90)		block->loadGraphic(this->_tileMap,false,this->TILE_WIDTH,this->TILE_HEIGHT,null(),null());
 HXLINE(  91)		this->_pool->unshift(block);
 HXLINE(  94)		{
 HXLINE(  94)			int _g1 = (int)1;

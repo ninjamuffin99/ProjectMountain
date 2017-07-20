@@ -75,6 +75,7 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::flixel::FlxState_obj
 		int _score;
 		int _startDistance;
 		bool _resetPlatforms;
+		 ::flixel::FlxSprite _stumps;
 		void create();
 
 		void setupBG();
@@ -118,6 +119,9 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::flixel::FlxState_obj
 
 		void makeBlock(Float x,Float y,int tile);
 		::Dynamic makeBlock_dyn();
+
+		void setAnimations();
+		::Dynamic setAnimations_dyn();
 
 };
 

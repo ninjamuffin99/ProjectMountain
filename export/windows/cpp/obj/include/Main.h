@@ -15,6 +15,7 @@ HX_DECLARE_CLASS3(openfl,_legacy,display,DisplayObjectContainer)
 HX_DECLARE_CLASS3(openfl,_legacy,display,IBitmapDrawable)
 HX_DECLARE_CLASS3(openfl,_legacy,display,InteractiveObject)
 HX_DECLARE_CLASS3(openfl,_legacy,display,Sprite)
+HX_DECLARE_CLASS3(openfl,_legacy,events,Event)
 HX_DECLARE_CLASS3(openfl,_legacy,events,EventDispatcher)
 HX_DECLARE_CLASS3(openfl,_legacy,events,IEventDispatcher)
 
@@ -43,9 +44,20 @@ class HXCPP_CLASS_ATTRIBUTES Main_obj : public  ::openfl::_legacy::display::Spri
 		//~Main_obj();
 
 		HX_DO_RTTI_ALL;
+		hx::Val __Field(const ::String &inString, hx::PropertyAccess inCallProp);
+		static bool __GetStatic(const ::String &inString, Dynamic &outValue, hx::PropertyAccess inCallProp);
 		static void __register();
 		bool _hx_isInstanceOf(int inClassId);
 		::String __ToString() const { return HX_HCSTRING("Main","\x59","\x64","\x2f","\x33"); }
+
+		static void main();
+		static ::Dynamic main_dyn();
+
+		void init( ::openfl::_legacy::events::Event E);
+		::Dynamic init_dyn();
+
+		void initialize();
+		::Dynamic initialize_dyn();
 
 };
 

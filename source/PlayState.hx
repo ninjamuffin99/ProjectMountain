@@ -19,7 +19,7 @@ class PlayState extends FlxState
 	
 	private static inline var yVelocity:Int = 1400;
 	
-	private static inline var jumpDuration:Float = 0.25;
+	private static inline var jumpDuration:Float = 0.3;
 	
 	private var _player:FlxSprite;
 	private var _jump:Float;
@@ -45,13 +45,20 @@ class PlayState extends FlxState
 	
 	private var _resetPlatforms:Bool;
 	
+	
+	private var _stumps:FlxSprite;
+	
 	override public function create():Void
 	{
 		FlxG.worldBounds.setSize(TILE_WIDTH * 100000, 1000);
+		FlxG.camera.angle = -15;
 		
 		setupBG();
 		setupPlayer();
 		initPlayer();
+		
+		_stumps = new Stump();
+		
 		setupPlatforms();
 		initPlatforms();
 		
@@ -74,7 +81,7 @@ class PlayState extends FlxState
 		add(_player);
 		
 		// something that follows player x movment
-		_ghost = new FlxSprite(_player.x + FlxG.width - TILE_WIDTH, FlxG.height / 2);
+		_ghost = new FlxSprite(_player.x + FlxG.width - TILE_WIDTH, FlxG.height * 0.6);
 		
 		FlxG.camera.follow(_ghost);
 	}
@@ -103,7 +110,7 @@ class PlayState extends FlxState
 		_jumpPressed = false;
 		_sfxDie = true;
 		
-		_player.setPosition(_startDistance * TILE_WIDTH, 0);
+		_player.setPosition(_startDistance * (TILE_WIDTH * 2), 0);
 		_player.drag.x = xDrag;
 		_player.velocity.set(0, 0);
 		_player.maxVelocity.set(BASE_SPEED, yVelocity);
@@ -126,7 +133,7 @@ class PlayState extends FlxState
 		
 		_edge = (_startDistance - 1) * TILE_WIDTH;
 		
-		makePlatform(15, 4);
+		makePlatform(16, 4);
 		makePlatform();
 	}
 	
@@ -155,6 +162,7 @@ class PlayState extends FlxState
 			
 			return;
 		}
+		
 		
 		if (_player.y > FlxG.height)
 		{
@@ -246,7 +254,7 @@ class PlayState extends FlxState
 			{
 				_player.acceleration.y = yAcceleration;
 				
-				_player.velocity.y = yAcceleration * 0.25;
+				_player.velocity.y += yAcceleration * 0.025;
 				
 				_jump = -1;
 				
@@ -271,7 +279,7 @@ class PlayState extends FlxState
 	
 	private function removeBlocks():Void
 	{
-		var distance:Float = _player.x - (TILE_WIDTH * 2);
+		var distance:Float = _player.x - (TILE_WIDTH * 6);
 		
 		
 		if (_resetPlatforms)
@@ -308,7 +316,9 @@ class PlayState extends FlxState
 	{
 		if (wide == 0)
 		{
-			wide = FlxG.random.int(0, 5) + 4 + Std.int(_player.x * 0.0001);
+			wide = FlxG.random.int(0, 5) + 4 + Std.int(_player.x * 0.00015);
+			
+			FlxG.log.add(wide);
 		}
 		if (high == 0)
 		{
@@ -341,10 +351,19 @@ class PlayState extends FlxState
 		
 		makeBlock(_edge + TILE_WIDTH, top, line + 2);
 		
+		if (FlxG.random.bool())
+		{
+			_stumps.x = _edge + FlxG.random.int(TILE_WIDTH * -wide, TILE_WIDTH);
+			_stumps.y = top - TILE_HEIGHT;
+			
+			add(_stumps);
+			
+			_collisions.add(_stumps);
+		}
+		
 		_edge += Std.int(_player.x / (TILE_WIDTH * 0.9)) + ((FlxG.random.int(0, 2) + 3) * TILE_WIDTH);
 		
 		_change = true;
-		
 	}
 	
 	private inline function makeBlock(x:Float, y:Float, tile:Int):Void
