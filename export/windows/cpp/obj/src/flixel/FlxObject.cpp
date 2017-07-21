@@ -29,15 +29,6 @@
 #ifndef INCLUDED_flixel_math_FlxVelocity
 #include <flixel/math/FlxVelocity.h>
 #endif
-#ifndef INCLUDED_flixel_system_debug_log_LogStyle
-#include <flixel/system/debug/log/LogStyle.h>
-#endif
-#ifndef INCLUDED_flixel_system_frontEnds_DebuggerFrontEnd
-#include <flixel/system/frontEnds/DebuggerFrontEnd.h>
-#endif
-#ifndef INCLUDED_flixel_system_frontEnds_LogFrontEnd
-#include <flixel/system/frontEnds/LogFrontEnd.h>
-#endif
 #ifndef INCLUDED_flixel_tile_FlxBaseTilemap
 #include <flixel/tile/FlxBaseTilemap.h>
 #endif
@@ -59,9 +50,6 @@
 #ifndef INCLUDED_flixel_util_FlxPool_flixel_util_LabelValuePair
 #include <flixel/util/FlxPool_flixel_util_LabelValuePair.h>
 #endif
-#ifndef INCLUDED_flixel_util_FlxSpriteUtil
-#include <flixel/util/FlxSpriteUtil.h>
-#endif
 #ifndef INCLUDED_flixel_util_FlxStringUtil
 #include <flixel/util/FlxStringUtil.h>
 #endif
@@ -76,54 +64,6 @@
 #endif
 #ifndef INCLUDED_flixel_util_LabelValuePair
 #include <flixel/util/LabelValuePair.h>
-#endif
-#ifndef INCLUDED_openfl__legacy_display_BitmapData
-#include <openfl/_legacy/display/BitmapData.h>
-#endif
-#ifndef INCLUDED_openfl__legacy_display_BlendMode
-#include <openfl/_legacy/display/BlendMode.h>
-#endif
-#ifndef INCLUDED_openfl__legacy_display_CapsStyle
-#include <openfl/_legacy/display/CapsStyle.h>
-#endif
-#ifndef INCLUDED_openfl__legacy_display_DisplayObject
-#include <openfl/_legacy/display/DisplayObject.h>
-#endif
-#ifndef INCLUDED_openfl__legacy_display_DisplayObjectContainer
-#include <openfl/_legacy/display/DisplayObjectContainer.h>
-#endif
-#ifndef INCLUDED_openfl__legacy_display_Graphics
-#include <openfl/_legacy/display/Graphics.h>
-#endif
-#ifndef INCLUDED_openfl__legacy_display_IBitmapDrawable
-#include <openfl/_legacy/display/IBitmapDrawable.h>
-#endif
-#ifndef INCLUDED_openfl__legacy_display_InteractiveObject
-#include <openfl/_legacy/display/InteractiveObject.h>
-#endif
-#ifndef INCLUDED_openfl__legacy_display_JointStyle
-#include <openfl/_legacy/display/JointStyle.h>
-#endif
-#ifndef INCLUDED_openfl__legacy_display_LineScaleMode
-#include <openfl/_legacy/display/LineScaleMode.h>
-#endif
-#ifndef INCLUDED_openfl__legacy_display_Sprite
-#include <openfl/_legacy/display/Sprite.h>
-#endif
-#ifndef INCLUDED_openfl__legacy_events_EventDispatcher
-#include <openfl/_legacy/events/EventDispatcher.h>
-#endif
-#ifndef INCLUDED_openfl__legacy_events_IEventDispatcher
-#include <openfl/_legacy/events/IEventDispatcher.h>
-#endif
-#ifndef INCLUDED_openfl__legacy_geom_ColorTransform
-#include <openfl/_legacy/geom/ColorTransform.h>
-#endif
-#ifndef INCLUDED_openfl__legacy_geom_Matrix
-#include <openfl/_legacy/geom/Matrix.h>
-#endif
-#ifndef INCLUDED_openfl__legacy_geom_Rectangle
-#include <openfl/_legacy/geom/Rectangle.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_c625bfaa5b4263df_20_new,"flixel.FlxObject","new",0x2aa4ec91,"flixel.FlxObject.new","flixel/FlxObject.hx",20,0xf0fe0d80)
@@ -152,17 +92,12 @@ HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_979_hurt,"flixel.FlxObject","hurt"
 HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_994_screenCenter,"flixel.FlxObject","screenCenter",0x59e58410,"flixel.FlxObject.screenCenter","flixel/FlxObject.hx",994,0xf0fe0d80)
 HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1014_setPosition,"flixel.FlxObject","setPosition",0x265d9f9c,"flixel.FlxObject.setPosition","flixel/FlxObject.hx",1014,0xf0fe0d80)
 HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1026_setSize,"flixel.FlxObject","setSize",0xa7896a34,"flixel.FlxObject.setSize","flixel/FlxObject.hx",1026,0xf0fe0d80)
-HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1033_drawDebug,"flixel.FlxObject","drawDebug",0x2ad45ea0,"flixel.FlxObject.drawDebug","flixel/FlxObject.hx",1033,0xf0fe0d80)
-HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1055_drawDebugOnCamera,"flixel.FlxObject","drawDebugOnCamera",0x0b2ef7e4,"flixel.FlxObject.drawDebugOnCamera","flixel/FlxObject.hx",1055,0xf0fe0d80)
-HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1068_drawDebugBoundingBox,"flixel.FlxObject","drawDebugBoundingBox",0xa96b1247,"flixel.FlxObject.drawDebugBoundingBox","flixel/FlxObject.hx",1068,0xf0fe0d80)
-HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1090_beginDrawDebug,"flixel.FlxObject","beginDrawDebug",0x8677cfb5,"flixel.FlxObject.beginDrawDebug","flixel/FlxObject.hx",1090,0xf0fe0d80)
-HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1103_endDrawDebug,"flixel.FlxObject","endDrawDebug",0x2518e603,"flixel.FlxObject.endDrawDebug","flixel/FlxObject.hx",1103,0xf0fe0d80)
 HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1111_getBoundingBox,"flixel.FlxObject","getBoundingBox",0x58364780,"flixel.FlxObject.getBoundingBox","flixel/FlxObject.hx",1111,0xf0fe0d80)
 HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1128_toString,"flixel.FlxObject","toString",0x9e14e2db,"flixel.FlxObject.toString","flixel/FlxObject.hx",1128,0xf0fe0d80)
 HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1140_set_x,"flixel.FlxObject","set_x",0xb024e5cc,"flixel.FlxObject.set_x","flixel/FlxObject.hx",1140,0xf0fe0d80)
 HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1146_set_y,"flixel.FlxObject","set_y",0xb024e5cd,"flixel.FlxObject.set_y","flixel/FlxObject.hx",1146,0xf0fe0d80)
-HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1151_set_width,"flixel.FlxObject","set_width",0x7d06d55a,"flixel.FlxObject.set_width","flixel/FlxObject.hx",1151,0xf0fe0d80)
-HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1165_set_height,"flixel.FlxObject","set_height",0x9f435213,"flixel.FlxObject.set_height","flixel/FlxObject.hx",1165,0xf0fe0d80)
+HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1160_set_width,"flixel.FlxObject","set_width",0x7d06d55a,"flixel.FlxObject.set_width","flixel/FlxObject.hx",1160,0xf0fe0d80)
+HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1174_set_height,"flixel.FlxObject","set_height",0x9f435213,"flixel.FlxObject.set_height","flixel/FlxObject.hx",1174,0xf0fe0d80)
 HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1180_get_width,"flixel.FlxObject","get_width",0x99b5e94e,"flixel.FlxObject.get_width","flixel/FlxObject.hx",1180,0xf0fe0d80)
 HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1186_get_height,"flixel.FlxObject","get_height",0x9bc5b39f,"flixel.FlxObject.get_height","flixel/FlxObject.hx",1186,0xf0fe0d80)
 HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1192_get_solid,"flixel.FlxObject","get_solid",0x5018e773,"flixel.FlxObject.get_solid","flixel/FlxObject.hx",1192,0xf0fe0d80)
@@ -172,9 +107,6 @@ HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1211_set_moves,"flixel.FlxObject",
 HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1217_set_immovable,"flixel.FlxObject","set_immovable",0xc5b8805e,"flixel.FlxObject.set_immovable","flixel/FlxObject.hx",1217,0xf0fe0d80)
 HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1223_set_pixelPerfectRender,"flixel.FlxObject","set_pixelPerfectRender",0x84233609,"flixel.FlxObject.set_pixelPerfectRender","flixel/FlxObject.hx",1223,0xf0fe0d80)
 HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1229_set_allowCollisions,"flixel.FlxObject","set_allowCollisions",0x7975d9fe,"flixel.FlxObject.set_allowCollisions","flixel/FlxObject.hx",1229,0xf0fe0d80)
-HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1235_set_debugBoundingBoxColorSolid,"flixel.FlxObject","set_debugBoundingBoxColorSolid",0xb8a23688,"flixel.FlxObject.set_debugBoundingBoxColorSolid","flixel/FlxObject.hx",1235,0xf0fe0d80)
-HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1240_set_debugBoundingBoxColorNotSolid,"flixel.FlxObject","set_debugBoundingBoxColorNotSolid",0x55ae1bdb,"flixel.FlxObject.set_debugBoundingBoxColorNotSolid","flixel/FlxObject.hx",1240,0xf0fe0d80)
-HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1245_set_debugBoundingBoxColorPartial,"flixel.FlxObject","set_debugBoundingBoxColorPartial",0x34746b1e,"flixel.FlxObject.set_debugBoundingBoxColorPartial","flixel/FlxObject.hx",1245,0xf0fe0d80)
 HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_1251_set_path,"flixel.FlxObject","set_path",0xde100cd1,"flixel.FlxObject.set_path","flixel/FlxObject.hx",1251,0xf0fe0d80)
 HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_82_separate,"flixel.FlxObject","separate",0x6cc23192,"flixel.FlxObject.separate","flixel/FlxObject.hx",82,0xf0fe0d80)
 HX_LOCAL_STACK_FRAME(_hx_pos_c625bfaa5b4263df_97_updateTouchingFlags,"flixel.FlxObject","updateTouchingFlags",0x15a0502c,"flixel.FlxObject.updateTouchingFlags","flixel/FlxObject.hx",97,0xf0fe0d80)
@@ -217,11 +149,6 @@ HXLINE( 581)		 ::flixel::math::FlxPoint point = ::flixel::math::FlxPoint_obj::_p
 HXDLIN( 581)		point->_inPool = false;
 HXDLIN( 581)		this->_point = point;
 HXLINE( 578)		this->path = null();
-HXLINE( 569)		this->ignoreDrawDebug = false;
-HXLINE( 563)		this->debugBoundingBoxColorPartial = (int)-16744448;
-HXLINE( 555)		this->debugBoundingBoxColorNotSolid = (int)-16776961;
-HXLINE( 549)		this->debugBoundingBoxColorSolid = (int)-65536;
-HXLINE( 543)		this->debugBoundingBoxColor = null();
 HXLINE( 536)		this->collisonXDrag = true;
 HXLINE( 531)		this->allowCollisions = (int)4369;
 HXLINE( 526)		this->wasTouching = (int)0;
@@ -332,7 +259,6 @@ HXLINE( 644)		this->_rect = ( ( ::flixel::math::FlxRect)(::flixel::util::FlxDest
 
 void FlxObject_obj::update(Float elapsed){
             	HX_STACKFRAME(&_hx_pos_c625bfaa5b4263df_652_update)
-HXLINE( 655)		this->super::update(elapsed);
 HXLINE( 658)		this->last->set_x(this->x);
 HXLINE( 659)		this->last->set_y(this->y);
 HXLINE( 661)		bool _hx_tmp;
@@ -403,10 +329,6 @@ HX_DEFINE_DYNAMIC_FUNC1(FlxObject_obj,updateMotion,(void))
 
 void FlxObject_obj::draw(){
             	HX_STACKFRAME(&_hx_pos_c625bfaa5b4263df_700_draw)
-HXLINE( 702)		this->super::draw();
-HXLINE( 703)		if (::flixel::FlxG_obj::debugger->drawDebug) {
-HXLINE( 704)			this->drawDebug();
-            		}
             	}
 
 
@@ -908,120 +830,6 @@ HXLINE(1028)		this->set_height(Height);
 
 HX_DEFINE_DYNAMIC_FUNC2(FlxObject_obj,setSize,(void))
 
-void FlxObject_obj::drawDebug(){
-            	HX_STACKFRAME(&_hx_pos_c625bfaa5b4263df_1033_drawDebug)
-HXLINE(1034)		if (this->ignoreDrawDebug) {
-HXLINE(1036)			return;
-            		}
-HXLINE(1039)		{
-HXLINE(1039)			int _g = (int)0;
-HXDLIN(1039)			::Array< ::Dynamic> _g1 = this->get_cameras();
-HXDLIN(1039)			while((_g < _g1->length)){
-HXLINE(1039)				 ::flixel::FlxCamera camera = _g1->__get(_g).StaticCast<  ::flixel::FlxCamera >();
-HXDLIN(1039)				_g = (_g + (int)1);
-HXLINE(1041)				this->drawDebugOnCamera(camera);
-HXLINE(1043)				bool _hx_tmp;
-HXDLIN(1043)				if (hx::IsNotNull( this->path )) {
-HXLINE(1043)					_hx_tmp = !(this->path->ignoreDrawDebug);
-            				}
-            				else {
-HXLINE(1043)					_hx_tmp = false;
-            				}
-HXDLIN(1043)				if (_hx_tmp) {
-HXLINE(1044)					this->path->drawDebug(null());
-            				}
-            			}
-            		}
-            	}
-
-
-HX_DEFINE_DYNAMIC_FUNC0(FlxObject_obj,drawDebug,(void))
-
-void FlxObject_obj::drawDebugOnCamera( ::flixel::FlxCamera camera){
-            	HX_STACKFRAME(&_hx_pos_c625bfaa5b4263df_1055_drawDebugOnCamera)
-HXLINE(1056)		bool _hx_tmp;
-HXDLIN(1056)		bool _hx_tmp1;
-HXDLIN(1056)		if (!(!(camera->visible))) {
-HXLINE(1056)			_hx_tmp1 = !(camera->exists);
-            		}
-            		else {
-HXLINE(1056)			_hx_tmp1 = true;
-            		}
-HXDLIN(1056)		if (!(_hx_tmp1)) {
-HXLINE(1056)			_hx_tmp = !(this->isOnScreen(camera));
-            		}
-            		else {
-HXLINE(1056)			_hx_tmp = true;
-            		}
-HXDLIN(1056)		if (_hx_tmp) {
-HXLINE(1058)			return;
-            		}
-HXLINE(1061)		 ::flixel::math::FlxRect rect = this->getBoundingBox(camera);
-HXLINE(1062)		 ::openfl::_legacy::display::Graphics gfx;
-HXDLIN(1062)		if (::flixel::FlxG_obj::renderBlit) {
-HXLINE(1062)			::flixel::util::FlxSpriteUtil_obj::flashGfx->clear();
-HXDLIN(1062)			gfx = ::flixel::util::FlxSpriteUtil_obj::flashGfx;
-            		}
-            		else {
-HXLINE(1062)			gfx = camera->debugLayer->get_graphics();
-            		}
-HXLINE(1063)		this->drawDebugBoundingBox(gfx,rect,this->allowCollisions,this->immovable);
-HXLINE(1064)		if (::flixel::FlxG_obj::renderBlit) {
-HXLINE(1064)			camera->buffer->draw(::flixel::util::FlxSpriteUtil_obj::flashGfxSprite,null(),null(),null(),null(),null());
-            		}
-            	}
-
-
-HX_DEFINE_DYNAMIC_FUNC1(FlxObject_obj,drawDebugOnCamera,(void))
-
-void FlxObject_obj::drawDebugBoundingBox( ::openfl::_legacy::display::Graphics gfx, ::flixel::math::FlxRect rect,int allowCollisions,bool partial){
-            	HX_STACKFRAME(&_hx_pos_c625bfaa5b4263df_1068_drawDebugBoundingBox)
-HXLINE(1070)		 ::Dynamic color = this->debugBoundingBoxColor;
-HXLINE(1071)		if (hx::IsNull( color )) {
-HXLINE(1073)			if ((allowCollisions != (int)0)) {
-HXLINE(1075)				if (partial) {
-HXLINE(1075)					color = this->debugBoundingBoxColorPartial;
-            				}
-            				else {
-HXLINE(1075)					color = this->debugBoundingBoxColorSolid;
-            				}
-            			}
-            			else {
-HXLINE(1079)				color = this->debugBoundingBoxColorNotSolid;
-            			}
-            		}
-HXLINE(1084)		gfx->lineStyle((int)1,color,((Float)0.5),null(),null(),null(),null(),null());
-HXLINE(1085)		gfx->drawRect(rect->x,rect->y,rect->width,rect->height);
-            	}
-
-
-HX_DEFINE_DYNAMIC_FUNC4(FlxObject_obj,drawDebugBoundingBox,(void))
-
- ::openfl::_legacy::display::Graphics FlxObject_obj::beginDrawDebug( ::flixel::FlxCamera camera){
-            	HX_STACKFRAME(&_hx_pos_c625bfaa5b4263df_1090_beginDrawDebug)
-HXLINE(1090)		if (::flixel::FlxG_obj::renderBlit) {
-HXLINE(1092)			::flixel::util::FlxSpriteUtil_obj::flashGfx->clear();
-HXLINE(1093)			return ::flixel::util::FlxSpriteUtil_obj::flashGfx;
-            		}
-            		else {
-HXLINE(1097)			return camera->debugLayer->get_graphics();
-            		}
-HXLINE(1090)		return null();
-            	}
-
-
-HX_DEFINE_DYNAMIC_FUNC1(FlxObject_obj,beginDrawDebug,return )
-
-void FlxObject_obj::endDrawDebug( ::flixel::FlxCamera camera){
-            	HX_STACKFRAME(&_hx_pos_c625bfaa5b4263df_1103_endDrawDebug)
-HXLINE(1103)		if (::flixel::FlxG_obj::renderBlit) {
-HXLINE(1105)			camera->buffer->draw(::flixel::util::FlxSpriteUtil_obj::flashGfxSprite,null(),null(),null(),null(),null());
-            		}
-            	}
-
-
-HX_DEFINE_DYNAMIC_FUNC1(FlxObject_obj,endDrawDebug,(void))
-
  ::flixel::math::FlxRect FlxObject_obj::getBoundingBox( ::flixel::FlxCamera camera){
             	HX_STACKFRAME(&_hx_pos_c625bfaa5b4263df_1111_getBoundingBox)
 HXLINE(1112)		this->getScreenPosition(this->_point,camera);
@@ -1101,11 +909,7 @@ HXLINE(1146)		return (this->y = NewY);
 HX_DEFINE_DYNAMIC_FUNC1(FlxObject_obj,set_y,return )
 
 Float FlxObject_obj::set_width(Float Width){
-            	HX_STACKFRAME(&_hx_pos_c625bfaa5b4263df_1151_set_width)
-HXLINE(1153)		if ((Width < (int)0)) {
-HXLINE(1155)			::flixel::FlxG_obj::log->advanced(HX_("An object's width cannot be smaller than 0. Use offset for sprites to control the hitbox position!",f5,8d,0b,95),::flixel::_hx_system::debug::log::LogStyle_obj::WARNING,true);
-HXLINE(1156)			return Width;
-            		}
+            	HX_STACKFRAME(&_hx_pos_c625bfaa5b4263df_1160_set_width)
 HXLINE(1160)		return (this->width = Width);
             	}
 
@@ -1113,11 +917,7 @@ HXLINE(1160)		return (this->width = Width);
 HX_DEFINE_DYNAMIC_FUNC1(FlxObject_obj,set_width,return )
 
 Float FlxObject_obj::set_height(Float Height){
-            	HX_STACKFRAME(&_hx_pos_c625bfaa5b4263df_1165_set_height)
-HXLINE(1167)		if ((Height < (int)0)) {
-HXLINE(1169)			::flixel::FlxG_obj::log->advanced(HX_("An object's height cannot be smaller than 0. Use offset for sprites to control the hitbox position!",b0,49,90,e4),::flixel::_hx_system::debug::log::LogStyle_obj::WARNING,true);
-HXLINE(1170)			return Height;
-            		}
+            	HX_STACKFRAME(&_hx_pos_c625bfaa5b4263df_1174_set_height)
 HXLINE(1174)		return (this->height = Height);
             	}
 
@@ -1203,30 +1003,6 @@ HXLINE(1229)		return (this->allowCollisions = Value);
 
 
 HX_DEFINE_DYNAMIC_FUNC1(FlxObject_obj,set_allowCollisions,return )
-
-int FlxObject_obj::set_debugBoundingBoxColorSolid(int color){
-            	HX_STACKFRAME(&_hx_pos_c625bfaa5b4263df_1235_set_debugBoundingBoxColorSolid)
-HXLINE(1235)		return (this->debugBoundingBoxColorSolid = color);
-            	}
-
-
-HX_DEFINE_DYNAMIC_FUNC1(FlxObject_obj,set_debugBoundingBoxColorSolid,return )
-
-int FlxObject_obj::set_debugBoundingBoxColorNotSolid(int color){
-            	HX_STACKFRAME(&_hx_pos_c625bfaa5b4263df_1240_set_debugBoundingBoxColorNotSolid)
-HXLINE(1240)		return (this->debugBoundingBoxColorNotSolid = color);
-            	}
-
-
-HX_DEFINE_DYNAMIC_FUNC1(FlxObject_obj,set_debugBoundingBoxColorNotSolid,return )
-
-int FlxObject_obj::set_debugBoundingBoxColorPartial(int color){
-            	HX_STACKFRAME(&_hx_pos_c625bfaa5b4263df_1245_set_debugBoundingBoxColorPartial)
-HXLINE(1245)		return (this->debugBoundingBoxColorPartial = color);
-            	}
-
-
-HX_DEFINE_DYNAMIC_FUNC1(FlxObject_obj,set_debugBoundingBoxColorPartial,return )
 
  ::flixel::util::FlxPath FlxObject_obj::set_path( ::flixel::util::FlxPath path){
             	HX_STACKFRAME(&_hx_pos_c625bfaa5b4263df_1251_set_path)
@@ -1946,11 +1722,6 @@ void FlxObject_obj::__Mark(HX_MARK_PARAMS)
 	HX_MARK_MEMBER_NAME(wasTouching,"wasTouching");
 	HX_MARK_MEMBER_NAME(allowCollisions,"allowCollisions");
 	HX_MARK_MEMBER_NAME(collisonXDrag,"collisonXDrag");
-	HX_MARK_MEMBER_NAME(debugBoundingBoxColor,"debugBoundingBoxColor");
-	HX_MARK_MEMBER_NAME(debugBoundingBoxColorSolid,"debugBoundingBoxColorSolid");
-	HX_MARK_MEMBER_NAME(debugBoundingBoxColorNotSolid,"debugBoundingBoxColorNotSolid");
-	HX_MARK_MEMBER_NAME(debugBoundingBoxColorPartial,"debugBoundingBoxColorPartial");
-	HX_MARK_MEMBER_NAME(ignoreDrawDebug,"ignoreDrawDebug");
 	HX_MARK_MEMBER_NAME(path,"path");
 	HX_MARK_MEMBER_NAME(_point,"_point");
 	HX_MARK_MEMBER_NAME(_rect,"_rect");
@@ -1986,11 +1757,6 @@ void FlxObject_obj::__Visit(HX_VISIT_PARAMS)
 	HX_VISIT_MEMBER_NAME(wasTouching,"wasTouching");
 	HX_VISIT_MEMBER_NAME(allowCollisions,"allowCollisions");
 	HX_VISIT_MEMBER_NAME(collisonXDrag,"collisonXDrag");
-	HX_VISIT_MEMBER_NAME(debugBoundingBoxColor,"debugBoundingBoxColor");
-	HX_VISIT_MEMBER_NAME(debugBoundingBoxColorSolid,"debugBoundingBoxColorSolid");
-	HX_VISIT_MEMBER_NAME(debugBoundingBoxColorNotSolid,"debugBoundingBoxColorNotSolid");
-	HX_VISIT_MEMBER_NAME(debugBoundingBoxColorPartial,"debugBoundingBoxColorPartial");
-	HX_VISIT_MEMBER_NAME(ignoreDrawDebug,"ignoreDrawDebug");
 	HX_VISIT_MEMBER_NAME(path,"path");
 	HX_VISIT_MEMBER_NAME(_point,"_point");
 	HX_VISIT_MEMBER_NAME(_rect,"_rect");
@@ -2043,7 +1809,6 @@ hx::Val FlxObject_obj::__Field(const ::String &inName,hx::PropertyAccess inCallP
 	case 9:
 		if (HX_FIELD_EQ(inName,"immovable") ) { return hx::Val( immovable); }
 		if (HX_FIELD_EQ(inName,"getHitbox") ) { return hx::Val( getHitbox_dyn()); }
-		if (HX_FIELD_EQ(inName,"drawDebug") ) { return hx::Val( drawDebug_dyn()); }
 		if (HX_FIELD_EQ(inName,"set_width") ) { return hx::Val( set_width_dyn()); }
 		if (HX_FIELD_EQ(inName,"get_width") ) { return hx::Val( get_width_dyn()); }
 		if (HX_FIELD_EQ(inName,"get_solid") ) { return hx::Val( get_solid_dyn()); }
@@ -2074,7 +1839,6 @@ hx::Val FlxObject_obj::__Field(const ::String &inName,hx::PropertyAccess inCallP
 		if (HX_FIELD_EQ(inName,"acceleration") ) { return hx::Val( acceleration); }
 		if (HX_FIELD_EQ(inName,"updateMotion") ) { return hx::Val( updateMotion_dyn()); }
 		if (HX_FIELD_EQ(inName,"screenCenter") ) { return hx::Val( screenCenter_dyn()); }
-		if (HX_FIELD_EQ(inName,"endDrawDebug") ) { return hx::Val( endDrawDebug_dyn()); }
 		break;
 	case 13:
 		if (HX_FIELD_EQ(inName,"collisonXDrag") ) { return hx::Val( collisonXDrag); }
@@ -2084,20 +1848,17 @@ hx::Val FlxObject_obj::__Field(const ::String &inName,hx::PropertyAccess inCallP
 		break;
 	case 14:
 		if (HX_FIELD_EQ(inName,"initMotionVars") ) { return hx::Val( initMotionVars_dyn()); }
-		if (HX_FIELD_EQ(inName,"beginDrawDebug") ) { return hx::Val( beginDrawDebug_dyn()); }
 		if (HX_FIELD_EQ(inName,"getBoundingBox") ) { return hx::Val( getBoundingBox_dyn()); }
 		break;
 	case 15:
 		if (HX_FIELD_EQ(inName,"angularVelocity") ) { return hx::Val( angularVelocity); }
 		if (HX_FIELD_EQ(inName,"allowCollisions") ) { return hx::Val( allowCollisions); }
-		if (HX_FIELD_EQ(inName,"ignoreDrawDebug") ) { return hx::Val( ignoreDrawDebug); }
 		break;
 	case 16:
 		if (HX_FIELD_EQ(inName,"overlapsCallback") ) { return hx::Val( overlapsCallback_dyn()); }
 		break;
 	case 17:
 		if (HX_FIELD_EQ(inName,"getScreenPosition") ) { return hx::Val( getScreenPosition_dyn()); }
-		if (HX_FIELD_EQ(inName,"drawDebugOnCamera") ) { return hx::Val( drawDebugOnCamera_dyn()); }
 		break;
 	case 18:
 		if (HX_FIELD_EQ(inName,"pixelPerfectRender") ) { return hx::Val( pixelPerfectRender); }
@@ -2110,31 +1871,9 @@ hx::Val FlxObject_obj::__Field(const ::String &inName,hx::PropertyAccess inCallP
 	case 20:
 		if (HX_FIELD_EQ(inName,"pixelPerfectPosition") ) { return hx::Val( pixelPerfectPosition); }
 		if (HX_FIELD_EQ(inName,"isPixelPerfectRender") ) { return hx::Val( isPixelPerfectRender_dyn()); }
-		if (HX_FIELD_EQ(inName,"drawDebugBoundingBox") ) { return hx::Val( drawDebugBoundingBox_dyn()); }
-		break;
-	case 21:
-		if (HX_FIELD_EQ(inName,"debugBoundingBoxColor") ) { return hx::Val( debugBoundingBoxColor); }
 		break;
 	case 22:
 		if (HX_FIELD_EQ(inName,"set_pixelPerfectRender") ) { return hx::Val( set_pixelPerfectRender_dyn()); }
-		break;
-	case 26:
-		if (HX_FIELD_EQ(inName,"debugBoundingBoxColorSolid") ) { return hx::Val( debugBoundingBoxColorSolid); }
-		break;
-	case 28:
-		if (HX_FIELD_EQ(inName,"debugBoundingBoxColorPartial") ) { return hx::Val( debugBoundingBoxColorPartial); }
-		break;
-	case 29:
-		if (HX_FIELD_EQ(inName,"debugBoundingBoxColorNotSolid") ) { return hx::Val( debugBoundingBoxColorNotSolid); }
-		break;
-	case 30:
-		if (HX_FIELD_EQ(inName,"set_debugBoundingBoxColorSolid") ) { return hx::Val( set_debugBoundingBoxColorSolid_dyn()); }
-		break;
-	case 32:
-		if (HX_FIELD_EQ(inName,"set_debugBoundingBoxColorPartial") ) { return hx::Val( set_debugBoundingBoxColorPartial_dyn()); }
-		break;
-	case 33:
-		if (HX_FIELD_EQ(inName,"set_debugBoundingBoxColorNotSolid") ) { return hx::Val( set_debugBoundingBoxColorNotSolid_dyn()); }
 	}
 	return super::__Field(inName,inCallProp);
 }
@@ -2226,7 +1965,6 @@ hx::Val FlxObject_obj::__SetField(const ::String &inName,const hx::Val &inValue,
 	case 15:
 		if (HX_FIELD_EQ(inName,"angularVelocity") ) { angularVelocity=inValue.Cast< Float >(); return inValue; }
 		if (HX_FIELD_EQ(inName,"allowCollisions") ) { if (inCallProp == hx::paccAlways) return hx::Val( set_allowCollisions(inValue) );allowCollisions=inValue.Cast< int >(); return inValue; }
-		if (HX_FIELD_EQ(inName,"ignoreDrawDebug") ) { ignoreDrawDebug=inValue.Cast< bool >(); return inValue; }
 		break;
 	case 18:
 		if (HX_FIELD_EQ(inName,"pixelPerfectRender") ) { if (inCallProp == hx::paccAlways) return hx::Val( set_pixelPerfectRender(inValue) );pixelPerfectRender=inValue.Cast<  ::Dynamic >(); return inValue; }
@@ -2236,18 +1974,6 @@ hx::Val FlxObject_obj::__SetField(const ::String &inName,const hx::Val &inValue,
 		break;
 	case 20:
 		if (HX_FIELD_EQ(inName,"pixelPerfectPosition") ) { pixelPerfectPosition=inValue.Cast< bool >(); return inValue; }
-		break;
-	case 21:
-		if (HX_FIELD_EQ(inName,"debugBoundingBoxColor") ) { debugBoundingBoxColor=inValue.Cast<  ::Dynamic >(); return inValue; }
-		break;
-	case 26:
-		if (HX_FIELD_EQ(inName,"debugBoundingBoxColorSolid") ) { if (inCallProp == hx::paccAlways) return hx::Val( set_debugBoundingBoxColorSolid(inValue) );debugBoundingBoxColorSolid=inValue.Cast< int >(); return inValue; }
-		break;
-	case 28:
-		if (HX_FIELD_EQ(inName,"debugBoundingBoxColorPartial") ) { if (inCallProp == hx::paccAlways) return hx::Val( set_debugBoundingBoxColorPartial(inValue) );debugBoundingBoxColorPartial=inValue.Cast< int >(); return inValue; }
-		break;
-	case 29:
-		if (HX_FIELD_EQ(inName,"debugBoundingBoxColorNotSolid") ) { if (inCallProp == hx::paccAlways) return hx::Val( set_debugBoundingBoxColorNotSolid(inValue) );debugBoundingBoxColorNotSolid=inValue.Cast< int >(); return inValue; }
 	}
 	return super::__SetField(inName,inValue,inCallProp);
 }
@@ -2299,11 +2025,6 @@ void FlxObject_obj::__GetFields(Array< ::String> &outFields)
 	outFields->push(HX_HCSTRING("wasTouching","\xcc","\x44","\xe4","\x5f"));
 	outFields->push(HX_HCSTRING("allowCollisions","\xaa","\xc9","\xd9","\x59"));
 	outFields->push(HX_HCSTRING("collisonXDrag","\x97","\xca","\xfa","\x0a"));
-	outFields->push(HX_HCSTRING("debugBoundingBoxColor","\x4f","\xf7","\x30","\x61"));
-	outFields->push(HX_HCSTRING("debugBoundingBoxColorSolid","\x5c","\x4e","\x14","\x21"));
-	outFields->push(HX_HCSTRING("debugBoundingBoxColorNotSolid","\x87","\xa0","\x85","\x00"));
-	outFields->push(HX_HCSTRING("debugBoundingBoxColorPartial","\xf2","\x1f","\x7b","\x2f"));
-	outFields->push(HX_HCSTRING("ignoreDrawDebug","\x3d","\xfc","\x11","\x6b"));
 	outFields->push(HX_HCSTRING("path","\xa5","\xe5","\x51","\x4a"));
 	outFields->push(HX_HCSTRING("_point","\x91","\xfb","\x76","\xc2"));
 	outFields->push(HX_HCSTRING("_rect","\x03","\x69","\xb8","\xfe"));
@@ -2338,11 +2059,6 @@ static hx::StorageInfo FlxObject_obj_sMemberStorageInfo[] = {
 	{hx::fsInt,(int)offsetof(FlxObject_obj,wasTouching),HX_HCSTRING("wasTouching","\xcc","\x44","\xe4","\x5f")},
 	{hx::fsInt,(int)offsetof(FlxObject_obj,allowCollisions),HX_HCSTRING("allowCollisions","\xaa","\xc9","\xd9","\x59")},
 	{hx::fsBool,(int)offsetof(FlxObject_obj,collisonXDrag),HX_HCSTRING("collisonXDrag","\x97","\xca","\xfa","\x0a")},
-	{hx::fsObject /*Dynamic*/ ,(int)offsetof(FlxObject_obj,debugBoundingBoxColor),HX_HCSTRING("debugBoundingBoxColor","\x4f","\xf7","\x30","\x61")},
-	{hx::fsInt,(int)offsetof(FlxObject_obj,debugBoundingBoxColorSolid),HX_HCSTRING("debugBoundingBoxColorSolid","\x5c","\x4e","\x14","\x21")},
-	{hx::fsInt,(int)offsetof(FlxObject_obj,debugBoundingBoxColorNotSolid),HX_HCSTRING("debugBoundingBoxColorNotSolid","\x87","\xa0","\x85","\x00")},
-	{hx::fsInt,(int)offsetof(FlxObject_obj,debugBoundingBoxColorPartial),HX_HCSTRING("debugBoundingBoxColorPartial","\xf2","\x1f","\x7b","\x2f")},
-	{hx::fsBool,(int)offsetof(FlxObject_obj,ignoreDrawDebug),HX_HCSTRING("ignoreDrawDebug","\x3d","\xfc","\x11","\x6b")},
 	{hx::fsObject /*::flixel::util::FlxPath*/ ,(int)offsetof(FlxObject_obj,path),HX_HCSTRING("path","\xa5","\xe5","\x51","\x4a")},
 	{hx::fsObject /*::flixel::math::FlxPoint*/ ,(int)offsetof(FlxObject_obj,_point),HX_HCSTRING("_point","\x91","\xfb","\x76","\xc2")},
 	{hx::fsObject /*::flixel::math::FlxRect*/ ,(int)offsetof(FlxObject_obj,_rect),HX_HCSTRING("_rect","\x03","\x69","\xb8","\xfe")},
@@ -2393,11 +2109,6 @@ static ::String FlxObject_obj_sMemberFields[] = {
 	HX_HCSTRING("wasTouching","\xcc","\x44","\xe4","\x5f"),
 	HX_HCSTRING("allowCollisions","\xaa","\xc9","\xd9","\x59"),
 	HX_HCSTRING("collisonXDrag","\x97","\xca","\xfa","\x0a"),
-	HX_HCSTRING("debugBoundingBoxColor","\x4f","\xf7","\x30","\x61"),
-	HX_HCSTRING("debugBoundingBoxColorSolid","\x5c","\x4e","\x14","\x21"),
-	HX_HCSTRING("debugBoundingBoxColorNotSolid","\x87","\xa0","\x85","\x00"),
-	HX_HCSTRING("debugBoundingBoxColorPartial","\xf2","\x1f","\x7b","\x2f"),
-	HX_HCSTRING("ignoreDrawDebug","\x3d","\xfc","\x11","\x6b"),
 	HX_HCSTRING("path","\xa5","\xe5","\x51","\x4a"),
 	HX_HCSTRING("_point","\x91","\xfb","\x76","\xc2"),
 	HX_HCSTRING("_rect","\x03","\x69","\xb8","\xfe"),
@@ -2426,11 +2137,6 @@ static ::String FlxObject_obj_sMemberFields[] = {
 	HX_HCSTRING("screenCenter","\x61","\x2e","\xf9","\xe2"),
 	HX_HCSTRING("setPosition","\x6b","\x6a","\x5b","\xfb"),
 	HX_HCSTRING("setSize","\x83","\xe1","\xd7","\x11"),
-	HX_HCSTRING("drawDebug","\xaf","\x87","\x2a","\x9f"),
-	HX_HCSTRING("drawDebugOnCamera","\xf3","\x47","\x7b","\xcb"),
-	HX_HCSTRING("drawDebugBoundingBox","\x98","\xf5","\x9a","\x0b"),
-	HX_HCSTRING("beginDrawDebug","\x46","\x70","\x87","\x3b"),
-	HX_HCSTRING("endDrawDebug","\x54","\x90","\x2c","\xae"),
 	HX_HCSTRING("getBoundingBox","\x11","\xe8","\x45","\x0d"),
 	HX_HCSTRING("toString","\xac","\xd0","\x6e","\x38"),
 	HX_HCSTRING("set_x","\x5b","\x9b","\x2f","\x7a"),
@@ -2446,9 +2152,6 @@ static ::String FlxObject_obj_sMemberFields[] = {
 	HX_HCSTRING("set_immovable","\xed","\xdc","\xd9","\x2d"),
 	HX_HCSTRING("set_pixelPerfectRender","\x9a","\x4f","\x8f","\xbc"),
 	HX_HCSTRING("set_allowCollisions","\xcd","\x8b","\x81","\x21"),
-	HX_HCSTRING("set_debugBoundingBoxColorSolid","\x19","\xc9","\x0b","\x4b"),
-	HX_HCSTRING("set_debugBoundingBoxColorNotSolid","\xea","\xb9","\xe3","\x4b"),
-	HX_HCSTRING("set_debugBoundingBoxColorPartial","\xef","\x83","\x54","\x62"),
 	HX_HCSTRING("set_path","\xa2","\xfa","\x69","\x78"),
 	::String(null()) };
 

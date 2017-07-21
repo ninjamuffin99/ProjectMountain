@@ -37,6 +37,8 @@ class PlayState extends FlxState
 	private var _bgImg1:FlxSprite;
 	private var _bgImg2:FlxSprite;
 	private var _bgImg3:FlxSprite;
+	private var _bgImg4:FlxSprite;
+	private var _bgImg5:FlxSprite;
 	private var _bgImages:Array<String>;
 	
 	private var _collisions:FlxGroup;
@@ -87,9 +89,14 @@ class PlayState extends FlxState
 	{
 		_bgImg1 = new FlxSprite();
 		_bgImg2 = new FlxSprite();
+		_bgImg3 = new FlxSprite();
+		_bgImg4 = new FlxSprite();
+		_bgImg5 = new FlxSprite();
 		_bgImg1.loadGraphic("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png", false, 272, 160);
 		_bgImg2.loadGraphic("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-montain-far.png", false, 272, 160);
 		_bgImg3.loadGraphic("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-mountains.png", false, 272, 160);
+		_bgImg4.loadGraphic("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-trees.png", false, 544, 160);
+		_bgImg5.loadGraphic("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-foreground-trees.png", false, 544, 160);
 		
 		_bgImgGrp = new FlxGroup();
 		
@@ -97,6 +104,8 @@ class PlayState extends FlxState
 		_bgImgGrp.add(_bgImg1);
 		_bgImgGrp.add(_bgImg2);
 		_bgImgGrp.add(_bgImg3);
+		_bgImgGrp.add(_bgImg4);
+		_bgImgGrp.add(_bgImg5);
 		
 	}
 	
@@ -138,16 +147,31 @@ class PlayState extends FlxState
 	{
 		_bgImg1.scrollFactor.x = 0;
 		_bgImg2.scrollFactor.x = 0.05;
-		_bgImg2.scrollFactor.x = 0.1;
+		_bgImg3.scrollFactor.x = 0.1;
+		_bgImg3.scrollFactor.x = 0.3;
+		_bgImg3.scrollFactor.x = 0.35;
 		
 		
-		_bgImg1.setGraphicSize(FlxG.width * 2, FlxG.height);
-		_bgImg2.setGraphicSize(FlxG.width, FlxG.height);
-		_bgImg3.setGraphicSize(FlxG.width, FlxG.height);
+		_bgImg1.setGraphicSize(FlxG.width * 2, FlxG.height + 100);
+		_bgImg2.setGraphicSize(FlxG.width * 2, FlxG.height + 100);
+		_bgImg3.setGraphicSize(FlxG.width * 2, FlxG.height + 100);
+		_bgImg4.setGraphicSize(FlxG.width * 4, FlxG.height + 500);
+		_bgImg5.setGraphicSize(FlxG.width * 4, FlxG.height + 500);
+		
+		_bgImg4.y = _bgImg5.y = _player.y;
+		
+		_bgImg2.x = FlxG.random.float(0, FlxG.width);
+		_bgImg3.x = FlxG.random.float(0, FlxG.width);
 		
 		_bgImg1.screenCenter();
 		_bgImg2.screenCenter();
 		_bgImg3.screenCenter();
+		_bgImg4.screenCenter(X);
+		_bgImg5.screenCenter(X);
+		
+		_bgImg1.angle = 15;
+		_bgImg2.angle = 15;
+		_bgImg3.angle = 15;
 	}
 	
 	private inline function initPlayer():Void

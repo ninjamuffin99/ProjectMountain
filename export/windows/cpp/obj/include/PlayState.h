@@ -73,6 +73,8 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::flixel::FlxState_obj
 		 ::flixel::FlxSprite _bgImg1;
 		 ::flixel::FlxSprite _bgImg2;
 		 ::flixel::FlxSprite _bgImg3;
+		 ::flixel::FlxSprite _bgImg4;
+		 ::flixel::FlxSprite _bgImg5;
 		::Array< ::String > _bgImages;
 		 ::flixel::group::FlxTypedGroup _collisions;
 		::Array< ::Dynamic> _tiles;

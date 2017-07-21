@@ -28,9 +28,6 @@
 #ifndef INCLUDED_flixel_system_VirtualInputData
 #include <flixel/system/VirtualInputData.h>
 #endif
-#ifndef INCLUDED_flixel_system_debug_log_LogStyle
-#include <flixel/system/debug/log/LogStyle.h>
-#endif
 #ifndef INCLUDED_flixel_system_frontEnds_BitmapFrontEnd
 #include <flixel/system/frontEnds/BitmapFrontEnd.h>
 #endif
@@ -168,7 +165,7 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC1(FlxAssets_obj,drawLogo,(void))
 HXLINE( 126)		if (::openfl::_legacy::Assets_obj::exists(id,null())) {
 HXLINE( 127)			return ::openfl::_legacy::Assets_obj::getBitmapData(id,false);
             		}
-HXLINE( 128)		::flixel::FlxG_obj::log->advanced(((HX_("Could not find a BitmapData asset with ID '",5f,79,a9,21) + id) + HX_("'.",27,22,00,00)),::flixel::_hx_system::debug::log::LogStyle_obj::ERROR,true);
+HXLINE( 128)		 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
 HXLINE( 129)		return null();
             	}
 
@@ -199,7 +196,7 @@ HXDLIN( 165)					if (::openfl::_legacy::Assets_obj::exists(( (::String)(Graphic)
 HXLINE( 165)						_hx_tmp = ::openfl::_legacy::Assets_obj::getBitmapData(( (::String)(Graphic) ),false);
             					}
             					else {
-HXLINE( 165)						::flixel::FlxG_obj::log->advanced(((HX_("Could not find a BitmapData asset with ID '",5f,79,a9,21) + Graphic) + HX_("'.",27,22,00,00)),::flixel::_hx_system::debug::log::LogStyle_obj::ERROR,true);
+HXLINE( 165)						 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
 HXDLIN( 165)						_hx_tmp = null();
             					}
 HXDLIN( 165)					return _hx_tmp;

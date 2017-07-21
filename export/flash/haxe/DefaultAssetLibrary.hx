@@ -58,6 +58,17 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_monsterrat_ttf);
 		
@@ -71,10 +82,32 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
 		className.set ("assets/images/images-go-here.txt", __ASSET__assets_images_images_go_here_txt);
 		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
+		className.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png", __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_bg_png);
+		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png", AssetType.IMAGE);
+		className.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-foreground-trees.png", __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_foreground_trees_png);
+		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-foreground-trees.png", AssetType.IMAGE);
+		className.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-montain-far.png", __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_montain_far_png);
+		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-montain-far.png", AssetType.IMAGE);
+		className.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-mountains.png", __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_mountains_png);
+		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-mountains.png", AssetType.IMAGE);
+		className.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-trees.png", __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_trees_png);
+		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-trees.png", AssetType.IMAGE);
+		className.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/license.txt", __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_license_txt);
+		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/license.txt", AssetType.TEXT);
+		className.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/parallax-mountain.psd", __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_parallax_mountain_psd);
+		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/parallax-mountain.psd", AssetType.BINARY);
+		className.set ("assets/images/parallax_mountain_pack.zip", __ASSET__assets_images_parallax_mountain_pack_zip);
+		type.set ("assets/images/parallax_mountain_pack.zip", AssetType.BINARY);
+		className.set ("assets/images/tiles.jpg", __ASSET__assets_images_tiles_jpg);
+		type.set ("assets/images/tiles.jpg", AssetType.IMAGE);
 		className.set ("assets/images/tiles.png", __ASSET__assets_images_tiles_png);
 		type.set ("assets/images/tiles.png", AssetType.IMAGE);
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
+		className.set ("assets/music/Oof.mp3", __ASSET__assets_music_oof_mp3);
+		type.set ("assets/music/Oof.mp3", AssetType.MUSIC);
+		className.set ("assets/music/Oof.ogg", __ASSET__assets_music_oof_ogg);
+		type.set ("assets/music/Oof.ogg", AssetType.SOUND);
 		className.set ("assets/sounds/sounds-go-here.txt", __ASSET__assets_sounds_sounds_go_here_txt);
 		type.set ("assets/sounds/sounds-go-here.txt", AssetType.TEXT);
 		className.set ("flixel/sounds/beep.mp3", __ASSET__flixel_sounds_beep_mp3);
@@ -102,6 +135,42 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
+		id = "assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-foreground-trees.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-montain-far.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-mountains.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-trees.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/parallax_mountain_pack/parallax_mountain_pack/license.txt";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/images/parallax_mountain_pack/parallax_mountain_pack/parallax-mountain.psd";
+		path.set (id, id);
+		
+		type.set (id, AssetType.BINARY);
+		id = "assets/images/parallax_mountain_pack.zip";
+		path.set (id, id);
+		
+		type.set (id, AssetType.BINARY);
+		id = "assets/images/tiles.jpg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/tiles.png";
 		path.set (id, id);
 		
@@ -110,6 +179,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
+		id = "assets/music/Oof.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
+		id = "assets/music/Oof.ogg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.SOUND);
 		id = "assets/sounds/sounds-go-here.txt";
 		path.set (id, id);
 		
@@ -162,11 +239,44 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/images/images-go-here.txt", __ASSET__assets_images_images_go_here_txt);
 		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
 		
+		className.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png", __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_bg_png);
+		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-foreground-trees.png", __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_foreground_trees_png);
+		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-foreground-trees.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-montain-far.png", __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_montain_far_png);
+		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-montain-far.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-mountains.png", __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_mountains_png);
+		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-mountains.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-trees.png", __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_trees_png);
+		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-trees.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/license.txt", __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_license_txt);
+		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/license.txt", AssetType.TEXT);
+		
+		className.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/parallax-mountain.psd", __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_parallax_mountain_psd);
+		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/parallax-mountain.psd", AssetType.BINARY);
+		
+		className.set ("assets/images/parallax_mountain_pack.zip", __ASSET__assets_images_parallax_mountain_pack_zip);
+		type.set ("assets/images/parallax_mountain_pack.zip", AssetType.BINARY);
+		
+		className.set ("assets/images/tiles.jpg", __ASSET__assets_images_tiles_jpg);
+		type.set ("assets/images/tiles.jpg", AssetType.IMAGE);
+		
 		className.set ("assets/images/tiles.png", __ASSET__assets_images_tiles_png);
 		type.set ("assets/images/tiles.png", AssetType.IMAGE);
 		
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
+		
+		className.set ("assets/music/Oof.mp3", __ASSET__assets_music_oof_mp3);
+		type.set ("assets/music/Oof.mp3", AssetType.MUSIC);
+		
+		className.set ("assets/music/Oof.ogg", __ASSET__assets_music_oof_ogg);
+		type.set ("assets/music/Oof.ogg", AssetType.SOUND);
 		
 		className.set ("assets/sounds/sounds-go-here.txt", __ASSET__assets_sounds_sounds_go_here_txt);
 		type.set ("assets/sounds/sounds-go-here.txt", AssetType.TEXT);
@@ -835,8 +945,19 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 @:keep @:bind #if display private #end class __ASSET__assets_data_data_goes_here_txt extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_images_go_here_txt extends flash.utils.ByteArray { }
+@:keep @:bind #if display private #end class __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_bg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_foreground_trees_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_montain_far_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_mountains_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_trees_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_license_txt extends flash.utils.ByteArray { }
+@:keep @:bind #if display private #end class __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_parallax_mountain_psd extends flash.utils.ByteArray { }
+@:keep @:bind #if display private #end class __ASSET__assets_images_parallax_mountain_pack_zip extends flash.utils.ByteArray { }
+@:keep @:bind #if display private #end class __ASSET__assets_images_tiles_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_tiles_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_music_music_goes_here_txt extends flash.utils.ByteArray { }
+@:keep @:bind #if display private #end class __ASSET__assets_music_oof_mp3 extends flash.media.Sound { }
+@:keep @:bind #if display private #end class __ASSET__assets_music_oof_ogg extends flash.media.Sound { }
 @:keep @:bind #if display private #end class __ASSET__assets_sounds_sounds_go_here_txt extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_beep_mp3 extends flash.media.Sound { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_flixel_mp3 extends flash.media.Sound { }
@@ -847,6 +968,17 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 #elseif html5
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -870,8 +1002,19 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 @:file("assets/data/data-goes-here.txt") #if display private #end class __ASSET__assets_data_data_goes_here_txt extends lime.utils.Bytes {}
 @:file("assets/images/images-go-here.txt") #if display private #end class __ASSET__assets_images_images_go_here_txt extends lime.utils.Bytes {}
+@:image("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png") #if display private #end class __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_bg_png extends lime.graphics.Image {}
+@:image("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-foreground-trees.png") #if display private #end class __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_foreground_trees_png extends lime.graphics.Image {}
+@:image("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-montain-far.png") #if display private #end class __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_montain_far_png extends lime.graphics.Image {}
+@:image("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-mountains.png") #if display private #end class __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_mountains_png extends lime.graphics.Image {}
+@:image("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-trees.png") #if display private #end class __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_trees_png extends lime.graphics.Image {}
+@:file("assets/images/parallax_mountain_pack/parallax_mountain_pack/license.txt") #if display private #end class __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_license_txt extends lime.utils.Bytes {}
+@:file("assets/images/parallax_mountain_pack/parallax_mountain_pack/parallax-mountain.psd") #if display private #end class __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_parallax_mountain_psd extends lime.utils.Bytes {}
+@:file("assets/images/parallax_mountain_pack.zip") #if display private #end class __ASSET__assets_images_parallax_mountain_pack_zip extends lime.utils.Bytes {}
+@:image("assets/images/tiles.jpg") #if display private #end class __ASSET__assets_images_tiles_jpg extends lime.graphics.Image {}
 @:image("assets/images/tiles.png") #if display private #end class __ASSET__assets_images_tiles_png extends lime.graphics.Image {}
 @:file("assets/music/music-goes-here.txt") #if display private #end class __ASSET__assets_music_music_goes_here_txt extends lime.utils.Bytes {}
+@:file("assets/music/Oof.mp3") #if display private #end class __ASSET__assets_music_oof_mp3 extends lime.utils.Bytes {}
+@:file("assets/music/Oof.ogg") #if display private #end class __ASSET__assets_music_oof_ogg extends lime.utils.Bytes {}
 @:file("assets/sounds/sounds-go-here.txt") #if display private #end class __ASSET__assets_sounds_sounds_go_here_txt extends lime.utils.Bytes {}
 @:file("C:/HaxeToolkit/haxe/lib/flixel/4,2,0/assets/sounds/beep.mp3") #if display private #end class __ASSET__flixel_sounds_beep_mp3 extends lime.utils.Bytes {}
 @:file("C:/HaxeToolkit/haxe/lib/flixel/4,2,0/assets/sounds/flixel.mp3") #if display private #end class __ASSET__flixel_sounds_flixel_mp3 extends lime.utils.Bytes {}

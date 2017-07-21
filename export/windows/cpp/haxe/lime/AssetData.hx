@@ -36,6 +36,8 @@ class AssetData {
 			type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/parallax-mountain.psd", Reflect.field (AssetType, "binary".toUpperCase ()));
 			path.set ("assets/images/parallax_mountain_pack.zip", "assets/images/parallax_mountain_pack.zip");
 			type.set ("assets/images/parallax_mountain_pack.zip", Reflect.field (AssetType, "binary".toUpperCase ()));
+			path.set ("assets/images/tiles.jpg", "assets/images/tiles.jpg");
+			type.set ("assets/images/tiles.jpg", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/tiles.png", "assets/images/tiles.png");
 			type.set ("assets/images/tiles.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/music/music-goes-here.txt", "assets/music/music-goes-here.txt");

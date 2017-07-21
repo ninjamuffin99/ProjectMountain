@@ -108,7 +108,6 @@ HXLINE(  26)				continue;
 HXLINE(  29)			this->_matrix->identity();
 HXLINE(  30)			this->_matrix->scale(camera->width,camera->height);
 HXLINE(  31)			camera->drawPixels(this->frame,null(),this->_matrix,this->colorTransform,null(),null(),null());
-HXLINE(  34)			::flixel::FlxBasic_obj::visibleCount++;
             		}
             	}
 

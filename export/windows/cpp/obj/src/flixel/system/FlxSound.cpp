@@ -328,8 +328,7 @@ HXDLIN( 322)					if (_hx_tmp) {
 HXLINE( 324)						this->_sound = ::openfl::_legacy::Assets_obj::getSound(( (::String)(EmbeddedSound) ),null());
             					}
             					else {
-HXLINE( 326)						 ::Dynamic _hx_tmp1 = ::flixel::FlxG_obj::log->error_dyn();
-HXDLIN( 326)						_hx_tmp1(((HX_("Could not find a Sound asset with an ID of '",6f,0e,1e,66) + EmbeddedSound) + HX_("'.",27,22,00,00)));
+HXLINE( 326)						 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
             					}
             				}
             			}

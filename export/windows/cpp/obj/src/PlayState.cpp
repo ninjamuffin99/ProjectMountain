@@ -25,9 +25,6 @@
 #ifndef INCLUDED_flixel_FlxG
 #include <flixel/FlxG.h>
 #endif
-#ifndef INCLUDED_flixel_FlxGame
-#include <flixel/FlxGame.h>
-#endif
 #ifndef INCLUDED_flixel_FlxObject
 #include <flixel/FlxObject.h>
 #endif
@@ -79,21 +76,6 @@
 #ifndef INCLUDED_flixel_system_FlxSoundGroup
 #include <flixel/system/FlxSoundGroup.h>
 #endif
-#ifndef INCLUDED_flixel_system_debug_FlxDebugger
-#include <flixel/system/debug/FlxDebugger.h>
-#endif
-#ifndef INCLUDED_flixel_system_debug_Window
-#include <flixel/system/debug/Window.h>
-#endif
-#ifndef INCLUDED_flixel_system_debug_log_LogStyle
-#include <flixel/system/debug/log/LogStyle.h>
-#endif
-#ifndef INCLUDED_flixel_system_debug_watch_Watch
-#include <flixel/system/debug/watch/Watch.h>
-#endif
-#ifndef INCLUDED_flixel_system_debug_watch_WatchEntryData
-#include <flixel/system/debug/watch/WatchEntryData.h>
-#endif
 #ifndef INCLUDED_flixel_system_frontEnds_LogFrontEnd
 #include <flixel/system/frontEnds/LogFrontEnd.h>
 #endif
@@ -121,49 +103,28 @@
 #ifndef INCLUDED_haxe_ds_StringMap
 #include <haxe/ds/StringMap.h>
 #endif
-#ifndef INCLUDED_openfl__legacy_display_DisplayObject
-#include <openfl/_legacy/display/DisplayObject.h>
-#endif
-#ifndef INCLUDED_openfl__legacy_display_DisplayObjectContainer
-#include <openfl/_legacy/display/DisplayObjectContainer.h>
-#endif
-#ifndef INCLUDED_openfl__legacy_display_IBitmapDrawable
-#include <openfl/_legacy/display/IBitmapDrawable.h>
-#endif
-#ifndef INCLUDED_openfl__legacy_display_InteractiveObject
-#include <openfl/_legacy/display/InteractiveObject.h>
-#endif
-#ifndef INCLUDED_openfl__legacy_display_Sprite
-#include <openfl/_legacy/display/Sprite.h>
-#endif
-#ifndef INCLUDED_openfl__legacy_events_EventDispatcher
-#include <openfl/_legacy/events/EventDispatcher.h>
-#endif
-#ifndef INCLUDED_openfl__legacy_events_IEventDispatcher
-#include <openfl/_legacy/events/IEventDispatcher.h>
-#endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_af23706db05c7feb_9_new,"PlayState","new",0xf8bf96cf,"PlayState.new","PlayState.hx",9,0xb30d7781)
-HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_62_create,"PlayState","create",0x82220fed,"PlayState.create","PlayState.hx",62,0xb30d7781)
-HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_87_setupBG,"PlayState","setupBG",0x72976b71,"PlayState.setupBG","PlayState.hx",87,0xb30d7781)
-HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_104_setupPlayer,"PlayState","setupPlayer",0x21bcd72d,"PlayState.setupPlayer","PlayState.hx",104,0xb30d7781)
-HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_119_setupUI,"PlayState","setupUI",0x72977c00,"PlayState.setupUI","PlayState.hx",119,0xb30d7781)
-HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_126_setupPlatforms,"PlayState","setupPlatforms",0x685b2614,"PlayState.setupPlatforms","PlayState.hx",126,0xb30d7781)
-HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_138_initBg,"PlayState","initBg",0x9d5f01e6,"PlayState.initBg","PlayState.hx",138,0xb30d7781)
-HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_154_initPlayer,"PlayState","initPlayer",0xc816bc02,"PlayState.initPlayer","PlayState.hx",154,0xb30d7781)
-HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_173_initUI,"PlayState","initUI",0x9d5f1255,"PlayState.initUI","PlayState.hx",173,0xb30d7781)
-HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_179_initPlatforms,"PlayState","initPlatforms",0xc112345f,"PlayState.initPlatforms","PlayState.hx",179,0xb30d7781)
-HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_189_onReset,"PlayState","onReset",0xc747121f,"PlayState.onReset","PlayState.hx",189,0xb30d7781)
-HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_205_update,"PlayState","update",0x8d182efa,"PlayState.update","PlayState.hx",205,0xb30d7781)
-HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_259_updateUI,"PlayState","updateUI",0x26bdabce,"PlayState.updateUI","PlayState.hx",259,0xb30d7781)
-HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_269_updatePlayer,"PlayState","updatePlayer",0x52b205fb,"PlayState.updatePlayer","PlayState.hx",269,0xb30d7781)
-HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_321_updateBg,"PlayState","updateBg",0x26bd9b5f,"PlayState.updateBg","PlayState.hx",321,0xb30d7781)
-HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_327_updatePlatforms,"PlayState","updatePlatforms",0x6e80ac06,"PlayState.updatePlatforms","PlayState.hx",327,0xb30d7781)
-HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_342_removeBlocks,"PlayState","removeBlocks",0x324d3d9b,"PlayState.removeBlocks","PlayState.hx",342,0xb30d7781)
-HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_377_makePlatform,"PlayState","makePlatform",0xc807ba72,"PlayState.makePlatform","PlayState.hx",377,0xb30d7781)
-HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_431_makeBlock,"PlayState","makeBlock",0xc4e7b02e,"PlayState.makeBlock","PlayState.hx",431,0xb30d7781)
-HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_443_setAnimations,"PlayState","setAnimations",0xd8243a60,"PlayState.setAnimations","PlayState.hx",443,0xb30d7781)
-HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_448_positionText,"PlayState","positionText",0x8e8b15a7,"PlayState.positionText","PlayState.hx",448,0xb30d7781)
+HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_64_create,"PlayState","create",0x82220fed,"PlayState.create","PlayState.hx",64,0xb30d7781)
+HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_89_setupBG,"PlayState","setupBG",0x72976b71,"PlayState.setupBG","PlayState.hx",89,0xb30d7781)
+HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_113_setupPlayer,"PlayState","setupPlayer",0x21bcd72d,"PlayState.setupPlayer","PlayState.hx",113,0xb30d7781)
+HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_128_setupUI,"PlayState","setupUI",0x72977c00,"PlayState.setupUI","PlayState.hx",128,0xb30d7781)
+HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_135_setupPlatforms,"PlayState","setupPlatforms",0x685b2614,"PlayState.setupPlatforms","PlayState.hx",135,0xb30d7781)
+HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_147_initBg,"PlayState","initBg",0x9d5f01e6,"PlayState.initBg","PlayState.hx",147,0xb30d7781)
+HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_178_initPlayer,"PlayState","initPlayer",0xc816bc02,"PlayState.initPlayer","PlayState.hx",178,0xb30d7781)
+HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_197_initUI,"PlayState","initUI",0x9d5f1255,"PlayState.initUI","PlayState.hx",197,0xb30d7781)
+HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_203_initPlatforms,"PlayState","initPlatforms",0xc112345f,"PlayState.initPlatforms","PlayState.hx",203,0xb30d7781)
+HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_213_onReset,"PlayState","onReset",0xc747121f,"PlayState.onReset","PlayState.hx",213,0xb30d7781)
+HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_229_update,"PlayState","update",0x8d182efa,"PlayState.update","PlayState.hx",229,0xb30d7781)
+HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_283_updateUI,"PlayState","updateUI",0x26bdabce,"PlayState.updateUI","PlayState.hx",283,0xb30d7781)
+HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_293_updatePlayer,"PlayState","updatePlayer",0x52b205fb,"PlayState.updatePlayer","PlayState.hx",293,0xb30d7781)
+HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_345_updateBg,"PlayState","updateBg",0x26bd9b5f,"PlayState.updateBg","PlayState.hx",345,0xb30d7781)
+HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_351_updatePlatforms,"PlayState","updatePlatforms",0x6e80ac06,"PlayState.updatePlatforms","PlayState.hx",351,0xb30d7781)
+HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_366_removeBlocks,"PlayState","removeBlocks",0x324d3d9b,"PlayState.removeBlocks","PlayState.hx",366,0xb30d7781)
+HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_401_makePlatform,"PlayState","makePlatform",0xc807ba72,"PlayState.makePlatform","PlayState.hx",401,0xb30d7781)
+HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_455_makeBlock,"PlayState","makeBlock",0xc4e7b02e,"PlayState.makeBlock","PlayState.hx",455,0xb30d7781)
+HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_467_setAnimations,"PlayState","setAnimations",0xd8243a60,"PlayState.setAnimations","PlayState.hx",467,0xb30d7781)
+HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_472_positionText,"PlayState","positionText",0x8e8b15a7,"PlayState.positionText","PlayState.hx",472,0xb30d7781)
 HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_11_boot,"PlayState","boot",0xa6fd5ee3,"PlayState.boot","PlayState.hx",11,0xb30d7781)
 HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_12_boot,"PlayState","boot",0xa6fd5ee3,"PlayState.boot","PlayState.hx",12,0xb30d7781)
 HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_14_boot,"PlayState","boot",0xa6fd5ee3,"PlayState.boot","PlayState.hx",14,0xb30d7781)
@@ -202,210 +163,289 @@ bool PlayState_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void PlayState_obj::create(){
-            	HX_GC_STACKFRAME(&_hx_pos_af23706db05c7feb_62_create)
-HXLINE(  63)		{
-HXLINE(  63)			 ::flixel::math::FlxRect _this = ::flixel::FlxG_obj::worldBounds;
-HXDLIN(  63)			_this->width = (int)7000000;
-HXDLIN(  63)			_this->height = (int)1000;
+            	HX_GC_STACKFRAME(&_hx_pos_af23706db05c7feb_64_create)
+HXLINE(  65)		{
+HXLINE(  65)			 ::flixel::math::FlxRect _this = ::flixel::FlxG_obj::worldBounds;
+HXDLIN(  65)			_this->width = (int)7000000;
+HXDLIN(  65)			_this->height = (int)1000;
             		}
-HXLINE(  64)		::flixel::FlxG_obj::camera->set_angle((int)-15);
-HXLINE(  66)		::flixel::FlxG_obj::sound->playMusic(HX_("assets/music/Oof.ogg",91,0a,a5,90),null(),null(),null());
-HXLINE(  70)		this->setupBG();
-HXLINE(  71)		this->setupPlayer();
-HXLINE(  72)		{
-HXLINE(  72)			this->_jump = (int)-1;
-HXDLIN(  72)			this->_playJump = true;
-HXDLIN(  72)			this->_jumpPressed = false;
-HXDLIN(  72)			this->_sfxDie = true;
-HXDLIN(  72)			 ::flixel::FlxSprite _hx_tmp = this->_player;
-HXDLIN(  72)			_hx_tmp->setPosition((this->_startDistance * (int)140),(int)0);
-HXDLIN(  72)			this->_player->drag->set_x((int)200);
-HXDLIN(  72)			this->_player->velocity->set((int)0,(int)0);
-HXDLIN(  72)			this->_player->maxVelocity->set((int)250,(int)1400);
-HXDLIN(  72)			this->_player->acceleration->set((int)500,(int)1400);
-HXDLIN(  72)			int line = (::flixel::FlxG_obj::random->_hx_int((int)0,(int)5,null()) * (int)6);
-HXDLIN(  72)			 ::flixel::FlxSprite _hx_tmp1 = this->_ghost;
-HXDLIN(  72)			Float _hx_tmp2 = (this->_player->x - ((Float)14.));
-HXDLIN(  72)			_hx_tmp1->set_x((_hx_tmp2 + (::flixel::FlxG_obj::width * ((Float)0.5))));
+HXLINE(  66)		::flixel::FlxG_obj::camera->set_angle((int)-15);
+HXLINE(  68)		::flixel::FlxG_obj::sound->playMusic(HX_("assets/music/Oof.ogg",91,0a,a5,90),null(),null(),null());
+HXLINE(  72)		this->setupBG();
+HXLINE(  73)		this->setupPlayer();
+HXLINE(  74)		{
+HXLINE(  74)			this->_jump = (int)-1;
+HXDLIN(  74)			this->_playJump = true;
+HXDLIN(  74)			this->_jumpPressed = false;
+HXDLIN(  74)			this->_sfxDie = true;
+HXDLIN(  74)			 ::flixel::FlxSprite _hx_tmp = this->_player;
+HXDLIN(  74)			_hx_tmp->setPosition((this->_startDistance * (int)140),(int)0);
+HXDLIN(  74)			this->_player->drag->set_x((int)200);
+HXDLIN(  74)			this->_player->velocity->set((int)0,(int)0);
+HXDLIN(  74)			this->_player->maxVelocity->set((int)250,(int)1400);
+HXDLIN(  74)			this->_player->acceleration->set((int)500,(int)1400);
+HXDLIN(  74)			int line = (::flixel::FlxG_obj::random->_hx_int((int)0,(int)5,null()) * (int)6);
+HXDLIN(  74)			 ::flixel::FlxSprite _hx_tmp1 = this->_ghost;
+HXDLIN(  74)			Float _hx_tmp2 = (this->_player->x - ((Float)14.));
+HXDLIN(  74)			_hx_tmp1->set_x((_hx_tmp2 + (::flixel::FlxG_obj::width * ((Float)0.5))));
             		}
-HXLINE(  73)		this->setupUI();
-HXLINE(  75)		this->_stumps =  ::Stump_obj::__alloc( HX_CTX ,null(),null(),null());
-HXLINE(  77)		this->setupPlatforms();
-HXLINE(  78)		{
-HXLINE(  78)			this->_change = false;
-HXDLIN(  78)			this->_edge = ((this->_startDistance - (int)1) * (int)70);
-HXDLIN(  78)			this->makePlatform((int)16,(int)4);
-HXDLIN(  78)			this->makePlatform(null(),null());
-            		}
+HXLINE(  75)		this->setupUI();
+HXLINE(  77)		this->_stumps =  ::Stump_obj::__alloc( HX_CTX ,null(),null(),null());
+HXLINE(  79)		this->setupPlatforms();
 HXLINE(  80)		{
-HXLINE(  80)			this->_bgImg1->scrollFactor->set_x((int)0);
-HXDLIN(  80)			this->_bgImg2->scrollFactor->set_x(((Float)0.05));
-HXDLIN(  80)			this->_bgImg2->scrollFactor->set_x(((Float)0.1));
-HXDLIN(  80)			 ::flixel::FlxSprite _hx_tmp3 = this->_bgImg1;
-HXDLIN(  80)			_hx_tmp3->setGraphicSize((::flixel::FlxG_obj::width * (int)2),::flixel::FlxG_obj::height);
-HXDLIN(  80)			this->_bgImg2->setGraphicSize(::flixel::FlxG_obj::width,::flixel::FlxG_obj::height);
-HXDLIN(  80)			this->_bgImg3->setGraphicSize(::flixel::FlxG_obj::width,::flixel::FlxG_obj::height);
-HXDLIN(  80)			this->_bgImg1->screenCenter(null());
-HXDLIN(  80)			this->_bgImg2->screenCenter(null());
-HXDLIN(  80)			this->_bgImg3->screenCenter(null());
+HXLINE(  80)			this->_change = false;
+HXDLIN(  80)			this->_edge = ((this->_startDistance - (int)1) * (int)70);
+HXDLIN(  80)			this->makePlatform((int)16,(int)4);
+HXDLIN(  80)			this->makePlatform(null(),null());
             		}
-HXLINE(  83)		this->super::create();
+HXLINE(  82)		{
+HXLINE(  82)			this->_bgImg1->scrollFactor->set_x((int)0);
+HXDLIN(  82)			this->_bgImg2->scrollFactor->set_x(((Float)0.05));
+HXDLIN(  82)			this->_bgImg3->scrollFactor->set_x(((Float)0.1));
+HXDLIN(  82)			this->_bgImg3->scrollFactor->set_x(((Float)0.3));
+HXDLIN(  82)			this->_bgImg3->scrollFactor->set_x(((Float)0.35));
+HXDLIN(  82)			 ::flixel::FlxSprite _hx_tmp3 = this->_bgImg1;
+HXDLIN(  82)			int _hx_tmp4 = (::flixel::FlxG_obj::width * (int)2);
+HXDLIN(  82)			_hx_tmp3->setGraphicSize(_hx_tmp4,(::flixel::FlxG_obj::height + (int)100));
+HXDLIN(  82)			 ::flixel::FlxSprite _hx_tmp5 = this->_bgImg2;
+HXDLIN(  82)			int _hx_tmp6 = (::flixel::FlxG_obj::width * (int)2);
+HXDLIN(  82)			_hx_tmp5->setGraphicSize(_hx_tmp6,(::flixel::FlxG_obj::height + (int)100));
+HXDLIN(  82)			 ::flixel::FlxSprite _hx_tmp7 = this->_bgImg3;
+HXDLIN(  82)			int _hx_tmp8 = (::flixel::FlxG_obj::width * (int)2);
+HXDLIN(  82)			_hx_tmp7->setGraphicSize(_hx_tmp8,(::flixel::FlxG_obj::height + (int)100));
+HXDLIN(  82)			 ::flixel::FlxSprite _hx_tmp9 = this->_bgImg4;
+HXDLIN(  82)			int _hx_tmp10 = (::flixel::FlxG_obj::width * (int)4);
+HXDLIN(  82)			_hx_tmp9->setGraphicSize(_hx_tmp10,(::flixel::FlxG_obj::height + (int)500));
+HXDLIN(  82)			 ::flixel::FlxSprite _hx_tmp11 = this->_bgImg5;
+HXDLIN(  82)			int _hx_tmp12 = (::flixel::FlxG_obj::width * (int)4);
+HXDLIN(  82)			_hx_tmp11->setGraphicSize(_hx_tmp12,(::flixel::FlxG_obj::height + (int)500));
+HXDLIN(  82)			 ::flixel::FlxSprite _hx_tmp13 = this->_bgImg4;
+HXDLIN(  82)			_hx_tmp13->set_y(this->_bgImg5->set_y(this->_player->y));
+HXDLIN(  82)			 ::flixel::FlxSprite _hx_tmp14 = this->_bgImg2;
+HXDLIN(  82)			_hx_tmp14->set_x(::flixel::FlxG_obj::random->_hx_float((int)0,::flixel::FlxG_obj::width,null()));
+HXDLIN(  82)			 ::flixel::FlxSprite _hx_tmp15 = this->_bgImg3;
+HXDLIN(  82)			_hx_tmp15->set_x(::flixel::FlxG_obj::random->_hx_float((int)0,::flixel::FlxG_obj::width,null()));
+HXDLIN(  82)			this->_bgImg1->screenCenter(null());
+HXDLIN(  82)			this->_bgImg2->screenCenter(null());
+HXDLIN(  82)			this->_bgImg3->screenCenter(null());
+HXDLIN(  82)			this->_bgImg4->screenCenter(::flixel::util::FlxAxes_obj::X_dyn());
+HXDLIN(  82)			this->_bgImg5->screenCenter(::flixel::util::FlxAxes_obj::X_dyn());
+HXDLIN(  82)			this->_bgImg1->set_angle((int)15);
+HXDLIN(  82)			this->_bgImg2->set_angle((int)15);
+HXDLIN(  82)			this->_bgImg3->set_angle((int)15);
+            		}
+HXLINE(  85)		this->super::create();
             	}
 
 
 void PlayState_obj::setupBG(){
-            	HX_GC_STACKFRAME(&_hx_pos_af23706db05c7feb_87_setupBG)
-HXLINE(  88)		this->_bgImg1 =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,null(),null(),null());
-HXLINE(  89)		this->_bgImg2 =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,null(),null(),null());
-HXLINE(  90)		this->_bgImg1->loadGraphic(HX_("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png",ec,31,49,02),false,(int)272,(int)160,null(),null());
-HXLINE(  91)		this->_bgImg2->loadGraphic(HX_("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-montain-far.png",77,0a,00,29),false,(int)272,(int)160,null(),null());
-HXLINE(  92)		this->_bgImg3->loadGraphic(HX_("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-mountains.png",d5,d6,66,6f),false,(int)272,(int)160,null(),null());
-HXLINE(  94)		this->_bgImgGrp =  ::flixel::group::FlxTypedGroup_obj::__alloc( HX_CTX ,null());
-HXLINE(  96)		this->add(this->_bgImgGrp);
-HXLINE(  97)		this->_bgImgGrp->add(this->_bgImg1).StaticCast<  ::flixel::FlxBasic >();
-HXLINE(  98)		this->_bgImgGrp->add(this->_bgImg2).StaticCast<  ::flixel::FlxBasic >();
-HXLINE(  99)		this->_bgImgGrp->add(this->_bgImg3).StaticCast<  ::flixel::FlxBasic >();
+            	HX_GC_STACKFRAME(&_hx_pos_af23706db05c7feb_89_setupBG)
+HXLINE(  90)		this->_bgImg1 =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,null(),null(),null());
+HXLINE(  91)		this->_bgImg2 =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,null(),null(),null());
+HXLINE(  92)		this->_bgImg3 =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,null(),null(),null());
+HXLINE(  93)		this->_bgImg4 =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,null(),null(),null());
+HXLINE(  94)		this->_bgImg5 =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,null(),null(),null());
+HXLINE(  95)		this->_bgImg1->loadGraphic(HX_("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png",ec,31,49,02),false,(int)272,(int)160,null(),null());
+HXLINE(  96)		this->_bgImg2->loadGraphic(HX_("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-montain-far.png",77,0a,00,29),false,(int)272,(int)160,null(),null());
+HXLINE(  97)		this->_bgImg3->loadGraphic(HX_("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-mountains.png",d5,d6,66,6f),false,(int)272,(int)160,null(),null());
+HXLINE(  98)		this->_bgImg4->loadGraphic(HX_("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-trees.png",24,b8,c6,5f),false,(int)544,(int)160,null(),null());
+HXLINE(  99)		this->_bgImg5->loadGraphic(HX_("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-foreground-trees.png",32,bf,29,66),false,(int)544,(int)160,null(),null());
+HXLINE( 101)		this->_bgImgGrp =  ::flixel::group::FlxTypedGroup_obj::__alloc( HX_CTX ,null());
+HXLINE( 103)		this->add(this->_bgImgGrp);
+HXLINE( 104)		this->_bgImgGrp->add(this->_bgImg1).StaticCast<  ::flixel::FlxBasic >();
+HXLINE( 105)		this->_bgImgGrp->add(this->_bgImg2).StaticCast<  ::flixel::FlxBasic >();
+HXLINE( 106)		this->_bgImgGrp->add(this->_bgImg3).StaticCast<  ::flixel::FlxBasic >();
+HXLINE( 107)		this->_bgImgGrp->add(this->_bgImg4).StaticCast<  ::flixel::FlxBasic >();
+HXLINE( 108)		this->_bgImgGrp->add(this->_bgImg5).StaticCast<  ::flixel::FlxBasic >();
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,setupBG,(void))
 
 void PlayState_obj::setupPlayer(){
-            	HX_GC_STACKFRAME(&_hx_pos_af23706db05c7feb_104_setupPlayer)
-HXLINE( 105)		this->_player =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,null(),null(),null());
-HXLINE( 106)		this->_player->makeGraphic((int)70,(int)100,null(),null(),null());
-HXLINE( 108)		this->_startDistance = ::Std_obj::_hx_int(this->_player->x);
-HXLINE( 110)		this->add(this->_player);
-HXLINE( 113)		Float _hx_tmp = ((this->_player->x + ::flixel::FlxG_obj::width) - (int)70);
-HXDLIN( 113)		this->_ghost =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,_hx_tmp,(::flixel::FlxG_obj::height * ((Float)0.6)),null());
-HXLINE( 115)		::flixel::FlxG_obj::camera->follow(this->_ghost,null(),null());
+            	HX_GC_STACKFRAME(&_hx_pos_af23706db05c7feb_113_setupPlayer)
+HXLINE( 114)		this->_player =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,null(),null(),null());
+HXLINE( 115)		this->_player->makeGraphic((int)70,(int)100,null(),null(),null());
+HXLINE( 117)		this->_startDistance = ::Std_obj::_hx_int(this->_player->x);
+HXLINE( 119)		this->add(this->_player);
+HXLINE( 122)		Float _hx_tmp = ((this->_player->x + ::flixel::FlxG_obj::width) - (int)70);
+HXDLIN( 122)		this->_ghost =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,_hx_tmp,(::flixel::FlxG_obj::height * ((Float)0.6)),null());
+HXLINE( 124)		::flixel::FlxG_obj::camera->follow(this->_ghost,null(),null());
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,setupPlayer,(void))
 
 void PlayState_obj::setupUI(){
-            	HX_GC_STACKFRAME(&_hx_pos_af23706db05c7feb_119_setupUI)
-HXLINE( 120)		this->_scoreText =  ::flixel::text::FlxText_obj::__alloc( HX_CTX ,(int)0,(int)0,(int)280,HX_("",00,00,00,00),null(),null());
-HXLINE( 121)		this->_scoreText->set_alignment(HX_("right",dc,0b,64,e9));
-HXLINE( 122)		this->add(this->_scoreText);
+            	HX_GC_STACKFRAME(&_hx_pos_af23706db05c7feb_128_setupUI)
+HXLINE( 129)		this->_scoreText =  ::flixel::text::FlxText_obj::__alloc( HX_CTX ,(int)0,(int)0,(int)280,HX_("",00,00,00,00),null(),null());
+HXLINE( 130)		this->_scoreText->set_alignment(HX_("right",dc,0b,64,e9));
+HXLINE( 131)		this->add(this->_scoreText);
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,setupUI,(void))
 
 void PlayState_obj::setupPlatforms(){
-            	HX_GC_STACKFRAME(&_hx_pos_af23706db05c7feb_126_setupPlatforms)
-HXLINE( 127)		this->_pool =  ::ObjectPool_obj::__alloc( HX_CTX ,(int)70,(int)70,HX_("assets/images/tiles.png",35,bc,d1,f5),null(),null());
-HXLINE( 129)		this->_tiles = ::Array_obj< ::Dynamic>::__new();
-HXLINE( 131)		this->_collisions =  ::flixel::group::FlxTypedGroup_obj::__alloc( HX_CTX ,null());
-HXLINE( 132)		this->add(this->_collisions);
-HXLINE( 134)		this->_resetPlatforms = false;
+            	HX_GC_STACKFRAME(&_hx_pos_af23706db05c7feb_135_setupPlatforms)
+HXLINE( 136)		this->_pool =  ::ObjectPool_obj::__alloc( HX_CTX ,(int)70,(int)70,HX_("assets/images/tiles.png",35,bc,d1,f5),null(),null());
+HXLINE( 138)		this->_tiles = ::Array_obj< ::Dynamic>::__new();
+HXLINE( 140)		this->_collisions =  ::flixel::group::FlxTypedGroup_obj::__alloc( HX_CTX ,null());
+HXLINE( 141)		this->add(this->_collisions);
+HXLINE( 143)		this->_resetPlatforms = false;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,setupPlatforms,(void))
 
 void PlayState_obj::initBg(){
-            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_138_initBg)
-HXLINE( 139)		this->_bgImg1->scrollFactor->set_x((int)0);
-HXLINE( 140)		this->_bgImg2->scrollFactor->set_x(((Float)0.05));
-HXLINE( 141)		this->_bgImg2->scrollFactor->set_x(((Float)0.1));
-HXLINE( 144)		 ::flixel::FlxSprite _hx_tmp = this->_bgImg1;
-HXDLIN( 144)		_hx_tmp->setGraphicSize((::flixel::FlxG_obj::width * (int)2),::flixel::FlxG_obj::height);
-HXLINE( 145)		this->_bgImg2->setGraphicSize(::flixel::FlxG_obj::width,::flixel::FlxG_obj::height);
-HXLINE( 146)		this->_bgImg3->setGraphicSize(::flixel::FlxG_obj::width,::flixel::FlxG_obj::height);
-HXLINE( 148)		this->_bgImg1->screenCenter(null());
-HXLINE( 149)		this->_bgImg2->screenCenter(null());
-HXLINE( 150)		this->_bgImg3->screenCenter(null());
+            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_147_initBg)
+HXLINE( 148)		this->_bgImg1->scrollFactor->set_x((int)0);
+HXLINE( 149)		this->_bgImg2->scrollFactor->set_x(((Float)0.05));
+HXLINE( 150)		this->_bgImg3->scrollFactor->set_x(((Float)0.1));
+HXLINE( 151)		this->_bgImg3->scrollFactor->set_x(((Float)0.3));
+HXLINE( 152)		this->_bgImg3->scrollFactor->set_x(((Float)0.35));
+HXLINE( 155)		 ::flixel::FlxSprite _hx_tmp = this->_bgImg1;
+HXDLIN( 155)		int _hx_tmp1 = (::flixel::FlxG_obj::width * (int)2);
+HXDLIN( 155)		_hx_tmp->setGraphicSize(_hx_tmp1,(::flixel::FlxG_obj::height + (int)100));
+HXLINE( 156)		 ::flixel::FlxSprite _hx_tmp2 = this->_bgImg2;
+HXDLIN( 156)		int _hx_tmp3 = (::flixel::FlxG_obj::width * (int)2);
+HXDLIN( 156)		_hx_tmp2->setGraphicSize(_hx_tmp3,(::flixel::FlxG_obj::height + (int)100));
+HXLINE( 157)		 ::flixel::FlxSprite _hx_tmp4 = this->_bgImg3;
+HXDLIN( 157)		int _hx_tmp5 = (::flixel::FlxG_obj::width * (int)2);
+HXDLIN( 157)		_hx_tmp4->setGraphicSize(_hx_tmp5,(::flixel::FlxG_obj::height + (int)100));
+HXLINE( 158)		 ::flixel::FlxSprite _hx_tmp6 = this->_bgImg4;
+HXDLIN( 158)		int _hx_tmp7 = (::flixel::FlxG_obj::width * (int)4);
+HXDLIN( 158)		_hx_tmp6->setGraphicSize(_hx_tmp7,(::flixel::FlxG_obj::height + (int)500));
+HXLINE( 159)		 ::flixel::FlxSprite _hx_tmp8 = this->_bgImg5;
+HXDLIN( 159)		int _hx_tmp9 = (::flixel::FlxG_obj::width * (int)4);
+HXDLIN( 159)		_hx_tmp8->setGraphicSize(_hx_tmp9,(::flixel::FlxG_obj::height + (int)500));
+HXLINE( 161)		 ::flixel::FlxSprite _hx_tmp10 = this->_bgImg4;
+HXDLIN( 161)		_hx_tmp10->set_y(this->_bgImg5->set_y(this->_player->y));
+HXLINE( 163)		 ::flixel::FlxSprite _hx_tmp11 = this->_bgImg2;
+HXDLIN( 163)		_hx_tmp11->set_x(::flixel::FlxG_obj::random->_hx_float((int)0,::flixel::FlxG_obj::width,null()));
+HXLINE( 164)		 ::flixel::FlxSprite _hx_tmp12 = this->_bgImg3;
+HXDLIN( 164)		_hx_tmp12->set_x(::flixel::FlxG_obj::random->_hx_float((int)0,::flixel::FlxG_obj::width,null()));
+HXLINE( 166)		this->_bgImg1->screenCenter(null());
+HXLINE( 167)		this->_bgImg2->screenCenter(null());
+HXLINE( 168)		this->_bgImg3->screenCenter(null());
+HXLINE( 169)		this->_bgImg4->screenCenter(::flixel::util::FlxAxes_obj::X_dyn());
+HXLINE( 170)		this->_bgImg5->screenCenter(::flixel::util::FlxAxes_obj::X_dyn());
+HXLINE( 172)		this->_bgImg1->set_angle((int)15);
+HXLINE( 173)		this->_bgImg2->set_angle((int)15);
+HXLINE( 174)		this->_bgImg3->set_angle((int)15);
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,initBg,(void))
 
 void PlayState_obj::initPlayer(){
-            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_154_initPlayer)
-HXLINE( 155)		this->_jump = (int)-1;
-HXLINE( 156)		this->_playJump = true;
-HXLINE( 157)		this->_jumpPressed = false;
-HXLINE( 158)		this->_sfxDie = true;
-HXLINE( 160)		 ::flixel::FlxSprite _hx_tmp = this->_player;
-HXDLIN( 160)		_hx_tmp->setPosition((this->_startDistance * (int)140),(int)0);
-HXLINE( 161)		this->_player->drag->set_x((int)200);
-HXLINE( 162)		this->_player->velocity->set((int)0,(int)0);
-HXLINE( 163)		this->_player->maxVelocity->set((int)250,(int)1400);
-HXLINE( 164)		this->_player->acceleration->set((int)500,(int)1400);
-HXLINE( 167)		int line = (::flixel::FlxG_obj::random->_hx_int((int)0,(int)5,null()) * (int)6);
-HXLINE( 169)		 ::flixel::FlxSprite _hx_tmp1 = this->_ghost;
-HXDLIN( 169)		Float _hx_tmp2 = (this->_player->x - ((Float)14.));
-HXDLIN( 169)		_hx_tmp1->set_x((_hx_tmp2 + (::flixel::FlxG_obj::width * ((Float)0.5))));
+            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_178_initPlayer)
+HXLINE( 179)		this->_jump = (int)-1;
+HXLINE( 180)		this->_playJump = true;
+HXLINE( 181)		this->_jumpPressed = false;
+HXLINE( 182)		this->_sfxDie = true;
+HXLINE( 184)		 ::flixel::FlxSprite _hx_tmp = this->_player;
+HXDLIN( 184)		_hx_tmp->setPosition((this->_startDistance * (int)140),(int)0);
+HXLINE( 185)		this->_player->drag->set_x((int)200);
+HXLINE( 186)		this->_player->velocity->set((int)0,(int)0);
+HXLINE( 187)		this->_player->maxVelocity->set((int)250,(int)1400);
+HXLINE( 188)		this->_player->acceleration->set((int)500,(int)1400);
+HXLINE( 191)		int line = (::flixel::FlxG_obj::random->_hx_int((int)0,(int)5,null()) * (int)6);
+HXLINE( 193)		 ::flixel::FlxSprite _hx_tmp1 = this->_ghost;
+HXDLIN( 193)		Float _hx_tmp2 = (this->_player->x - ((Float)14.));
+HXDLIN( 193)		_hx_tmp1->set_x((_hx_tmp2 + (::flixel::FlxG_obj::width * ((Float)0.5))));
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,initPlayer,(void))
 
 void PlayState_obj::initUI(){
-            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_173_initUI)
-HXLINE( 174)		this->_scoreText->set_y((int)20);
-HXLINE( 175)		this->_score = (int)0;
+            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_197_initUI)
+HXLINE( 198)		this->_scoreText->set_y((int)20);
+HXLINE( 199)		this->_score = (int)0;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,initUI,(void))
 
 void PlayState_obj::initPlatforms(){
-            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_179_initPlatforms)
-HXLINE( 180)		this->_change = false;
-HXLINE( 182)		this->_edge = ((this->_startDistance - (int)1) * (int)70);
-HXLINE( 184)		this->makePlatform((int)16,(int)4);
-HXLINE( 185)		this->makePlatform(null(),null());
+            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_203_initPlatforms)
+HXLINE( 204)		this->_change = false;
+HXLINE( 206)		this->_edge = ((this->_startDistance - (int)1) * (int)70);
+HXLINE( 208)		this->makePlatform((int)16,(int)4);
+HXLINE( 209)		this->makePlatform(null(),null());
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,initPlatforms,(void))
 
 void PlayState_obj::onReset(){
-            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_189_onReset)
-HXLINE( 190)		this->_resetPlatforms = true;
-HXLINE( 191)		this->removeBlocks();
-HXLINE( 192)		this->_resetPlatforms = false;
-HXLINE( 194)		{
-HXLINE( 194)			this->_jump = (int)-1;
-HXDLIN( 194)			this->_playJump = true;
-HXDLIN( 194)			this->_jumpPressed = false;
-HXDLIN( 194)			this->_sfxDie = true;
-HXDLIN( 194)			 ::flixel::FlxSprite _hx_tmp = this->_player;
-HXDLIN( 194)			_hx_tmp->setPosition((this->_startDistance * (int)140),(int)0);
-HXDLIN( 194)			this->_player->drag->set_x((int)200);
-HXDLIN( 194)			this->_player->velocity->set((int)0,(int)0);
-HXDLIN( 194)			this->_player->maxVelocity->set((int)250,(int)1400);
-HXDLIN( 194)			this->_player->acceleration->set((int)500,(int)1400);
-HXDLIN( 194)			int line = (::flixel::FlxG_obj::random->_hx_int((int)0,(int)5,null()) * (int)6);
-HXDLIN( 194)			 ::flixel::FlxSprite _hx_tmp1 = this->_ghost;
-HXDLIN( 194)			Float _hx_tmp2 = (this->_player->x - ((Float)14.));
-HXDLIN( 194)			_hx_tmp1->set_x((_hx_tmp2 + (::flixel::FlxG_obj::width * ((Float)0.5))));
+            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_213_onReset)
+HXLINE( 214)		this->_resetPlatforms = true;
+HXLINE( 215)		this->removeBlocks();
+HXLINE( 216)		this->_resetPlatforms = false;
+HXLINE( 218)		{
+HXLINE( 218)			this->_jump = (int)-1;
+HXDLIN( 218)			this->_playJump = true;
+HXDLIN( 218)			this->_jumpPressed = false;
+HXDLIN( 218)			this->_sfxDie = true;
+HXDLIN( 218)			 ::flixel::FlxSprite _hx_tmp = this->_player;
+HXDLIN( 218)			_hx_tmp->setPosition((this->_startDistance * (int)140),(int)0);
+HXDLIN( 218)			this->_player->drag->set_x((int)200);
+HXDLIN( 218)			this->_player->velocity->set((int)0,(int)0);
+HXDLIN( 218)			this->_player->maxVelocity->set((int)250,(int)1400);
+HXDLIN( 218)			this->_player->acceleration->set((int)500,(int)1400);
+HXDLIN( 218)			int line = (::flixel::FlxG_obj::random->_hx_int((int)0,(int)5,null()) * (int)6);
+HXDLIN( 218)			 ::flixel::FlxSprite _hx_tmp1 = this->_ghost;
+HXDLIN( 218)			Float _hx_tmp2 = (this->_player->x - ((Float)14.));
+HXDLIN( 218)			_hx_tmp1->set_x((_hx_tmp2 + (::flixel::FlxG_obj::width * ((Float)0.5))));
             		}
-HXLINE( 196)		{
-HXLINE( 196)			this->_scoreText->set_y((int)20);
-HXDLIN( 196)			this->_score = (int)0;
+HXLINE( 220)		{
+HXLINE( 220)			this->_scoreText->set_y((int)20);
+HXDLIN( 220)			this->_score = (int)0;
             		}
-HXLINE( 198)		{
-HXLINE( 198)			this->_change = false;
-HXDLIN( 198)			this->_edge = ((this->_startDistance - (int)1) * (int)70);
-HXDLIN( 198)			this->makePlatform((int)16,(int)4);
-HXDLIN( 198)			this->makePlatform(null(),null());
+HXLINE( 222)		{
+HXLINE( 222)			this->_change = false;
+HXDLIN( 222)			this->_edge = ((this->_startDistance - (int)1) * (int)70);
+HXDLIN( 222)			this->makePlatform((int)16,(int)4);
+HXDLIN( 222)			this->makePlatform(null(),null());
             		}
-HXLINE( 200)		{
-HXLINE( 200)			this->_bgImg1->scrollFactor->set_x((int)0);
-HXDLIN( 200)			this->_bgImg2->scrollFactor->set_x(((Float)0.05));
-HXDLIN( 200)			this->_bgImg2->scrollFactor->set_x(((Float)0.1));
-HXDLIN( 200)			 ::flixel::FlxSprite _hx_tmp3 = this->_bgImg1;
-HXDLIN( 200)			_hx_tmp3->setGraphicSize((::flixel::FlxG_obj::width * (int)2),::flixel::FlxG_obj::height);
-HXDLIN( 200)			this->_bgImg2->setGraphicSize(::flixel::FlxG_obj::width,::flixel::FlxG_obj::height);
-HXDLIN( 200)			this->_bgImg3->setGraphicSize(::flixel::FlxG_obj::width,::flixel::FlxG_obj::height);
-HXDLIN( 200)			this->_bgImg1->screenCenter(null());
-HXDLIN( 200)			this->_bgImg2->screenCenter(null());
-HXDLIN( 200)			this->_bgImg3->screenCenter(null());
+HXLINE( 224)		{
+HXLINE( 224)			this->_bgImg1->scrollFactor->set_x((int)0);
+HXDLIN( 224)			this->_bgImg2->scrollFactor->set_x(((Float)0.05));
+HXDLIN( 224)			this->_bgImg3->scrollFactor->set_x(((Float)0.1));
+HXDLIN( 224)			this->_bgImg3->scrollFactor->set_x(((Float)0.3));
+HXDLIN( 224)			this->_bgImg3->scrollFactor->set_x(((Float)0.35));
+HXDLIN( 224)			 ::flixel::FlxSprite _hx_tmp3 = this->_bgImg1;
+HXDLIN( 224)			int _hx_tmp4 = (::flixel::FlxG_obj::width * (int)2);
+HXDLIN( 224)			_hx_tmp3->setGraphicSize(_hx_tmp4,(::flixel::FlxG_obj::height + (int)100));
+HXDLIN( 224)			 ::flixel::FlxSprite _hx_tmp5 = this->_bgImg2;
+HXDLIN( 224)			int _hx_tmp6 = (::flixel::FlxG_obj::width * (int)2);
+HXDLIN( 224)			_hx_tmp5->setGraphicSize(_hx_tmp6,(::flixel::FlxG_obj::height + (int)100));
+HXDLIN( 224)			 ::flixel::FlxSprite _hx_tmp7 = this->_bgImg3;
+HXDLIN( 224)			int _hx_tmp8 = (::flixel::FlxG_obj::width * (int)2);
+HXDLIN( 224)			_hx_tmp7->setGraphicSize(_hx_tmp8,(::flixel::FlxG_obj::height + (int)100));
+HXDLIN( 224)			 ::flixel::FlxSprite _hx_tmp9 = this->_bgImg4;
+HXDLIN( 224)			int _hx_tmp10 = (::flixel::FlxG_obj::width * (int)4);
+HXDLIN( 224)			_hx_tmp9->setGraphicSize(_hx_tmp10,(::flixel::FlxG_obj::height + (int)500));
+HXDLIN( 224)			 ::flixel::FlxSprite _hx_tmp11 = this->_bgImg5;
+HXDLIN( 224)			int _hx_tmp12 = (::flixel::FlxG_obj::width * (int)4);
+HXDLIN( 224)			_hx_tmp11->setGraphicSize(_hx_tmp12,(::flixel::FlxG_obj::height + (int)500));
+HXDLIN( 224)			 ::flixel::FlxSprite _hx_tmp13 = this->_bgImg4;
+HXDLIN( 224)			_hx_tmp13->set_y(this->_bgImg5->set_y(this->_player->y));
+HXDLIN( 224)			 ::flixel::FlxSprite _hx_tmp14 = this->_bgImg2;
+HXDLIN( 224)			_hx_tmp14->set_x(::flixel::FlxG_obj::random->_hx_float((int)0,::flixel::FlxG_obj::width,null()));
+HXDLIN( 224)			 ::flixel::FlxSprite _hx_tmp15 = this->_bgImg3;
+HXDLIN( 224)			_hx_tmp15->set_x(::flixel::FlxG_obj::random->_hx_float((int)0,::flixel::FlxG_obj::width,null()));
+HXDLIN( 224)			this->_bgImg1->screenCenter(null());
+HXDLIN( 224)			this->_bgImg2->screenCenter(null());
+HXDLIN( 224)			this->_bgImg3->screenCenter(null());
+HXDLIN( 224)			this->_bgImg4->screenCenter(::flixel::util::FlxAxes_obj::X_dyn());
+HXDLIN( 224)			this->_bgImg5->screenCenter(::flixel::util::FlxAxes_obj::X_dyn());
+HXDLIN( 224)			this->_bgImg1->set_angle((int)15);
+HXDLIN( 224)			this->_bgImg2->set_angle((int)15);
+HXDLIN( 224)			this->_bgImg3->set_angle((int)15);
             		}
             	}
 
@@ -413,228 +453,226 @@ HXDLIN( 200)			this->_bgImg3->screenCenter(null());
 HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,onReset,(void))
 
 void PlayState_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_205_update)
-HXLINE( 207)		 ::flixel::input::keyboard::FlxKeyList _this = ( ( ::flixel::input::keyboard::FlxKeyList)(::flixel::FlxG_obj::keys->justPressed) );
-HXDLIN( 207)		if (_this->keyManager->checkStatus((int)82,_this->status)) {
-HXLINE( 209)			this->onReset();
-HXLINE( 211)			return;
+            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_229_update)
+HXLINE( 231)		 ::flixel::input::keyboard::FlxKeyList _this = ( ( ::flixel::input::keyboard::FlxKeyList)(::flixel::FlxG_obj::keys->justPressed) );
+HXDLIN( 231)		if (_this->keyManager->checkStatus((int)82,_this->status)) {
+HXLINE( 233)			this->onReset();
+HXLINE( 235)			return;
             		}
-HXLINE( 215)		if ((this->_player->y > ::flixel::FlxG_obj::height)) {
-HXLINE( 217)			this->super::update(elapsed);
-HXLINE( 219)			return;
+HXLINE( 239)		if ((this->_player->y > ::flixel::FlxG_obj::height)) {
+HXLINE( 241)			this->super::update(elapsed);
+HXLINE( 243)			return;
             		}
-HXLINE( 222)		{
-HXLINE( 222)			this->removeBlocks();
-HXDLIN( 222)			while(((this->_player->x + ::flixel::FlxG_obj::width) > this->_edge)){
-HXLINE( 222)				this->makePlatform(null(),null());
+HXLINE( 246)		{
+HXLINE( 246)			this->removeBlocks();
+HXDLIN( 246)			while(((this->_player->x + ::flixel::FlxG_obj::width) > this->_edge)){
+HXLINE( 246)				this->makePlatform(null(),null());
             			}
             		}
-HXLINE( 224)		{
-HXLINE( 224)			 ::flixel::math::FlxPoint _hx_tmp = this->_player->maxVelocity;
-HXDLIN( 224)			_hx_tmp->set_x(((int)250 + ::Std_obj::_hx_int((this->_player->x * ((Float)0.05)))));
-HXDLIN( 224)			 ::flixel::input::keyboard::FlxKeyboard _this1 = ::flixel::FlxG_obj::keys;
-HXDLIN( 224)			int KeyArray;
-HXDLIN( 224)			::String s = HX_("UP",5b,4a,00,00);
-HXDLIN( 224)			s = s.toUpperCase();
-HXDLIN( 224)			if (::haxe::IMap_obj::exists(::flixel::input::keyboard::_FlxKey::FlxKey_Impl__obj::fromStringMap,s)) {
-HXLINE( 224)				KeyArray = ( (int)(::haxe::IMap_obj::get(::flixel::input::keyboard::_FlxKey::FlxKey_Impl__obj::fromStringMap,s)) );
+HXLINE( 248)		{
+HXLINE( 248)			 ::flixel::math::FlxPoint _hx_tmp = this->_player->maxVelocity;
+HXDLIN( 248)			_hx_tmp->set_x(((int)250 + ::Std_obj::_hx_int((this->_player->x * ((Float)0.05)))));
+HXDLIN( 248)			 ::flixel::input::keyboard::FlxKeyboard _this1 = ::flixel::FlxG_obj::keys;
+HXDLIN( 248)			int KeyArray;
+HXDLIN( 248)			::String s = HX_("UP",5b,4a,00,00);
+HXDLIN( 248)			s = s.toUpperCase();
+HXDLIN( 248)			if (::haxe::IMap_obj::exists(::flixel::input::keyboard::_FlxKey::FlxKey_Impl__obj::fromStringMap,s)) {
+HXLINE( 248)				KeyArray = ( (int)(::haxe::IMap_obj::get(::flixel::input::keyboard::_FlxKey::FlxKey_Impl__obj::fromStringMap,s)) );
             			}
             			else {
-HXLINE( 224)				KeyArray = (int)-1;
+HXLINE( 248)				KeyArray = (int)-1;
             			}
-HXDLIN( 224)			int KeyArray1;
-HXDLIN( 224)			::String s1 = HX_("W",57,00,00,00);
-HXDLIN( 224)			s1 = s1.toUpperCase();
-HXDLIN( 224)			if (::haxe::IMap_obj::exists(::flixel::input::keyboard::_FlxKey::FlxKey_Impl__obj::fromStringMap,s1)) {
-HXLINE( 224)				KeyArray1 = ( (int)(::haxe::IMap_obj::get(::flixel::input::keyboard::_FlxKey::FlxKey_Impl__obj::fromStringMap,s1)) );
-            			}
-            			else {
-HXLINE( 224)				KeyArray1 = (int)-1;
-            			}
-HXDLIN( 224)			::String s2 = HX_("SPACE",a6,c4,54,ff);
-HXDLIN( 224)			s2 = s2.toUpperCase();
-HXDLIN( 224)			int KeyArray2;
-HXDLIN( 224)			if (::haxe::IMap_obj::exists(::flixel::input::keyboard::_FlxKey::FlxKey_Impl__obj::fromStringMap,s2)) {
-HXLINE( 224)				KeyArray2 = ( (int)(::haxe::IMap_obj::get(::flixel::input::keyboard::_FlxKey::FlxKey_Impl__obj::fromStringMap,s2)) );
+HXDLIN( 248)			int KeyArray1;
+HXDLIN( 248)			::String s1 = HX_("W",57,00,00,00);
+HXDLIN( 248)			s1 = s1.toUpperCase();
+HXDLIN( 248)			if (::haxe::IMap_obj::exists(::flixel::input::keyboard::_FlxKey::FlxKey_Impl__obj::fromStringMap,s1)) {
+HXLINE( 248)				KeyArray1 = ( (int)(::haxe::IMap_obj::get(::flixel::input::keyboard::_FlxKey::FlxKey_Impl__obj::fromStringMap,s1)) );
             			}
             			else {
-HXLINE( 224)				KeyArray2 = (int)-1;
+HXLINE( 248)				KeyArray1 = (int)-1;
             			}
-HXDLIN( 224)			this->_jumpPressed = _this1->checkKeyArrayState(::Array_obj< int >::__new(3)->init(0,KeyArray)->init(1,KeyArray1)->init(2,KeyArray2),(int)1);
-HXDLIN( 224)			bool _hx_tmp1;
-HXDLIN( 224)			if ((this->_jump != (int)-1)) {
-HXLINE( 224)				_hx_tmp1 = this->_jumpPressed;
+HXDLIN( 248)			::String s2 = HX_("SPACE",a6,c4,54,ff);
+HXDLIN( 248)			s2 = s2.toUpperCase();
+HXDLIN( 248)			int KeyArray2;
+HXDLIN( 248)			if (::haxe::IMap_obj::exists(::flixel::input::keyboard::_FlxKey::FlxKey_Impl__obj::fromStringMap,s2)) {
+HXLINE( 248)				KeyArray2 = ( (int)(::haxe::IMap_obj::get(::flixel::input::keyboard::_FlxKey::FlxKey_Impl__obj::fromStringMap,s2)) );
             			}
             			else {
-HXLINE( 224)				_hx_tmp1 = false;
+HXLINE( 248)				KeyArray2 = (int)-1;
             			}
-HXDLIN( 224)			if (_hx_tmp1) {
-HXLINE( 224)				bool _hx_tmp2 = (this->_jump == (int)0);
-HXDLIN( 224)				 ::PlayState _hx_tmp3 = hx::ObjectPtr<OBJ_>(this);
-HXDLIN( 224)				_hx_tmp3->_jump = (_hx_tmp3->_jump + ::flixel::FlxG_obj::elapsed);
-HXDLIN( 224)				if ((this->_player->velocity->y >= (int)0)) {
-HXLINE( 224)					this->_playJump = true;
-HXDLIN( 224)					{
-HXLINE( 224)						 ::flixel::FlxSprite _g = this->_player;
-HXDLIN( 224)						_g->set_y((_g->y - (int)1));
+HXDLIN( 248)			this->_jumpPressed = _this1->checkKeyArrayState(::Array_obj< int >::__new(3)->init(0,KeyArray)->init(1,KeyArray1)->init(2,KeyArray2),(int)1);
+HXDLIN( 248)			bool _hx_tmp1;
+HXDLIN( 248)			if ((this->_jump != (int)-1)) {
+HXLINE( 248)				_hx_tmp1 = this->_jumpPressed;
+            			}
+            			else {
+HXLINE( 248)				_hx_tmp1 = false;
+            			}
+HXDLIN( 248)			if (_hx_tmp1) {
+HXLINE( 248)				bool _hx_tmp2 = (this->_jump == (int)0);
+HXDLIN( 248)				 ::PlayState _hx_tmp3 = hx::ObjectPtr<OBJ_>(this);
+HXDLIN( 248)				_hx_tmp3->_jump = (_hx_tmp3->_jump + ::flixel::FlxG_obj::elapsed);
+HXDLIN( 248)				if ((this->_player->velocity->y >= (int)0)) {
+HXLINE( 248)					this->_playJump = true;
+HXDLIN( 248)					{
+HXLINE( 248)						 ::flixel::FlxSprite _g = this->_player;
+HXDLIN( 248)						_g->set_y((_g->y - (int)1));
             					}
-HXDLIN( 224)					this->_player->velocity->set_y(((Float)-700.));
-HXDLIN( 224)					this->_player->acceleration->set_y((int)-1400);
+HXDLIN( 248)					this->_player->velocity->set_y(((Float)-700.));
+HXDLIN( 248)					this->_player->acceleration->set_y((int)-1400);
             				}
-HXDLIN( 224)				if ((this->_jump > ((Float)0.3))) {
-HXLINE( 224)					this->_player->velocity->set_y(((Float)-700.));
-HXDLIN( 224)					this->_jump = (int)-1;
-HXDLIN( 224)					this->_playJump = true;
+HXDLIN( 248)				if ((this->_jump > ((Float)0.3))) {
+HXLINE( 248)					this->_player->velocity->set_y(((Float)-700.));
+HXDLIN( 248)					this->_jump = (int)-1;
+HXDLIN( 248)					this->_playJump = true;
             				}
             			}
             			else {
-HXLINE( 224)				bool _hx_tmp4;
-HXDLIN( 224)				if (!(!(this->_jumpPressed))) {
-HXLINE( 224)					_hx_tmp4 = (this->_jump == (int)-1);
+HXLINE( 248)				bool _hx_tmp4;
+HXDLIN( 248)				if (!(!(this->_jumpPressed))) {
+HXLINE( 248)					_hx_tmp4 = (this->_jump == (int)-1);
             				}
             				else {
-HXLINE( 224)					_hx_tmp4 = true;
+HXLINE( 248)					_hx_tmp4 = true;
             				}
-HXDLIN( 224)				if (_hx_tmp4) {
-HXLINE( 224)					if ((this->_player->velocity->y < (int)0)) {
-HXLINE( 224)						this->_player->acceleration->set_y((int)1400);
-HXDLIN( 224)						{
-HXLINE( 224)							 ::flixel::math::FlxPoint _g1 = this->_player->velocity;
-HXDLIN( 224)							_g1->set_y((_g1->y + ((Float)35.)));
+HXDLIN( 248)				if (_hx_tmp4) {
+HXLINE( 248)					if ((this->_player->velocity->y < (int)0)) {
+HXLINE( 248)						this->_player->acceleration->set_y((int)1400);
+HXDLIN( 248)						{
+HXLINE( 248)							 ::flixel::math::FlxPoint _g1 = this->_player->velocity;
+HXDLIN( 248)							_g1->set_y((_g1->y + ((Float)35.)));
             						}
-HXDLIN( 224)						this->_jump = (int)-1;
+HXDLIN( 248)						this->_jump = (int)-1;
             					}
             				}
             			}
             		}
-HXLINE( 226)		if (this->_change) {
-HXLINE( 229)			this->_collisions->update(elapsed);
-HXLINE( 231)			this->_change = false;
+HXLINE( 250)		if (this->_change) {
+HXLINE( 253)			this->_collisions->update(elapsed);
+HXLINE( 255)			this->_change = false;
             		}
-HXLINE( 234)		if (::flixel::FlxG_obj::overlap(( ( ::flixel::FlxBasic)(this->_player) ),( ( ::flixel::FlxBasic)(this->_collisions) ),null(),::flixel::FlxObject_obj::separate_dyn())) {
-HXLINE( 236)			this->_playJump = false;
-HXLINE( 238)			if ((this->_player->velocity->x == (int)0)) {
-HXLINE( 241)				this->_jump = (int)-1;
-HXLINE( 242)				this->_playJump = false;
+HXLINE( 258)		if (::flixel::FlxG_obj::overlap(( ( ::flixel::FlxBasic)(this->_player) ),( ( ::flixel::FlxBasic)(this->_collisions) ),null(),::flixel::FlxObject_obj::separate_dyn())) {
+HXLINE( 260)			this->_playJump = false;
+HXLINE( 262)			if ((this->_player->velocity->x == (int)0)) {
+HXLINE( 265)				this->_jump = (int)-1;
+HXLINE( 266)				this->_playJump = false;
             			}
             			else {
-HXLINE( 245)				if (!(this->_jumpPressed)) {
-HXLINE( 247)					this->_jump = (int)0;
+HXLINE( 269)				if (!(this->_jumpPressed)) {
+HXLINE( 271)					this->_jump = (int)0;
             				}
             			}
             		}
-HXLINE( 253)		this->super::update(elapsed);
-HXLINE( 255)		{
-HXLINE( 255)			 ::PlayState _hx_tmp5 = hx::ObjectPtr<OBJ_>(this);
-HXDLIN( 255)			_hx_tmp5->_score = (_hx_tmp5->_score + ::flixel::FlxG_obj::elapsed);
-HXDLIN( 255)			{
-HXLINE( 255)				 ::flixel::_hx_system::frontEnds::WatchFrontEnd _this2 = ::flixel::FlxG_obj::watch;
-HXDLIN( 255)				 ::flixel::_hx_system::debug::watch::Watch _hx_tmp6 = ::flixel::FlxG_obj::game->debugger->watch;
-HXDLIN( 255)				_hx_tmp6->add(null(),::flixel::_hx_system::debug::watch::WatchEntryData_obj::FIELD(::flixel::FlxG_obj::sound->music,HX_("time",0d,cc,fc,4c)));
+HXLINE( 277)		this->super::update(elapsed);
+HXLINE( 279)		{
+HXLINE( 279)			 ::PlayState _hx_tmp5 = hx::ObjectPtr<OBJ_>(this);
+HXDLIN( 279)			_hx_tmp5->_score = (_hx_tmp5->_score + ::flixel::FlxG_obj::elapsed);
+HXDLIN( 279)			{
+HXLINE( 279)				 ::flixel::_hx_system::frontEnds::WatchFrontEnd _this2 = ::flixel::FlxG_obj::watch;
+HXDLIN( 279)				 ::Dynamic object = ::flixel::FlxG_obj::sound->music;
             			}
-HXDLIN( 255)			 ::flixel::text::FlxText _hx_tmp7 = this->_scoreText;
-HXDLIN( 255)			_hx_tmp7->set_x(((this->_player->x + ::flixel::FlxG_obj::width) - (int)280));
-HXDLIN( 255)			 ::flixel::FlxSprite _hx_tmp8 = this->_ghost;
-HXDLIN( 255)			Float _hx_tmp9 = (this->_player->x - ((Float)14.));
-HXDLIN( 255)			_hx_tmp8->set_x((_hx_tmp9 + (::flixel::FlxG_obj::width * ((Float).5))));
+HXDLIN( 279)			 ::flixel::text::FlxText _hx_tmp6 = this->_scoreText;
+HXDLIN( 279)			_hx_tmp6->set_x(((this->_player->x + ::flixel::FlxG_obj::width) - (int)280));
+HXDLIN( 279)			 ::flixel::FlxSprite _hx_tmp7 = this->_ghost;
+HXDLIN( 279)			Float _hx_tmp8 = (this->_player->x - ((Float)14.));
+HXDLIN( 279)			_hx_tmp7->set_x((_hx_tmp8 + (::flixel::FlxG_obj::width * ((Float).5))));
             		}
             	}
 
 
 void PlayState_obj::updateUI(){
-            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_259_updateUI)
-HXLINE( 260)		 ::PlayState _hx_tmp = hx::ObjectPtr<OBJ_>(this);
-HXDLIN( 260)		_hx_tmp->_score = (_hx_tmp->_score + ::flixel::FlxG_obj::elapsed);
-HXLINE( 262)		{
-HXLINE( 262)			 ::flixel::_hx_system::frontEnds::WatchFrontEnd _this = ::flixel::FlxG_obj::watch;
-HXDLIN( 262)			 ::flixel::_hx_system::debug::watch::Watch _hx_tmp1 = ::flixel::FlxG_obj::game->debugger->watch;
-HXDLIN( 262)			_hx_tmp1->add(null(),::flixel::_hx_system::debug::watch::WatchEntryData_obj::FIELD(::flixel::FlxG_obj::sound->music,HX_("time",0d,cc,fc,4c)));
+            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_283_updateUI)
+HXLINE( 284)		 ::PlayState _hx_tmp = hx::ObjectPtr<OBJ_>(this);
+HXDLIN( 284)		_hx_tmp->_score = (_hx_tmp->_score + ::flixel::FlxG_obj::elapsed);
+HXLINE( 286)		{
+HXLINE( 286)			 ::flixel::_hx_system::frontEnds::WatchFrontEnd _this = ::flixel::FlxG_obj::watch;
+HXDLIN( 286)			 ::Dynamic object = ::flixel::FlxG_obj::sound->music;
             		}
-HXLINE( 263)		 ::flixel::text::FlxText _hx_tmp2 = this->_scoreText;
-HXDLIN( 263)		_hx_tmp2->set_x(((this->_player->x + ::flixel::FlxG_obj::width) - (int)280));
-HXLINE( 265)		 ::flixel::FlxSprite _hx_tmp3 = this->_ghost;
-HXDLIN( 265)		Float _hx_tmp4 = (this->_player->x - ((Float)14.));
-HXDLIN( 265)		_hx_tmp3->set_x((_hx_tmp4 + (::flixel::FlxG_obj::width * ((Float).5))));
+HXLINE( 287)		 ::flixel::text::FlxText _hx_tmp1 = this->_scoreText;
+HXDLIN( 287)		_hx_tmp1->set_x(((this->_player->x + ::flixel::FlxG_obj::width) - (int)280));
+HXLINE( 289)		 ::flixel::FlxSprite _hx_tmp2 = this->_ghost;
+HXDLIN( 289)		Float _hx_tmp3 = (this->_player->x - ((Float)14.));
+HXDLIN( 289)		_hx_tmp2->set_x((_hx_tmp3 + (::flixel::FlxG_obj::width * ((Float).5))));
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,updateUI,(void))
 
 void PlayState_obj::updatePlayer(){
-            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_269_updatePlayer)
-HXLINE( 270)		 ::flixel::math::FlxPoint _hx_tmp = this->_player->maxVelocity;
-HXDLIN( 270)		_hx_tmp->set_x(((int)250 + ::Std_obj::_hx_int((this->_player->x * ((Float)0.05)))));
-HXLINE( 272)		 ::flixel::input::keyboard::FlxKeyboard _this = ::flixel::FlxG_obj::keys;
-HXDLIN( 272)		int KeyArray;
-HXDLIN( 272)		::String s = HX_("UP",5b,4a,00,00);
-HXDLIN( 272)		s = s.toUpperCase();
-HXDLIN( 272)		if (::haxe::IMap_obj::exists(::flixel::input::keyboard::_FlxKey::FlxKey_Impl__obj::fromStringMap,s)) {
-HXLINE( 272)			KeyArray = ( (int)(::haxe::IMap_obj::get(::flixel::input::keyboard::_FlxKey::FlxKey_Impl__obj::fromStringMap,s)) );
+            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_293_updatePlayer)
+HXLINE( 294)		 ::flixel::math::FlxPoint _hx_tmp = this->_player->maxVelocity;
+HXDLIN( 294)		_hx_tmp->set_x(((int)250 + ::Std_obj::_hx_int((this->_player->x * ((Float)0.05)))));
+HXLINE( 296)		 ::flixel::input::keyboard::FlxKeyboard _this = ::flixel::FlxG_obj::keys;
+HXDLIN( 296)		int KeyArray;
+HXDLIN( 296)		::String s = HX_("UP",5b,4a,00,00);
+HXDLIN( 296)		s = s.toUpperCase();
+HXDLIN( 296)		if (::haxe::IMap_obj::exists(::flixel::input::keyboard::_FlxKey::FlxKey_Impl__obj::fromStringMap,s)) {
+HXLINE( 296)			KeyArray = ( (int)(::haxe::IMap_obj::get(::flixel::input::keyboard::_FlxKey::FlxKey_Impl__obj::fromStringMap,s)) );
             		}
             		else {
-HXLINE( 272)			KeyArray = (int)-1;
+HXLINE( 296)			KeyArray = (int)-1;
             		}
-HXDLIN( 272)		int KeyArray1;
-HXDLIN( 272)		::String s1 = HX_("W",57,00,00,00);
-HXDLIN( 272)		s1 = s1.toUpperCase();
-HXDLIN( 272)		if (::haxe::IMap_obj::exists(::flixel::input::keyboard::_FlxKey::FlxKey_Impl__obj::fromStringMap,s1)) {
-HXLINE( 272)			KeyArray1 = ( (int)(::haxe::IMap_obj::get(::flixel::input::keyboard::_FlxKey::FlxKey_Impl__obj::fromStringMap,s1)) );
-            		}
-            		else {
-HXLINE( 272)			KeyArray1 = (int)-1;
-            		}
-HXDLIN( 272)		::String s2 = HX_("SPACE",a6,c4,54,ff);
-HXDLIN( 272)		s2 = s2.toUpperCase();
-HXDLIN( 272)		int KeyArray2;
-HXDLIN( 272)		if (::haxe::IMap_obj::exists(::flixel::input::keyboard::_FlxKey::FlxKey_Impl__obj::fromStringMap,s2)) {
-HXLINE( 272)			KeyArray2 = ( (int)(::haxe::IMap_obj::get(::flixel::input::keyboard::_FlxKey::FlxKey_Impl__obj::fromStringMap,s2)) );
+HXDLIN( 296)		int KeyArray1;
+HXDLIN( 296)		::String s1 = HX_("W",57,00,00,00);
+HXDLIN( 296)		s1 = s1.toUpperCase();
+HXDLIN( 296)		if (::haxe::IMap_obj::exists(::flixel::input::keyboard::_FlxKey::FlxKey_Impl__obj::fromStringMap,s1)) {
+HXLINE( 296)			KeyArray1 = ( (int)(::haxe::IMap_obj::get(::flixel::input::keyboard::_FlxKey::FlxKey_Impl__obj::fromStringMap,s1)) );
             		}
             		else {
-HXLINE( 272)			KeyArray2 = (int)-1;
+HXLINE( 296)			KeyArray1 = (int)-1;
             		}
-HXDLIN( 272)		this->_jumpPressed = _this->checkKeyArrayState(::Array_obj< int >::__new(3)->init(0,KeyArray)->init(1,KeyArray1)->init(2,KeyArray2),(int)1);
-HXLINE( 274)		bool _hx_tmp1;
-HXDLIN( 274)		if ((this->_jump != (int)-1)) {
-HXLINE( 274)			_hx_tmp1 = this->_jumpPressed;
+HXDLIN( 296)		::String s2 = HX_("SPACE",a6,c4,54,ff);
+HXDLIN( 296)		s2 = s2.toUpperCase();
+HXDLIN( 296)		int KeyArray2;
+HXDLIN( 296)		if (::haxe::IMap_obj::exists(::flixel::input::keyboard::_FlxKey::FlxKey_Impl__obj::fromStringMap,s2)) {
+HXLINE( 296)			KeyArray2 = ( (int)(::haxe::IMap_obj::get(::flixel::input::keyboard::_FlxKey::FlxKey_Impl__obj::fromStringMap,s2)) );
             		}
             		else {
-HXLINE( 274)			_hx_tmp1 = false;
+HXLINE( 296)			KeyArray2 = (int)-1;
             		}
-HXDLIN( 274)		if (_hx_tmp1) {
-HXLINE( 276)			bool _hx_tmp2 = (this->_jump == (int)0);
-HXLINE( 281)			 ::PlayState _hx_tmp3 = hx::ObjectPtr<OBJ_>(this);
-HXDLIN( 281)			_hx_tmp3->_jump = (_hx_tmp3->_jump + ::flixel::FlxG_obj::elapsed);
-HXLINE( 283)			if ((this->_player->velocity->y >= (int)0)) {
-HXLINE( 286)				this->_playJump = true;
-HXLINE( 288)				{
-HXLINE( 288)					 ::flixel::FlxSprite _g = this->_player;
-HXDLIN( 288)					_g->set_y((_g->y - (int)1));
+HXDLIN( 296)		this->_jumpPressed = _this->checkKeyArrayState(::Array_obj< int >::__new(3)->init(0,KeyArray)->init(1,KeyArray1)->init(2,KeyArray2),(int)1);
+HXLINE( 298)		bool _hx_tmp1;
+HXDLIN( 298)		if ((this->_jump != (int)-1)) {
+HXLINE( 298)			_hx_tmp1 = this->_jumpPressed;
+            		}
+            		else {
+HXLINE( 298)			_hx_tmp1 = false;
+            		}
+HXDLIN( 298)		if (_hx_tmp1) {
+HXLINE( 300)			bool _hx_tmp2 = (this->_jump == (int)0);
+HXLINE( 305)			 ::PlayState _hx_tmp3 = hx::ObjectPtr<OBJ_>(this);
+HXDLIN( 305)			_hx_tmp3->_jump = (_hx_tmp3->_jump + ::flixel::FlxG_obj::elapsed);
+HXLINE( 307)			if ((this->_player->velocity->y >= (int)0)) {
+HXLINE( 310)				this->_playJump = true;
+HXLINE( 312)				{
+HXLINE( 312)					 ::flixel::FlxSprite _g = this->_player;
+HXDLIN( 312)					_g->set_y((_g->y - (int)1));
             				}
-HXLINE( 290)				this->_player->velocity->set_y(((Float)-700.));
-HXLINE( 292)				this->_player->acceleration->set_y((int)-1400);
+HXLINE( 314)				this->_player->velocity->set_y(((Float)-700.));
+HXLINE( 316)				this->_player->acceleration->set_y((int)-1400);
             			}
-HXLINE( 295)			if ((this->_jump > ((Float)0.3))) {
-HXLINE( 297)				this->_player->velocity->set_y(((Float)-700.));
-HXLINE( 299)				this->_jump = (int)-1;
-HXLINE( 301)				this->_playJump = true;
+HXLINE( 319)			if ((this->_jump > ((Float)0.3))) {
+HXLINE( 321)				this->_player->velocity->set_y(((Float)-700.));
+HXLINE( 323)				this->_jump = (int)-1;
+HXLINE( 325)				this->_playJump = true;
             			}
             		}
             		else {
-HXLINE( 306)			bool _hx_tmp4;
-HXDLIN( 306)			if (!(!(this->_jumpPressed))) {
-HXLINE( 306)				_hx_tmp4 = (this->_jump == (int)-1);
+HXLINE( 330)			bool _hx_tmp4;
+HXDLIN( 330)			if (!(!(this->_jumpPressed))) {
+HXLINE( 330)				_hx_tmp4 = (this->_jump == (int)-1);
             			}
             			else {
-HXLINE( 306)				_hx_tmp4 = true;
+HXLINE( 330)				_hx_tmp4 = true;
             			}
-HXDLIN( 306)			if (_hx_tmp4) {
-HXLINE( 308)				if ((this->_player->velocity->y < (int)0)) {
-HXLINE( 310)					this->_player->acceleration->set_y((int)1400);
-HXLINE( 312)					{
-HXLINE( 312)						 ::flixel::math::FlxPoint _g1 = this->_player->velocity;
-HXDLIN( 312)						_g1->set_y((_g1->y + ((Float)35.)));
+HXDLIN( 330)			if (_hx_tmp4) {
+HXLINE( 332)				if ((this->_player->velocity->y < (int)0)) {
+HXLINE( 334)					this->_player->acceleration->set_y((int)1400);
+HXLINE( 336)					{
+HXLINE( 336)						 ::flixel::math::FlxPoint _g1 = this->_player->velocity;
+HXDLIN( 336)						_g1->set_y((_g1->y + ((Float)35.)));
             					}
-HXLINE( 314)					this->_jump = (int)-1;
+HXLINE( 338)					this->_jump = (int)-1;
             				}
             			}
             		}
@@ -644,17 +682,17 @@ HXLINE( 314)					this->_jump = (int)-1;
 HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,updatePlayer,(void))
 
 void PlayState_obj::updateBg(){
-            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_321_updateBg)
+            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_345_updateBg)
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,updateBg,(void))
 
 void PlayState_obj::updatePlatforms(){
-            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_327_updatePlatforms)
-HXLINE( 328)		this->removeBlocks();
-HXLINE( 330)		while(((this->_player->x + ::flixel::FlxG_obj::width) > this->_edge)){
-HXLINE( 332)			this->makePlatform(null(),null());
+            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_351_updatePlatforms)
+HXLINE( 352)		this->removeBlocks();
+HXLINE( 354)		while(((this->_player->x + ::flixel::FlxG_obj::width) > this->_edge)){
+HXLINE( 356)			this->makePlatform(null(),null());
             		}
             	}
 
@@ -662,32 +700,32 @@ HXLINE( 332)			this->makePlatform(null(),null());
 HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,updatePlatforms,(void))
 
 void PlayState_obj::removeBlocks(){
-            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_342_removeBlocks)
-HXLINE( 343)		Float distance = (this->_player->x - (int)420);
-HXLINE( 346)		if (this->_resetPlatforms) {
-HXLINE( 348)			distance = (distance + this->_edge);
+            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_366_removeBlocks)
+HXLINE( 367)		Float distance = (this->_player->x - (int)420);
+HXLINE( 370)		if (this->_resetPlatforms) {
+HXLINE( 372)			distance = (distance + this->_edge);
             		}
-HXLINE( 351)		bool ticker = true;
-HXLINE( 353)		while(true){
-HXLINE( 353)			bool _hx_tmp;
-HXDLIN( 353)			if (ticker) {
-HXLINE( 353)				_hx_tmp = (this->_tiles->length != (int)0);
+HXLINE( 375)		bool ticker = true;
+HXLINE( 377)		while(true){
+HXLINE( 377)			bool _hx_tmp;
+HXDLIN( 377)			if (ticker) {
+HXLINE( 377)				_hx_tmp = (this->_tiles->length != (int)0);
             			}
             			else {
-HXLINE( 353)				_hx_tmp = false;
+HXLINE( 377)				_hx_tmp = false;
             			}
-HXDLIN( 353)			if (!(_hx_tmp)) {
-HXLINE( 353)				goto _hx_goto_18;
+HXDLIN( 377)			if (!(_hx_tmp)) {
+HXLINE( 377)				goto _hx_goto_18;
             			}
-HXLINE( 355)			if ((this->_tiles->__get((int)0).StaticCast<  ::flixel::FlxSprite >()->x < distance)) {
-HXLINE( 357)				this->_block = this->_tiles->shift().StaticCast<  ::flixel::FlxSprite >();
-HXLINE( 359)				this->_collisions->remove(this->_block,null()).StaticCast<  ::flixel::FlxBasic >();
-HXLINE( 361)				this->_pool->returnObj(this->_block);
-HXLINE( 363)				ticker = true;
-HXLINE( 365)				this->_change = true;
+HXLINE( 379)			if ((this->_tiles->__get((int)0).StaticCast<  ::flixel::FlxSprite >()->x < distance)) {
+HXLINE( 381)				this->_block = this->_tiles->shift().StaticCast<  ::flixel::FlxSprite >();
+HXLINE( 383)				this->_collisions->remove(this->_block,null()).StaticCast<  ::flixel::FlxBasic >();
+HXLINE( 385)				this->_pool->returnObj(this->_block);
+HXLINE( 387)				ticker = true;
+HXLINE( 389)				this->_change = true;
             			}
             			else {
-HXLINE( 369)				ticker = false;
+HXLINE( 393)				ticker = false;
             			}
             		}
             		_hx_goto_18:;
@@ -699,143 +737,143 @@ HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,removeBlocks,(void))
 void PlayState_obj::makePlatform(hx::Null< int >  __o_wide,hx::Null< int >  __o_high){
 int wide = __o_wide.Default(0);
 int high = __o_high.Default(0);
-            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_377_makePlatform)
-HXLINE( 378)		if ((wide == (int)0)) {
-HXLINE( 380)			int wide1 = (::flixel::FlxG_obj::random->_hx_int((int)0,(int)5,null()) + (int)4);
-HXDLIN( 380)			wide = (wide1 + ::Std_obj::_hx_int((this->_player->x * ((Float)0.00015))));
-HXLINE( 382)			::flixel::FlxG_obj::log->advanced(wide,::flixel::_hx_system::debug::log::LogStyle_obj::NORMAL,null());
+            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_401_makePlatform)
+HXLINE( 402)		if ((wide == (int)0)) {
+HXLINE( 404)			int wide1 = (::flixel::FlxG_obj::random->_hx_int((int)0,(int)5,null()) + (int)4);
+HXDLIN( 404)			wide = (wide1 + ::Std_obj::_hx_int((this->_player->x * ((Float)0.00015))));
+HXLINE( 406)			 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
             		}
-HXLINE( 384)		if ((high == (int)0)) {
-HXLINE( 386)			high = (::flixel::FlxG_obj::random->_hx_int((int)0,(int)3,null()) + (int)1);
+HXLINE( 408)		if ((high == (int)0)) {
+HXLINE( 410)			high = (::flixel::FlxG_obj::random->_hx_int((int)0,(int)3,null()) + (int)1);
             		}
-HXLINE( 389)		int line = (::flixel::FlxG_obj::random->_hx_int((int)0,(int)9,null()) * (int)4);
-HXLINE( 391)		int top = ::flixel::FlxG_obj::height;
-HXDLIN( 391)		int top1 = (top - (high * (int)70));
-HXLINE( 393)		{
-HXLINE( 393)			Float x = this->_edge;
-HXDLIN( 393)			this->_block = this->_pool->getObj();
-HXDLIN( 393)			this->_block->setPosition(x,top1);
-HXDLIN( 393)			 ::flixel::FlxSprite _hx_tmp = this->_block;
-HXDLIN( 393)			_hx_tmp->set_frame(this->_block->frames->frames->__get(line).StaticCast<  ::flixel::graphics::frames::FlxFrame >());
-HXDLIN( 393)			this->_tiles->push(this->_block);
-HXDLIN( 393)			this->_collisions->add(this->_block).StaticCast<  ::flixel::FlxBasic >();
+HXLINE( 413)		int line = (::flixel::FlxG_obj::random->_hx_int((int)0,(int)9,null()) * (int)4);
+HXLINE( 415)		int top = ::flixel::FlxG_obj::height;
+HXDLIN( 415)		int top1 = (top - (high * (int)70));
+HXLINE( 417)		{
+HXLINE( 417)			Float x = this->_edge;
+HXDLIN( 417)			this->_block = this->_pool->getObj();
+HXDLIN( 417)			this->_block->setPosition(x,top1);
+HXDLIN( 417)			 ::flixel::FlxSprite _hx_tmp = this->_block;
+HXDLIN( 417)			_hx_tmp->set_frame(this->_block->frames->frames->__get(line).StaticCast<  ::flixel::graphics::frames::FlxFrame >());
+HXDLIN( 417)			this->_tiles->push(this->_block);
+HXDLIN( 417)			this->_collisions->add(this->_block).StaticCast<  ::flixel::FlxBasic >();
             		}
-HXLINE( 395)		{
-HXLINE( 395)			Float x1 = (this->_edge + (int)70);
-HXDLIN( 395)			this->_block = this->_pool->getObj();
-HXDLIN( 395)			this->_block->setPosition(x1,top1);
-HXDLIN( 395)			 ::flixel::FlxSprite _hx_tmp1 = this->_block;
-HXDLIN( 395)			::Array< ::Dynamic> _hx_tmp2 = this->_block->frames->frames;
-HXDLIN( 395)			_hx_tmp1->set_frame(_hx_tmp2->__get((line + (int)1)).StaticCast<  ::flixel::graphics::frames::FlxFrame >());
-HXDLIN( 395)			this->_tiles->push(this->_block);
-HXDLIN( 395)			this->_collisions->add(this->_block).StaticCast<  ::flixel::FlxBasic >();
+HXLINE( 419)		{
+HXLINE( 419)			Float x1 = (this->_edge + (int)70);
+HXDLIN( 419)			this->_block = this->_pool->getObj();
+HXDLIN( 419)			this->_block->setPosition(x1,top1);
+HXDLIN( 419)			 ::flixel::FlxSprite _hx_tmp1 = this->_block;
+HXDLIN( 419)			::Array< ::Dynamic> _hx_tmp2 = this->_block->frames->frames;
+HXDLIN( 419)			_hx_tmp1->set_frame(_hx_tmp2->__get((line + (int)1)).StaticCast<  ::flixel::graphics::frames::FlxFrame >());
+HXDLIN( 419)			this->_tiles->push(this->_block);
+HXDLIN( 419)			this->_collisions->add(this->_block).StaticCast<  ::flixel::FlxBasic >();
             		}
-HXLINE( 397)		 ::PlayState _hx_tmp3 = hx::ObjectPtr<OBJ_>(this);
-HXDLIN( 397)		_hx_tmp3->_edge = (_hx_tmp3->_edge + (int)140);
-HXLINE( 399)		{
-HXLINE( 399)			int _g1 = (int)0;
-HXDLIN( 399)			int _g = wide;
-HXDLIN( 399)			while((_g1 < _g)){
-HXLINE( 399)				_g1 = (_g1 + (int)1);
-HXDLIN( 399)				int row = (_g1 - (int)1);
-HXLINE( 401)				{
-HXLINE( 401)					Float x2 = this->_edge;
-HXDLIN( 401)					this->_block = this->_pool->getObj();
-HXDLIN( 401)					this->_block->setPosition(x2,top1);
-HXDLIN( 401)					 ::flixel::FlxSprite _hx_tmp4 = this->_block;
-HXDLIN( 401)					::Array< ::Dynamic> _hx_tmp5 = this->_block->frames->frames;
-HXDLIN( 401)					_hx_tmp4->set_frame(_hx_tmp5->__get((line + (int)1)).StaticCast<  ::flixel::graphics::frames::FlxFrame >());
-HXDLIN( 401)					this->_tiles->push(this->_block);
-HXDLIN( 401)					this->_collisions->add(this->_block).StaticCast<  ::flixel::FlxBasic >();
+HXLINE( 421)		 ::PlayState _hx_tmp3 = hx::ObjectPtr<OBJ_>(this);
+HXDLIN( 421)		_hx_tmp3->_edge = (_hx_tmp3->_edge + (int)140);
+HXLINE( 423)		{
+HXLINE( 423)			int _g1 = (int)0;
+HXDLIN( 423)			int _g = wide;
+HXDLIN( 423)			while((_g1 < _g)){
+HXLINE( 423)				_g1 = (_g1 + (int)1);
+HXDLIN( 423)				int row = (_g1 - (int)1);
+HXLINE( 425)				{
+HXLINE( 425)					Float x2 = this->_edge;
+HXDLIN( 425)					this->_block = this->_pool->getObj();
+HXDLIN( 425)					this->_block->setPosition(x2,top1);
+HXDLIN( 425)					 ::flixel::FlxSprite _hx_tmp4 = this->_block;
+HXDLIN( 425)					::Array< ::Dynamic> _hx_tmp5 = this->_block->frames->frames;
+HXDLIN( 425)					_hx_tmp4->set_frame(_hx_tmp5->__get((line + (int)1)).StaticCast<  ::flixel::graphics::frames::FlxFrame >());
+HXDLIN( 425)					this->_tiles->push(this->_block);
+HXDLIN( 425)					this->_collisions->add(this->_block).StaticCast<  ::flixel::FlxBasic >();
             				}
-HXLINE( 403)				{
-HXLINE( 403)					int _g3 = (int)1;
-HXDLIN( 403)					int _g2 = high;
-HXDLIN( 403)					while((_g3 < _g2)){
-HXLINE( 403)						_g3 = (_g3 + (int)1);
-HXDLIN( 403)						int c = (_g3 - (int)1);
-HXLINE( 405)						{
-HXLINE( 405)							Float x3 = this->_edge;
-HXDLIN( 405)							this->_block = this->_pool->getObj();
-HXDLIN( 405)							 ::flixel::FlxSprite _hx_tmp6 = this->_block;
-HXDLIN( 405)							_hx_tmp6->setPosition(x3,(top1 + (c * (int)70)));
-HXDLIN( 405)							 ::flixel::FlxSprite _hx_tmp7 = this->_block;
-HXDLIN( 405)							::Array< ::Dynamic> _hx_tmp8 = this->_block->frames->frames;
-HXDLIN( 405)							_hx_tmp7->set_frame(_hx_tmp8->__get((line + (int)3)).StaticCast<  ::flixel::graphics::frames::FlxFrame >());
-HXDLIN( 405)							this->_tiles->push(this->_block);
-HXDLIN( 405)							this->_collisions->add(this->_block).StaticCast<  ::flixel::FlxBasic >();
+HXLINE( 427)				{
+HXLINE( 427)					int _g3 = (int)1;
+HXDLIN( 427)					int _g2 = high;
+HXDLIN( 427)					while((_g3 < _g2)){
+HXLINE( 427)						_g3 = (_g3 + (int)1);
+HXDLIN( 427)						int c = (_g3 - (int)1);
+HXLINE( 429)						{
+HXLINE( 429)							Float x3 = this->_edge;
+HXDLIN( 429)							this->_block = this->_pool->getObj();
+HXDLIN( 429)							 ::flixel::FlxSprite _hx_tmp6 = this->_block;
+HXDLIN( 429)							_hx_tmp6->setPosition(x3,(top1 + (c * (int)70)));
+HXDLIN( 429)							 ::flixel::FlxSprite _hx_tmp7 = this->_block;
+HXDLIN( 429)							::Array< ::Dynamic> _hx_tmp8 = this->_block->frames->frames;
+HXDLIN( 429)							_hx_tmp7->set_frame(_hx_tmp8->__get((line + (int)3)).StaticCast<  ::flixel::graphics::frames::FlxFrame >());
+HXDLIN( 429)							this->_tiles->push(this->_block);
+HXDLIN( 429)							this->_collisions->add(this->_block).StaticCast<  ::flixel::FlxBasic >();
             						}
             					}
             				}
-HXLINE( 408)				 ::PlayState _hx_tmp9 = hx::ObjectPtr<OBJ_>(this);
-HXDLIN( 408)				_hx_tmp9->_edge = (_hx_tmp9->_edge + (int)70);
+HXLINE( 432)				 ::PlayState _hx_tmp9 = hx::ObjectPtr<OBJ_>(this);
+HXDLIN( 432)				_hx_tmp9->_edge = (_hx_tmp9->_edge + (int)70);
             			}
             		}
-HXLINE( 411)		{
-HXLINE( 411)			Float x4 = this->_edge;
-HXDLIN( 411)			this->_block = this->_pool->getObj();
-HXDLIN( 411)			this->_block->setPosition(x4,top1);
-HXDLIN( 411)			 ::flixel::FlxSprite _hx_tmp10 = this->_block;
-HXDLIN( 411)			::Array< ::Dynamic> _hx_tmp11 = this->_block->frames->frames;
-HXDLIN( 411)			_hx_tmp10->set_frame(_hx_tmp11->__get((line + (int)1)).StaticCast<  ::flixel::graphics::frames::FlxFrame >());
-HXDLIN( 411)			this->_tiles->push(this->_block);
-HXDLIN( 411)			this->_collisions->add(this->_block).StaticCast<  ::flixel::FlxBasic >();
+HXLINE( 435)		{
+HXLINE( 435)			Float x4 = this->_edge;
+HXDLIN( 435)			this->_block = this->_pool->getObj();
+HXDLIN( 435)			this->_block->setPosition(x4,top1);
+HXDLIN( 435)			 ::flixel::FlxSprite _hx_tmp10 = this->_block;
+HXDLIN( 435)			::Array< ::Dynamic> _hx_tmp11 = this->_block->frames->frames;
+HXDLIN( 435)			_hx_tmp10->set_frame(_hx_tmp11->__get((line + (int)1)).StaticCast<  ::flixel::graphics::frames::FlxFrame >());
+HXDLIN( 435)			this->_tiles->push(this->_block);
+HXDLIN( 435)			this->_collisions->add(this->_block).StaticCast<  ::flixel::FlxBasic >();
             		}
-HXLINE( 413)		{
-HXLINE( 413)			Float x5 = (this->_edge + (int)70);
-HXDLIN( 413)			this->_block = this->_pool->getObj();
-HXDLIN( 413)			this->_block->setPosition(x5,top1);
-HXDLIN( 413)			 ::flixel::FlxSprite _hx_tmp12 = this->_block;
-HXDLIN( 413)			::Array< ::Dynamic> _hx_tmp13 = this->_block->frames->frames;
-HXDLIN( 413)			_hx_tmp12->set_frame(_hx_tmp13->__get((line + (int)2)).StaticCast<  ::flixel::graphics::frames::FlxFrame >());
-HXDLIN( 413)			this->_tiles->push(this->_block);
-HXDLIN( 413)			this->_collisions->add(this->_block).StaticCast<  ::flixel::FlxBasic >();
+HXLINE( 437)		{
+HXLINE( 437)			Float x5 = (this->_edge + (int)70);
+HXDLIN( 437)			this->_block = this->_pool->getObj();
+HXDLIN( 437)			this->_block->setPosition(x5,top1);
+HXDLIN( 437)			 ::flixel::FlxSprite _hx_tmp12 = this->_block;
+HXDLIN( 437)			::Array< ::Dynamic> _hx_tmp13 = this->_block->frames->frames;
+HXDLIN( 437)			_hx_tmp12->set_frame(_hx_tmp13->__get((line + (int)2)).StaticCast<  ::flixel::graphics::frames::FlxFrame >());
+HXDLIN( 437)			this->_tiles->push(this->_block);
+HXDLIN( 437)			this->_collisions->add(this->_block).StaticCast<  ::flixel::FlxBasic >();
             		}
-HXLINE( 415)		if ((::flixel::FlxG_obj::random->_hx_float((int)0,(int)100,null()) < (int)50)) {
-HXLINE( 417)			 ::flixel::FlxSprite _hx_tmp14 = this->_stumps;
-HXDLIN( 417)			int _hx_tmp15 = this->_edge;
-HXDLIN( 417)			 ::flixel::math::FlxRandom _hx_tmp16 = ::flixel::FlxG_obj::random;
-HXDLIN( 417)			_hx_tmp14->set_x((_hx_tmp15 + _hx_tmp16->_hx_int(((int)70 * -(wide)),(int)70,null())));
-HXLINE( 418)			 ::flixel::FlxSprite _hx_tmp17 = this->_stumps;
-HXDLIN( 418)			_hx_tmp17->set_y((top1 - (int)70));
-HXLINE( 420)			this->add(this->_stumps);
-HXLINE( 422)			this->_collisions->add(this->_stumps).StaticCast<  ::flixel::FlxBasic >();
+HXLINE( 439)		if ((::flixel::FlxG_obj::random->_hx_float((int)0,(int)100,null()) < (int)50)) {
+HXLINE( 441)			 ::flixel::FlxSprite _hx_tmp14 = this->_stumps;
+HXDLIN( 441)			int _hx_tmp15 = this->_edge;
+HXDLIN( 441)			 ::flixel::math::FlxRandom _hx_tmp16 = ::flixel::FlxG_obj::random;
+HXDLIN( 441)			_hx_tmp14->set_x((_hx_tmp15 + _hx_tmp16->_hx_int(((int)70 * -(wide)),(int)70,null())));
+HXLINE( 442)			 ::flixel::FlxSprite _hx_tmp17 = this->_stumps;
+HXDLIN( 442)			_hx_tmp17->set_y((top1 - (int)70));
+HXLINE( 444)			this->add(this->_stumps);
+HXLINE( 446)			this->_collisions->add(this->_stumps).StaticCast<  ::flixel::FlxBasic >();
             		}
-HXLINE( 425)		 ::PlayState _hx_tmp18 = hx::ObjectPtr<OBJ_>(this);
-HXDLIN( 425)		int _hx_tmp19 = _hx_tmp18->_edge;
-HXDLIN( 425)		int _hx_tmp20 = ::Std_obj::_hx_int(((Float)this->_player->x / (Float)((Float)63.)));
-HXDLIN( 425)		_hx_tmp18->_edge = (_hx_tmp19 + (_hx_tmp20 + ((::flixel::FlxG_obj::random->_hx_int((int)0,(int)2,null()) + (int)3) * (int)70)));
-HXLINE( 427)		this->_change = true;
+HXLINE( 449)		 ::PlayState _hx_tmp18 = hx::ObjectPtr<OBJ_>(this);
+HXDLIN( 449)		int _hx_tmp19 = _hx_tmp18->_edge;
+HXDLIN( 449)		int _hx_tmp20 = ::Std_obj::_hx_int(((Float)this->_player->x / (Float)((Float)63.)));
+HXDLIN( 449)		_hx_tmp18->_edge = (_hx_tmp19 + (_hx_tmp20 + ((::flixel::FlxG_obj::random->_hx_int((int)0,(int)2,null()) + (int)3) * (int)70)));
+HXLINE( 451)		this->_change = true;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC2(PlayState_obj,makePlatform,(void))
 
 void PlayState_obj::makeBlock(Float x,Float y,int tile){
-            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_431_makeBlock)
-HXLINE( 432)		this->_block = this->_pool->getObj();
-HXLINE( 433)		this->_block->setPosition(x,y);
-HXLINE( 434)		 ::flixel::FlxSprite _hx_tmp = this->_block;
-HXDLIN( 434)		_hx_tmp->set_frame(this->_block->frames->frames->__get(tile).StaticCast<  ::flixel::graphics::frames::FlxFrame >());
-HXLINE( 436)		this->_tiles->push(this->_block);
-HXLINE( 438)		this->_collisions->add(this->_block).StaticCast<  ::flixel::FlxBasic >();
+            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_455_makeBlock)
+HXLINE( 456)		this->_block = this->_pool->getObj();
+HXLINE( 457)		this->_block->setPosition(x,y);
+HXLINE( 458)		 ::flixel::FlxSprite _hx_tmp = this->_block;
+HXDLIN( 458)		_hx_tmp->set_frame(this->_block->frames->frames->__get(tile).StaticCast<  ::flixel::graphics::frames::FlxFrame >());
+HXLINE( 460)		this->_tiles->push(this->_block);
+HXLINE( 462)		this->_collisions->add(this->_block).StaticCast<  ::flixel::FlxBasic >();
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC3(PlayState_obj,makeBlock,(void))
 
 void PlayState_obj::setAnimations(){
-            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_443_setAnimations)
-HXLINE( 443)		int line = (::flixel::FlxG_obj::random->_hx_int((int)0,(int)5,null()) * (int)6);
+            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_467_setAnimations)
+HXLINE( 467)		int line = (::flixel::FlxG_obj::random->_hx_int((int)0,(int)5,null()) * (int)6);
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,setAnimations,(void))
 
 void PlayState_obj::positionText(){
-            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_448_positionText)
-HXLINE( 448)		 ::flixel::text::FlxText _hx_tmp = this->_scoreText;
-HXDLIN( 448)		_hx_tmp->set_x(((this->_player->x + ::flixel::FlxG_obj::width) - (int)280));
+            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_472_positionText)
+HXLINE( 472)		 ::flixel::text::FlxText _hx_tmp = this->_scoreText;
+HXDLIN( 472)		_hx_tmp->set_x(((this->_player->x + ::flixel::FlxG_obj::width) - (int)280));
             	}
 
 
@@ -889,6 +927,8 @@ void PlayState_obj::__Mark(HX_MARK_PARAMS)
 	HX_MARK_MEMBER_NAME(_bgImg1,"_bgImg1");
 	HX_MARK_MEMBER_NAME(_bgImg2,"_bgImg2");
 	HX_MARK_MEMBER_NAME(_bgImg3,"_bgImg3");
+	HX_MARK_MEMBER_NAME(_bgImg4,"_bgImg4");
+	HX_MARK_MEMBER_NAME(_bgImg5,"_bgImg5");
 	HX_MARK_MEMBER_NAME(_bgImages,"_bgImages");
 	HX_MARK_MEMBER_NAME(_collisions,"_collisions");
 	HX_MARK_MEMBER_NAME(_tiles,"_tiles");
@@ -918,6 +958,8 @@ void PlayState_obj::__Visit(HX_VISIT_PARAMS)
 	HX_VISIT_MEMBER_NAME(_bgImg1,"_bgImg1");
 	HX_VISIT_MEMBER_NAME(_bgImg2,"_bgImg2");
 	HX_VISIT_MEMBER_NAME(_bgImg3,"_bgImg3");
+	HX_VISIT_MEMBER_NAME(_bgImg4,"_bgImg4");
+	HX_VISIT_MEMBER_NAME(_bgImg5,"_bgImg5");
 	HX_VISIT_MEMBER_NAME(_bgImages,"_bgImages");
 	HX_VISIT_MEMBER_NAME(_collisions,"_collisions");
 	HX_VISIT_MEMBER_NAME(_tiles,"_tiles");
@@ -957,6 +999,8 @@ hx::Val PlayState_obj::__Field(const ::String &inName,hx::PropertyAccess inCallP
 		if (HX_FIELD_EQ(inName,"_bgImg1") ) { return hx::Val( _bgImg1); }
 		if (HX_FIELD_EQ(inName,"_bgImg2") ) { return hx::Val( _bgImg2); }
 		if (HX_FIELD_EQ(inName,"_bgImg3") ) { return hx::Val( _bgImg3); }
+		if (HX_FIELD_EQ(inName,"_bgImg4") ) { return hx::Val( _bgImg4); }
+		if (HX_FIELD_EQ(inName,"_bgImg5") ) { return hx::Val( _bgImg5); }
 		if (HX_FIELD_EQ(inName,"_change") ) { return hx::Val( _change); }
 		if (HX_FIELD_EQ(inName,"_stumps") ) { return hx::Val( _stumps); }
 		if (HX_FIELD_EQ(inName,"setupBG") ) { return hx::Val( setupBG_dyn()); }
@@ -1024,6 +1068,8 @@ hx::Val PlayState_obj::__SetField(const ::String &inName,const hx::Val &inValue,
 		if (HX_FIELD_EQ(inName,"_bgImg1") ) { _bgImg1=inValue.Cast<  ::flixel::FlxSprite >(); return inValue; }
 		if (HX_FIELD_EQ(inName,"_bgImg2") ) { _bgImg2=inValue.Cast<  ::flixel::FlxSprite >(); return inValue; }
 		if (HX_FIELD_EQ(inName,"_bgImg3") ) { _bgImg3=inValue.Cast<  ::flixel::FlxSprite >(); return inValue; }
+		if (HX_FIELD_EQ(inName,"_bgImg4") ) { _bgImg4=inValue.Cast<  ::flixel::FlxSprite >(); return inValue; }
+		if (HX_FIELD_EQ(inName,"_bgImg5") ) { _bgImg5=inValue.Cast<  ::flixel::FlxSprite >(); return inValue; }
 		if (HX_FIELD_EQ(inName,"_change") ) { _change=inValue.Cast< bool >(); return inValue; }
 		if (HX_FIELD_EQ(inName,"_stumps") ) { _stumps=inValue.Cast<  ::flixel::FlxSprite >(); return inValue; }
 		break;
@@ -1066,6 +1112,8 @@ void PlayState_obj::__GetFields(Array< ::String> &outFields)
 	outFields->push(HX_HCSTRING("_bgImg1","\xd2","\xd0","\x49","\x1c"));
 	outFields->push(HX_HCSTRING("_bgImg2","\xd3","\xd0","\x49","\x1c"));
 	outFields->push(HX_HCSTRING("_bgImg3","\xd4","\xd0","\x49","\x1c"));
+	outFields->push(HX_HCSTRING("_bgImg4","\xd5","\xd0","\x49","\x1c"));
+	outFields->push(HX_HCSTRING("_bgImg5","\xd6","\xd0","\x49","\x1c"));
 	outFields->push(HX_HCSTRING("_bgImages","\xbc","\x33","\x2f","\x1b"));
 	outFields->push(HX_HCSTRING("_collisions","\xe0","\x88","\xa2","\xca"));
 	outFields->push(HX_HCSTRING("_tiles","\xc6","\x44","\x1c","\x0c"));
@@ -1094,6 +1142,8 @@ static hx::StorageInfo PlayState_obj_sMemberStorageInfo[] = {
 	{hx::fsObject /*::flixel::FlxSprite*/ ,(int)offsetof(PlayState_obj,_bgImg1),HX_HCSTRING("_bgImg1","\xd2","\xd0","\x49","\x1c")},
 	{hx::fsObject /*::flixel::FlxSprite*/ ,(int)offsetof(PlayState_obj,_bgImg2),HX_HCSTRING("_bgImg2","\xd3","\xd0","\x49","\x1c")},
 	{hx::fsObject /*::flixel::FlxSprite*/ ,(int)offsetof(PlayState_obj,_bgImg3),HX_HCSTRING("_bgImg3","\xd4","\xd0","\x49","\x1c")},
+	{hx::fsObject /*::flixel::FlxSprite*/ ,(int)offsetof(PlayState_obj,_bgImg4),HX_HCSTRING("_bgImg4","\xd5","\xd0","\x49","\x1c")},
+	{hx::fsObject /*::flixel::FlxSprite*/ ,(int)offsetof(PlayState_obj,_bgImg5),HX_HCSTRING("_bgImg5","\xd6","\xd0","\x49","\x1c")},
 	{hx::fsObject /*Array< ::String >*/ ,(int)offsetof(PlayState_obj,_bgImages),HX_HCSTRING("_bgImages","\xbc","\x33","\x2f","\x1b")},
 	{hx::fsObject /*::flixel::group::FlxTypedGroup*/ ,(int)offsetof(PlayState_obj,_collisions),HX_HCSTRING("_collisions","\xe0","\x88","\xa2","\xca")},
 	{hx::fsObject /*Array< ::Dynamic >*/ ,(int)offsetof(PlayState_obj,_tiles),HX_HCSTRING("_tiles","\xc6","\x44","\x1c","\x0c")},
@@ -1133,6 +1183,8 @@ static ::String PlayState_obj_sMemberFields[] = {
 	HX_HCSTRING("_bgImg1","\xd2","\xd0","\x49","\x1c"),
 	HX_HCSTRING("_bgImg2","\xd3","\xd0","\x49","\x1c"),
 	HX_HCSTRING("_bgImg3","\xd4","\xd0","\x49","\x1c"),
+	HX_HCSTRING("_bgImg4","\xd5","\xd0","\x49","\x1c"),
+	HX_HCSTRING("_bgImg5","\xd6","\xd0","\x49","\x1c"),
 	HX_HCSTRING("_bgImages","\xbc","\x33","\x2f","\x1b"),
 	HX_HCSTRING("_collisions","\xe0","\x88","\xa2","\xca"),
 	HX_HCSTRING("_tiles","\xc6","\x44","\x1c","\x0c"),

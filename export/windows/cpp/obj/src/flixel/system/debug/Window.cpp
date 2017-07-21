@@ -11,14 +11,8 @@
 #ifndef INCLUDED_flixel_FlxG
 #include <flixel/FlxG.h>
 #endif
-#ifndef INCLUDED_flixel_FlxGame
-#include <flixel/FlxGame.h>
-#endif
 #ifndef INCLUDED_flixel_system_debug_DebuggerUtil
 #include <flixel/system/debug/DebuggerUtil.h>
-#endif
-#ifndef INCLUDED_flixel_system_debug_FlxDebugger
-#include <flixel/system/debug/FlxDebugger.h>
 #endif
 #ifndef INCLUDED_flixel_system_debug_GraphicCloseButton
 #include <flixel/system/debug/GraphicCloseButton.h>
@@ -113,7 +107,7 @@ HX_LOCAL_STACK_FRAME(_hx_pos_4e51d5a8805713a4_373_onMouseDown,"flixel.system.deb
 HX_LOCAL_STACK_FRAME(_hx_pos_4e51d5a8805713a4_393_onMouseUp,"flixel.system.debug.Window","onMouseUp",0x62a36b2b,"flixel.system.debug.Window.onMouseUp","flixel/system/debug/Window.hx",393,0xb8dfd4e5)
 HX_LOCAL_STACK_FRAME(_hx_pos_4e51d5a8805713a4_405_bound,"flixel.system.debug.Window","bound",0xf2ff51e8,"flixel.system.debug.Window.bound","flixel/system/debug/Window.hx",405,0xb8dfd4e5)
 HX_LOCAL_STACK_FRAME(_hx_pos_4e51d5a8805713a4_416_updateSize,"flixel.system.debug.Window","updateSize",0x6f89a180,"flixel.system.debug.Window.updateSize","flixel/system/debug/Window.hx",416,0xb8dfd4e5)
-HX_LOCAL_STACK_FRAME(_hx_pos_4e51d5a8805713a4_439_close,"flixel.system.debug.Window","close",0x8465b962,"flixel.system.debug.Window.close","flixel/system/debug/Window.hx",439,0xb8dfd4e5)
+HX_LOCAL_STACK_FRAME(_hx_pos_4e51d5a8805713a4_440_close,"flixel.system.debug.Window","close",0x8465b962,"flixel.system.debug.Window.close","flixel/system/debug/Window.hx",440,0xb8dfd4e5)
 HX_LOCAL_STACK_FRAME(_hx_pos_4e51d5a8805713a4_29_boot,"flixel.system.debug.Window","boot",0x2f0245c8,"flixel.system.debug.Window.boot","flixel/system/debug/Window.hx",29,0xb8dfd4e5)
 HX_LOCAL_STACK_FRAME(_hx_pos_4e51d5a8805713a4_31_boot,"flixel.system.debug.Window","boot",0x2f0245c8,"flixel.system.debug.Window.boot","flixel/system/debug/Window.hx",31,0xb8dfd4e5)
 HX_LOCAL_STACK_FRAME(_hx_pos_4e51d5a8805713a4_32_boot,"flixel.system.debug.Window","boot",0x2f0245c8,"flixel.system.debug.Window.boot","flixel/system/debug/Window.hx",32,0xb8dfd4e5)
@@ -676,22 +670,8 @@ HXLINE( 434)			this->_closeButton->set_y((int)3);
 HX_DEFINE_DYNAMIC_FUNC0(Window_obj,updateSize,(void))
 
 void Window_obj::close(){
-            	HX_STACKFRAME(&_hx_pos_4e51d5a8805713a4_439_close)
+            	HX_STACKFRAME(&_hx_pos_4e51d5a8805713a4_440_close)
 HXLINE( 440)		this->destroy();
-HXLINE( 442)		{
-HXLINE( 442)			 ::flixel::_hx_system::debug::FlxDebugger _this = ::flixel::FlxG_obj::game->debugger;
-HXDLIN( 442)			if (_this->contains(hx::ObjectPtr<OBJ_>(this))) {
-HXLINE( 442)				_this->removeChild(hx::ObjectPtr<OBJ_>(this));
-            			}
-HXDLIN( 442)			{
-HXLINE( 442)				::Array< ::Dynamic> array = _this->_windows;
-HXDLIN( 442)				int index = array->indexOf(hx::ObjectPtr<OBJ_>(this),null());
-HXDLIN( 442)				if ((index != (int)-1)) {
-HXLINE( 442)					array[index] = array->__get((array->length - (int)1)).StaticCast<  ::flixel::_hx_system::debug::Window >();
-HXDLIN( 442)					array->pop().StaticCast<  ::flixel::_hx_system::debug::Window >();
-            				}
-            			}
-            		}
             	}
 
 
