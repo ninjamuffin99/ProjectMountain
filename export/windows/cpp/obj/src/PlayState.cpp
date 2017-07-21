@@ -540,7 +540,7 @@ HXLINE( 248)					if ((this->_player->velocity->y < (int)0)) {
 HXLINE( 248)						this->_player->acceleration->set_y((int)1400);
 HXDLIN( 248)						{
 HXLINE( 248)							 ::flixel::math::FlxPoint _g1 = this->_player->velocity;
-HXDLIN( 248)							_g1->set_y((_g1->y + ((Float)35.)));
+HXDLIN( 248)							_g1->set_y((_g1->y + ((Float)42.)));
             						}
 HXDLIN( 248)						this->_jump = (int)-1;
             					}
@@ -670,7 +670,7 @@ HXLINE( 332)				if ((this->_player->velocity->y < (int)0)) {
 HXLINE( 334)					this->_player->acceleration->set_y((int)1400);
 HXLINE( 336)					{
 HXLINE( 336)						 ::flixel::math::FlxPoint _g1 = this->_player->velocity;
-HXDLIN( 336)						_g1->set_y((_g1->y + ((Float)35.)));
+HXDLIN( 336)						_g1->set_y((_g1->y + ((Float)42.)));
             					}
 HXLINE( 338)					this->_jump = (int)-1;
             				}

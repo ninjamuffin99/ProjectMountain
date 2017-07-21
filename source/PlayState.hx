@@ -333,7 +333,7 @@ class PlayState extends FlxState
 			{
 				_player.acceleration.y = yAcceleration;
 				
-				_player.velocity.y += yAcceleration * 0.025;
+				_player.velocity.y += yAcceleration * 0.03;
 				
 				_jump = -1;
 				
