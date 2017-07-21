@@ -69,6 +69,11 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::flixel::FlxState_obj
 		bool _sfxDie;
 		 ::flixel::FlxSprite _ghost;
 		int _edge;
+		 ::flixel::group::FlxTypedGroup _bgImgGrp;
+		 ::flixel::FlxSprite _bgImg1;
+		 ::flixel::FlxSprite _bgImg2;
+		 ::flixel::FlxSprite _bgImg3;
+		::Array< ::String > _bgImages;
 		 ::flixel::group::FlxTypedGroup _collisions;
 		::Array< ::Dynamic> _tiles;
 		 ::ObjectPool _pool;
@@ -115,6 +120,9 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::flixel::FlxState_obj
 
 		void updatePlayer();
 		::Dynamic updatePlayer_dyn();
+
+		void updateBg();
+		::Dynamic updateBg_dyn();
 
 		void updatePlatforms();
 		::Dynamic updatePlatforms_dyn();

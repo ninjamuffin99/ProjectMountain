@@ -5210,6 +5210,7 @@
    <depend name="include/flixel/system/frontEnds/SoundFrontEnd.h"/>
    <depend name="include/flixel/system/frontEnds/WatchFrontEnd.h"/>
    <depend name="include/flixel/text/FlxText.h"/>
+   <depend name="include/flixel/util/FlxAxes.h"/>
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
    <depend name="include/flixel/util/IFlxPooled.h"/>
    <depend name="include/haxe/IMap.h"/>

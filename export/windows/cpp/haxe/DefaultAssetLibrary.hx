@@ -65,6 +65,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
 		Font.registerFont (__ASSET__flixel_fonts_nokiafc22_ttf);
 		Font.registerFont (__ASSET__flixel_fonts_monsterrat_ttf);
 		
@@ -74,6 +82,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -591,6 +607,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_monsterrat_ttf);
 		
@@ -604,6 +628,22 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
 		path.set ("assets/images/images-go-here.txt", "assets/images/images-go-here.txt");
 		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
+		path.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png", "assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png");
+		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png", AssetType.IMAGE);
+		path.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-foreground-trees.png", "assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-foreground-trees.png");
+		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-foreground-trees.png", AssetType.IMAGE);
+		path.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-montain-far.png", "assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-montain-far.png");
+		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-montain-far.png", AssetType.IMAGE);
+		path.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-mountains.png", "assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-mountains.png");
+		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-mountains.png", AssetType.IMAGE);
+		path.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-trees.png", "assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-trees.png");
+		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-trees.png", AssetType.IMAGE);
+		path.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/license.txt", "assets/images/parallax_mountain_pack/parallax_mountain_pack/license.txt");
+		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/license.txt", AssetType.TEXT);
+		path.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/parallax-mountain.psd", "assets/images/parallax_mountain_pack/parallax_mountain_pack/parallax-mountain.psd");
+		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/parallax-mountain.psd", AssetType.BINARY);
+		path.set ("assets/images/parallax_mountain_pack.zip", "assets/images/parallax_mountain_pack.zip");
+		type.set ("assets/images/parallax_mountain_pack.zip", AssetType.BINARY);
 		path.set ("assets/images/tiles.png", "assets/images/tiles.png");
 		type.set ("assets/images/tiles.png", AssetType.IMAGE);
 		path.set ("assets/music/music-goes-here.txt", "assets/music/music-goes-here.txt");
@@ -637,6 +677,30 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/images/images-go-here.txt";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
+		id = "assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-foreground-trees.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-montain-far.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-mountains.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-trees.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/parallax_mountain_pack/parallax_mountain_pack/license.txt";
+		path.set (id, id);
+		type.set (id, AssetType.TEXT);
+		id = "assets/images/parallax_mountain_pack/parallax_mountain_pack/parallax-mountain.psd";
+		path.set (id, id);
+		type.set (id, AssetType.BINARY);
+		id = "assets/images/parallax_mountain_pack.zip";
+		path.set (id, id);
+		type.set (id, AssetType.BINARY);
 		id = "assets/images/tiles.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
@@ -693,6 +757,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -1443,6 +1515,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
+
+
+
+
+
+
+
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_beep_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_flixel_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends null { }
@@ -1452,6 +1532,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 #elseif html5
+
+
+
+
+
+
+
+
 
 
 

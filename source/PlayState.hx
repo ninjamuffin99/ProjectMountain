@@ -33,6 +33,12 @@ class PlayState extends FlxState
 	
 	private var _edge:Int;
 	
+	private var _bgImgGrp:FlxGroup;
+	private var _bgImg1:FlxSprite;
+	private var _bgImg2:FlxSprite;
+	private var _bgImg3:FlxSprite;
+	private var _bgImages:Array<String>;
+	
 	private var _collisions:FlxGroup;
 	
 	private var _tiles:Array<FlxSprite>;
@@ -59,6 +65,8 @@ class PlayState extends FlxState
 		
 		FlxG.sound.playMusic("assets/music/Oof.ogg");
 		
+		
+		
 		setupBG();
 		setupPlayer();
 		initPlayer();
@@ -69,13 +77,27 @@ class PlayState extends FlxState
 		setupPlatforms();
 		initPlatforms();
 		
+		initBg();
+		
 		
 		super.create();
 	}
 	
 	private function setupBG():Void
 	{
-		//filler
+		_bgImg1 = new FlxSprite();
+		_bgImg2 = new FlxSprite();
+		_bgImg1.loadGraphic("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png", false, 272, 160);
+		_bgImg2.loadGraphic("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-montain-far.png", false, 272, 160);
+		_bgImg3.loadGraphic("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-mountains.png", false, 272, 160);
+		
+		_bgImgGrp = new FlxGroup();
+		
+		this.add(_bgImgGrp);
+		_bgImgGrp.add(_bgImg1);
+		_bgImgGrp.add(_bgImg2);
+		_bgImgGrp.add(_bgImg3);
+		
 	}
 	
 	private function setupPlayer():Void
@@ -114,7 +136,18 @@ class PlayState extends FlxState
 	
 	private inline function initBg():Void
 	{
-		var i:Int = FlxG.random.int(0, 4);
+		_bgImg1.scrollFactor.x = 0;
+		_bgImg2.scrollFactor.x = 0.05;
+		_bgImg2.scrollFactor.x = 0.1;
+		
+		
+		_bgImg1.setGraphicSize(FlxG.width * 2, FlxG.height);
+		_bgImg2.setGraphicSize(FlxG.width, FlxG.height);
+		_bgImg3.setGraphicSize(FlxG.width, FlxG.height);
+		
+		_bgImg1.screenCenter();
+		_bgImg2.screenCenter();
+		_bgImg3.screenCenter();
 	}
 	
 	private inline function initPlayer():Void
@@ -164,7 +197,7 @@ class PlayState extends FlxState
 		
 		initPlatforms();
 		
-		//initBg();
+		initBg();
 		
 	}
 	
@@ -283,6 +316,12 @@ class PlayState extends FlxState
 			}
 		}
 	}
+	
+	private inline function updateBg():Void
+	{
+		
+	}
+	
 	
 	private inline function updatePlatforms():Void
 	{
