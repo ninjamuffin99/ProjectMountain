@@ -18,6 +18,8 @@ class AssetData {
 			
 			path.set ("assets/data/data-goes-here.txt", "assets/data/data-goes-here.txt");
 			type.set ("assets/data/data-goes-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
+			path.set ("assets/images/boulder.png", "assets/images/boulder.png");
+			type.set ("assets/images/boulder.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/images-go-here.txt", "assets/images/images-go-here.txt");
 			type.set ("assets/images/images-go-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
 			path.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png", "assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png");
@@ -36,6 +38,18 @@ class AssetData {
 			type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/parallax-mountain.psd", Reflect.field (AssetType, "binary".toUpperCase ()));
 			path.set ("assets/images/parallax_mountain_pack.zip", "assets/images/parallax_mountain_pack.zip");
 			type.set ("assets/images/parallax_mountain_pack.zip", Reflect.field (AssetType, "binary".toUpperCase ()));
+			path.set ("assets/images/poof.png", "assets/images/poof.png");
+			type.set ("assets/images/poof.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/reset.png", "assets/images/reset.png");
+			type.set ("assets/images/reset.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/run.png", "assets/images/run.png");
+			type.set ("assets/images/run.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/run2.png", "assets/images/run2.png");
+			type.set ("assets/images/run2.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/run_nolegs.png", "assets/images/run_nolegs.png");
+			type.set ("assets/images/run_nolegs.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/sky.jpg", "assets/images/sky.jpg");
+			type.set ("assets/images/sky.jpg", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/tiles.jpg", "assets/images/tiles.jpg");
 			type.set ("assets/images/tiles.jpg", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/tiles.png", "assets/images/tiles.png");

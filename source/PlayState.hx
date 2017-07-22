@@ -3,8 +3,10 @@ package;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
+import flixel.effects.particles.FlxEmitter;
 import flixel.group.FlxGroup;
 import flixel.text.FlxText;
+import flixel.util.FlxColor;
 
 class PlayState extends FlxState
 {
@@ -23,6 +25,7 @@ class PlayState extends FlxState
 	private static inline var jumpDuration:Float = 0.3;
 	
 	private var _player:FlxSprite;
+	private var _emitter:FlxEmitter;
 	private var _jump:Float;
 	private var _playJump:Bool;
 	private var _jumpPressed:Bool;
@@ -92,7 +95,7 @@ class PlayState extends FlxState
 		_bgImg3 = new FlxSprite();
 		_bgImg4 = new FlxSprite();
 		_bgImg5 = new FlxSprite();
-		_bgImg1.loadGraphic("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png", false, 272, 160);
+		_bgImg1.loadGraphic("assets/images/sky.jpg", false, 1136, 640);
 		_bgImg2.loadGraphic("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-montain-far.png", false, 272, 160);
 		_bgImg3.loadGraphic("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-mountains.png", false, 272, 160);
 		_bgImg4.loadGraphic("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-trees.png", false, 544, 160);
@@ -113,6 +116,12 @@ class PlayState extends FlxState
 	{
 		_player = new FlxSprite();
 		_player.makeGraphic(70, 100);
+		
+		_emitter = new FlxEmitter(_player.x - 5, _player.y + 45);
+		_emitter.makeParticles(2, 3, FlxColor.WHITE, 10);
+		_emitter.start(false, 0.1);
+		//add(_emitter);
+		
 		
 		_startDistance = Std.int(_player.x);
 		
@@ -152,7 +161,7 @@ class PlayState extends FlxState
 		_bgImg3.scrollFactor.x = 0.35;
 		
 		
-		_bgImg1.setGraphicSize(FlxG.width * 2, FlxG.height + 100);
+		//_bgImg1.setGraphicSize(FlxG.width * 2, FlxG.height + 100);
 		_bgImg2.setGraphicSize(FlxG.width * 2, FlxG.height + 100);
 		_bgImg3.setGraphicSize(FlxG.width * 2, FlxG.height + 100);
 		_bgImg4.setGraphicSize(FlxG.width * 4, FlxG.height + 500);
@@ -291,6 +300,9 @@ class PlayState extends FlxState
 	
 	private inline function updatePlayer():Void
 	{
+		_emitter.x = _player.x - 5;
+		_emitter.y = _player.y - 45;
+		
 		_player.maxVelocity.x = BASE_SPEED + Std.int(_player.x * 0.05);
 		
 		_jumpPressed = FlxG.keys.anyPressed(["UP", "W", "SPACE"]);

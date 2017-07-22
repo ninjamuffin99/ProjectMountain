@@ -15,6 +15,7 @@ HX_DECLARE_CLASS1(flixel,FlxBasic)
 HX_DECLARE_CLASS1(flixel,FlxObject)
 HX_DECLARE_CLASS1(flixel,FlxSprite)
 HX_DECLARE_CLASS1(flixel,FlxState)
+HX_DECLARE_CLASS3(flixel,effects,particles,FlxTypedEmitter)
 HX_DECLARE_CLASS2(flixel,group,FlxTypedGroup)
 HX_DECLARE_CLASS2(flixel,text,FlxText)
 HX_DECLARE_CLASS2(flixel,util,IFlxDestroyable)
@@ -63,6 +64,7 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::flixel::FlxState_obj
 		static int yVelocity;
 		static Float jumpDuration;
 		 ::flixel::FlxSprite _player;
+		 ::flixel::effects::particles::FlxTypedEmitter _emitter;
 		Float _jump;
 		bool _playJump;
 		bool _jumpPressed;

@@ -1180,6 +1180,15 @@
   <file name="src/haxe/StackItem.cpp" >
    <depend name="include/haxe/StackItem.h"/>
   </file>
+  <file name="src/flixel/util/helpers/FlxRangeBounds.cpp" >
+   <depend name="include/flixel/util/FlxPool_flixel_util_LabelValuePair.h"/>
+   <depend name="include/flixel/util/FlxStringUtil.h"/>
+   <depend name="include/flixel/util/IFlxDestroyable.h"/>
+   <depend name="include/flixel/util/IFlxPool.h"/>
+   <depend name="include/flixel/util/LabelValuePair.h"/>
+   <depend name="include/flixel/util/helpers/FlxBounds.h"/>
+   <depend name="include/flixel/util/helpers/FlxRangeBounds.h"/>
+  </file>
   <file name="src/flixel/util/helpers/FlxRange.cpp" >
    <depend name="include/flixel/util/FlxPool_flixel_util_LabelValuePair.h"/>
    <depend name="include/flixel/util/FlxStringUtil.h"/>
@@ -1187,6 +1196,27 @@
    <depend name="include/flixel/util/IFlxPool.h"/>
    <depend name="include/flixel/util/LabelValuePair.h"/>
    <depend name="include/flixel/util/helpers/FlxRange.h"/>
+  </file>
+  <file name="src/flixel/util/helpers/FlxPointRangeBounds.cpp" >
+   <depend name="include/flixel/math/FlxPoint.h"/>
+   <depend name="include/flixel/util/FlxDestroyUtil.h"/>
+   <depend name="include/flixel/util/FlxPool_flixel_math_FlxPoint.h"/>
+   <depend name="include/flixel/util/FlxPool_flixel_util_LabelValuePair.h"/>
+   <depend name="include/flixel/util/FlxStringUtil.h"/>
+   <depend name="include/flixel/util/IFlxDestroyable.h"/>
+   <depend name="include/flixel/util/IFlxPool.h"/>
+   <depend name="include/flixel/util/IFlxPooled.h"/>
+   <depend name="include/flixel/util/LabelValuePair.h"/>
+   <depend name="include/flixel/util/helpers/FlxBounds.h"/>
+   <depend name="include/flixel/util/helpers/FlxPointRangeBounds.h"/>
+  </file>
+  <file name="src/flixel/util/helpers/FlxBounds.cpp" >
+   <depend name="include/flixel/util/FlxPool_flixel_util_LabelValuePair.h"/>
+   <depend name="include/flixel/util/FlxStringUtil.h"/>
+   <depend name="include/flixel/util/IFlxDestroyable.h"/>
+   <depend name="include/flixel/util/IFlxPool.h"/>
+   <depend name="include/flixel/util/LabelValuePair.h"/>
+   <depend name="include/flixel/util/helpers/FlxBounds.h"/>
   </file>
   <file name="src/flixel/util/FlxVerticalAlign.cpp" >
    <depend name="include/flixel/util/FlxVerticalAlign.h"/>
@@ -3478,6 +3508,63 @@
   <file name="src/flixel/effects/postprocess/_PostProcess/Uniform.cpp" >
    <depend name="include/flixel/effects/postprocess/_PostProcess/Uniform.h"/>
   </file>
+  <file name="src/flixel/effects/particles/FlxParticle.cpp" >
+   <depend name="include/Std.h"/>
+   <depend name="include/flixel/FlxBasic.h"/>
+   <depend name="include/flixel/FlxObject.h"/>
+   <depend name="include/flixel/FlxSprite.h"/>
+   <depend name="include/flixel/IFlxBasic.h"/>
+   <depend name="include/flixel/IFlxSprite.h"/>
+   <depend name="include/flixel/effects/particles/FlxParticle.h"/>
+   <depend name="include/flixel/effects/particles/IFlxParticle.h"/>
+   <depend name="include/flixel/math/FlxPoint.h"/>
+   <depend name="include/flixel/util/FlxDestroyUtil.h"/>
+   <depend name="include/flixel/util/FlxPool_flixel_math_FlxPoint.h"/>
+   <depend name="include/flixel/util/IFlxDestroyable.h"/>
+   <depend name="include/flixel/util/IFlxPool.h"/>
+   <depend name="include/flixel/util/IFlxPooled.h"/>
+   <depend name="include/flixel/util/_FlxColor/FlxColor_Impl_.h"/>
+   <depend name="include/flixel/util/helpers/FlxRange.h"/>
+  </file>
+  <file name="src/flixel/effects/particles/IFlxParticle.cpp" >
+   <depend name="include/flixel/IFlxBasic.h"/>
+   <depend name="include/flixel/IFlxSprite.h"/>
+   <depend name="include/flixel/effects/particles/IFlxParticle.h"/>
+   <depend name="include/flixel/util/helpers/FlxRange.h"/>
+  </file>
+  <file name="src/flixel/effects/particles/FlxEmitterMode.cpp" >
+   <depend name="include/flixel/effects/particles/FlxEmitterMode.h"/>
+  </file>
+  <file name="src/flixel/effects/particles/FlxTypedEmitter.cpp" >
+   <depend name="include/Std.h"/>
+   <depend name="include/Type.h"/>
+   <depend name="include/flixel/FlxBasic.h"/>
+   <depend name="include/flixel/FlxG.h"/>
+   <depend name="include/flixel/FlxObject.h"/>
+   <depend name="include/flixel/FlxSprite.h"/>
+   <depend name="include/flixel/IFlxBasic.h"/>
+   <depend name="include/flixel/IFlxSprite.h"/>
+   <depend name="include/flixel/animation/FlxAnimation.h"/>
+   <depend name="include/flixel/animation/FlxAnimationController.h"/>
+   <depend name="include/flixel/animation/FlxBaseAnimation.h"/>
+   <depend name="include/flixel/effects/particles/FlxEmitterMode.h"/>
+   <depend name="include/flixel/effects/particles/FlxParticle.h"/>
+   <depend name="include/flixel/effects/particles/FlxTypedEmitter.h"/>
+   <depend name="include/flixel/effects/particles/IFlxParticle.h"/>
+   <depend name="include/flixel/group/FlxTypedGroup.h"/>
+   <depend name="include/flixel/math/FlxPoint.h"/>
+   <depend name="include/flixel/math/FlxRandom.h"/>
+   <depend name="include/flixel/util/FlxDestroyUtil.h"/>
+   <depend name="include/flixel/util/FlxPool_flixel_math_FlxPoint.h"/>
+   <depend name="include/flixel/util/IFlxDestroyable.h"/>
+   <depend name="include/flixel/util/IFlxPool.h"/>
+   <depend name="include/flixel/util/IFlxPooled.h"/>
+   <depend name="include/flixel/util/helpers/FlxBounds.h"/>
+   <depend name="include/flixel/util/helpers/FlxPointRangeBounds.h"/>
+   <depend name="include/flixel/util/helpers/FlxRange.h"/>
+   <depend name="include/flixel/util/helpers/FlxRangeBounds.h"/>
+   <depend name="include/openfl/_legacy/display/BlendMode.h"/>
+  </file>
   <file name="src/flixel/effects/FlxFlicker.cpp" >
    <depend name="include/Std.h"/>
    <depend name="include/flixel/FlxBasic.h"/>
@@ -4004,6 +4091,7 @@
    <depend name="include/flixel/FlxObject.h"/>
    <depend name="include/flixel/FlxSprite.h"/>
    <depend name="include/flixel/FlxState.h"/>
+   <depend name="include/flixel/effects/particles/FlxTypedEmitter.h"/>
    <depend name="include/flixel/graphics/frames/FlxFrame.h"/>
    <depend name="include/flixel/graphics/frames/FlxFramesCollection.h"/>
    <depend name="include/flixel/group/FlxTypedGroup.h"/>
@@ -4631,6 +4719,7 @@
    <depend name="include/flixel/input/gamepad/FlxGamepadDeadZoneMode.h"/>
    <depend name="include/flixel/graphics/tile/FlxDrawItemType.h"/>
    <depend name="include/flixel/graphics/frames/FlxFrameCollectionType.h"/>
+   <depend name="include/flixel/effects/particles/FlxEmitterMode.h"/>
    <depend name="include/flixel/FlxRenderMethod.h"/>
    <depend name="include/flixel/FlxCameraFollowStyle.h"/>
    <depend name="include/ValueType.h"/>

@@ -116,7 +116,7 @@ class HXCPP_CLASS_ATTRIBUTES FlxTypedGroup_obj : public  ::flixel::FlxBasic_obj
 		void clear();
 		::Dynamic clear_dyn();
 
-		void kill();
+		virtual void kill();
 
 		void revive();
 

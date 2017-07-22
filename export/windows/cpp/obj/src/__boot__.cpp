@@ -136,6 +136,9 @@
 #ifndef INCLUDED_flixel_graphics_frames_FlxFrameCollectionType
 #include <flixel/graphics/frames/FlxFrameCollectionType.h>
 #endif
+#ifndef INCLUDED_flixel_effects_particles_FlxEmitterMode
+#include <flixel/effects/particles/FlxEmitterMode.h>
+#endif
 #ifndef INCLUDED_flixel_FlxRenderMethod
 #include <flixel/FlxRenderMethod.h>
 #endif
@@ -853,8 +856,17 @@
 #ifndef INCLUDED_haxe_CallStack
 #include <haxe/CallStack.h>
 #endif
+#ifndef INCLUDED_flixel_util_helpers_FlxRangeBounds
+#include <flixel/util/helpers/FlxRangeBounds.h>
+#endif
 #ifndef INCLUDED_flixel_util_helpers_FlxRange
 #include <flixel/util/helpers/FlxRange.h>
+#endif
+#ifndef INCLUDED_flixel_util_helpers_FlxPointRangeBounds
+#include <flixel/util/helpers/FlxPointRangeBounds.h>
+#endif
+#ifndef INCLUDED_flixel_util_helpers_FlxBounds
+#include <flixel/util/helpers/FlxBounds.h>
 #endif
 #ifndef INCLUDED_flixel_util_FlxTimerManager
 #include <flixel/util/FlxTimerManager.h>
@@ -1177,6 +1189,15 @@
 #ifndef INCLUDED_flixel_effects_postprocess__PostProcess_Uniform
 #include <flixel/effects/postprocess/_PostProcess/Uniform.h>
 #endif
+#ifndef INCLUDED_flixel_effects_particles_FlxParticle
+#include <flixel/effects/particles/FlxParticle.h>
+#endif
+#ifndef INCLUDED_flixel_effects_particles_IFlxParticle
+#include <flixel/effects/particles/IFlxParticle.h>
+#endif
+#ifndef INCLUDED_flixel_effects_particles_FlxTypedEmitter
+#include <flixel/effects/particles/FlxTypedEmitter.h>
+#endif
 #ifndef INCLUDED_flixel_util_FlxPool_flixel_effects_FlxFlicker
 #include <flixel/util/FlxPool_flixel_effects_FlxFlicker.h>
 #endif
@@ -1421,6 +1442,7 @@ hx::RegisterResources( hx::GetResources() );
 ::flixel::input::gamepad::FlxGamepadDeadZoneMode_obj::__register();
 ::flixel::graphics::tile::FlxDrawItemType_obj::__register();
 ::flixel::graphics::frames::FlxFrameCollectionType_obj::__register();
+::flixel::effects::particles::FlxEmitterMode_obj::__register();
 ::flixel::FlxRenderMethod_obj::__register();
 ::flixel::FlxCameraFollowStyle_obj::__register();
 ::ValueType_obj::__register();
@@ -1660,7 +1682,10 @@ hx::RegisterResources( hx::GetResources() );
 ::haxe::Resource_obj::__register();
 ::haxe::IMap_obj::__register();
 ::haxe::CallStack_obj::__register();
+::flixel::util::helpers::FlxRangeBounds_obj::__register();
 ::flixel::util::helpers::FlxRange_obj::__register();
+::flixel::util::helpers::FlxPointRangeBounds_obj::__register();
+::flixel::util::helpers::FlxBounds_obj::__register();
 ::flixel::util::FlxTimerManager_obj::__register();
 ::flixel::util::FlxTimer_obj::__register();
 ::flixel::util::FlxStringUtil_obj::__register();
@@ -1768,6 +1793,9 @@ hx::RegisterResources( hx::GetResources() );
 ::openfl::_legacy::geom::Matrix_obj::__register();
 ::flixel::effects::postprocess::Shader_obj::__register();
 ::flixel::effects::postprocess::_PostProcess::Uniform_obj::__register();
+::flixel::effects::particles::FlxParticle_obj::__register();
+::flixel::effects::particles::IFlxParticle_obj::__register();
+::flixel::effects::particles::FlxTypedEmitter_obj::__register();
 ::flixel::util::FlxPool_flixel_effects_FlxFlicker_obj::__register();
 ::flixel::animation::FlxAnimationController_obj::__register();
 ::flixel::animation::FlxAnimation_obj::__register();
@@ -1877,6 +1905,7 @@ hx::RegisterResources( hx::GetResources() );
 ::flixel::input::gamepad::FlxGamepadDeadZoneMode_obj::__boot();
 ::flixel::graphics::tile::FlxDrawItemType_obj::__boot();
 ::flixel::graphics::frames::FlxFrameCollectionType_obj::__boot();
+::flixel::effects::particles::FlxEmitterMode_obj::__boot();
 ::flixel::FlxRenderMethod_obj::__boot();
 ::flixel::FlxCameraFollowStyle_obj::__boot();
 ::ValueType_obj::__boot();
