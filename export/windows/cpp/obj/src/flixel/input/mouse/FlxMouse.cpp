@@ -37,6 +37,21 @@
 #ifndef INCLUDED_flixel_math_FlxPoint
 #include <flixel/math/FlxPoint.h>
 #endif
+#ifndef INCLUDED_flixel_system_debug_FlxDebugger
+#include <flixel/system/debug/FlxDebugger.h>
+#endif
+#ifndef INCLUDED_flixel_system_debug_Window
+#include <flixel/system/debug/Window.h>
+#endif
+#ifndef INCLUDED_flixel_system_debug_log_LogStyle
+#include <flixel/system/debug/log/LogStyle.h>
+#endif
+#ifndef INCLUDED_flixel_system_debug_watch_Watch
+#include <flixel/system/debug/watch/Watch.h>
+#endif
+#ifndef INCLUDED_flixel_system_debug_watch_WatchEntryData
+#include <flixel/system/debug/watch/WatchEntryData.h>
+#endif
 #ifndef INCLUDED_flixel_system_frontEnds_LogFrontEnd
 #include <flixel/system/frontEnds/LogFrontEnd.h>
 #endif
@@ -254,7 +269,7 @@ HXDLIN( 184)					if (::openfl::_legacy::Assets_obj::exists(id,null())) {
 HXLINE( 184)						_hx_tmp = ::openfl::_legacy::Assets_obj::getBitmapData(id,false);
             					}
             					else {
-HXLINE( 184)						 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
+HXLINE( 184)						::flixel::FlxG_obj::log->advanced(((HX_("Could not find a BitmapData asset with ID '",5f,79,a9,21) + id) + HX_("'.",27,22,00,00)),::flixel::_hx_system::debug::log::LogStyle_obj::ERROR,true);
 HXDLIN( 184)						_hx_tmp = null();
             					}
 HXDLIN( 184)					this->_cursor =  ::openfl::_legacy::display::Bitmap_obj::__alloc( HX_CTX ,_hx_tmp,null(),null());
@@ -325,7 +340,11 @@ HX_DEFINE_DYNAMIC_FUNC0(FlxMouse_obj,reset,(void))
 
 void FlxMouse_obj::update(){
             	HX_STACKFRAME(&_hx_pos_dcc29ee8d0f87524_408_update)
-HXLINE( 409)		 ::flixel::_hx_system::frontEnds::WatchFrontEnd _this = ::flixel::FlxG_obj::watch;
+HXLINE( 409)		{
+HXLINE( 409)			 ::flixel::_hx_system::frontEnds::WatchFrontEnd _this = ::flixel::FlxG_obj::watch;
+HXDLIN( 409)			 ::flixel::_hx_system::debug::watch::Watch _hx_tmp = ::flixel::FlxG_obj::game->debugger->watch;
+HXDLIN( 409)			_hx_tmp->add(HX_("Mouse Position",44,8e,3a,9d),::flixel::_hx_system::debug::watch::WatchEntryData_obj::FIELD(hx::ClassOf< ::flixel::FlxG >(),HX_("mouse",25,16,65,0c)));
+            		}
 HXLINE( 412)		{
 HXLINE( 412)			Float newX = ::flixel::FlxG_obj::game->get_mouseX();
 HXDLIN( 412)			Float newY = ::flixel::FlxG_obj::game->get_mouseY();
@@ -334,10 +353,10 @@ HXDLIN( 412)			this->_globalScreenY = ::Std_obj::_hx_int(((Float)newY / (Float):
 HXDLIN( 412)			this->updatePositions();
             		}
 HXLINE( 415)		if (this->visible) {
-HXLINE( 417)			 ::openfl::_legacy::display::Sprite _hx_tmp = this->cursorContainer;
-HXDLIN( 417)			_hx_tmp->set_x(::flixel::FlxG_obj::game->get_mouseX());
-HXLINE( 418)			 ::openfl::_legacy::display::Sprite _hx_tmp1 = this->cursorContainer;
-HXDLIN( 418)			_hx_tmp1->set_y(::flixel::FlxG_obj::game->get_mouseY());
+HXLINE( 417)			 ::openfl::_legacy::display::Sprite _hx_tmp1 = this->cursorContainer;
+HXDLIN( 417)			_hx_tmp1->set_x(::flixel::FlxG_obj::game->get_mouseX());
+HXLINE( 418)			 ::openfl::_legacy::display::Sprite _hx_tmp2 = this->cursorContainer;
+HXDLIN( 418)			_hx_tmp2->set_y(::flixel::FlxG_obj::game->get_mouseY());
             		}
 HXLINE( 423)		this->_leftButton->update();
 HXLINE( 425)		this->_middleButton->update();

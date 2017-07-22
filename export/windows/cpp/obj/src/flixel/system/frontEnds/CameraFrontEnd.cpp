@@ -19,6 +19,9 @@
 #ifndef INCLUDED_flixel_FlxSprite
 #include <flixel/FlxSprite.h>
 #endif
+#ifndef INCLUDED_flixel_system_debug_log_LogStyle
+#include <flixel/system/debug/log/LogStyle.h>
+#endif
 #ifndef INCLUDED_flixel_system_frontEnds_CameraFrontEnd
 #include <flixel/system/frontEnds/CameraFrontEnd.h>
 #endif
@@ -145,7 +148,7 @@ HXLINE(  69)			::flixel::FlxG_obj::game->removeChild(Camera->flashSprite);
 HXLINE(  70)			this->list->removeRange(index,(int)1);
             		}
             		else {
-HXLINE(  74)			 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
+HXLINE(  74)			::flixel::FlxG_obj::log->advanced(HX_("FlxG.cameras.remove(): The camera you attempted to remove is not a part of the game.",63,6f,2b,31),::flixel::_hx_system::debug::log::LogStyle_obj::WARNING,true);
 HXLINE(  75)			return;
             		}
 HXLINE(  78)		if (::flixel::FlxG_obj::renderTile) {
@@ -274,6 +277,7 @@ HXLINE( 189)					camera->buffer->lock();
 HXLINE( 193)			if (::flixel::FlxG_obj::renderTile) {
 HXLINE( 195)				camera->clearDrawStack();
 HXLINE( 196)				camera->canvas->get_graphics()->clear();
+HXLINE( 199)				camera->debugLayer->get_graphics()->clear();
             			}
 HXLINE( 203)			if (::flixel::FlxG_obj::renderBlit) {
 HXLINE( 205)				camera->fill(camera->bgColor,camera->useBgAlphaBlending,null(),null());

@@ -4,6 +4,9 @@
 #ifndef INCLUDED_flixel_FlxG
 #include <flixel/FlxG.h>
 #endif
+#ifndef INCLUDED_flixel_FlxGame
+#include <flixel/FlxGame.h>
+#endif
 #ifndef INCLUDED_flixel_input_FlxPointer
 #include <flixel/input/FlxPointer.h>
 #endif
@@ -13,11 +16,50 @@
 #ifndef INCLUDED_flixel_input_mouse_FlxMouse
 #include <flixel/input/mouse/FlxMouse.h>
 #endif
+#ifndef INCLUDED_flixel_system_debug_FlxDebugger
+#include <flixel/system/debug/FlxDebugger.h>
+#endif
+#ifndef INCLUDED_flixel_system_debug_GraphicArrowRight
+#include <flixel/system/debug/GraphicArrowRight.h>
+#endif
+#ifndef INCLUDED_flixel_system_debug_VCR
+#include <flixel/system/debug/VCR.h>
+#endif
+#ifndef INCLUDED_flixel_system_debug__VCR_GraphicPause
+#include <flixel/system/debug/_VCR/GraphicPause.h>
+#endif
 #ifndef INCLUDED_flixel_system_frontEnds_VCRFrontEnd
 #include <flixel/system/frontEnds/VCRFrontEnd.h>
 #endif
+#ifndef INCLUDED_flixel_system_ui_FlxSystemButton
+#include <flixel/system/ui/FlxSystemButton.h>
+#endif
 #ifndef INCLUDED_flixel_util_IFlxDestroyable
 #include <flixel/util/IFlxDestroyable.h>
+#endif
+#ifndef INCLUDED_openfl__legacy_display_BitmapData
+#include <openfl/_legacy/display/BitmapData.h>
+#endif
+#ifndef INCLUDED_openfl__legacy_display_DisplayObject
+#include <openfl/_legacy/display/DisplayObject.h>
+#endif
+#ifndef INCLUDED_openfl__legacy_display_DisplayObjectContainer
+#include <openfl/_legacy/display/DisplayObjectContainer.h>
+#endif
+#ifndef INCLUDED_openfl__legacy_display_IBitmapDrawable
+#include <openfl/_legacy/display/IBitmapDrawable.h>
+#endif
+#ifndef INCLUDED_openfl__legacy_display_InteractiveObject
+#include <openfl/_legacy/display/InteractiveObject.h>
+#endif
+#ifndef INCLUDED_openfl__legacy_display_Sprite
+#include <openfl/_legacy/display/Sprite.h>
+#endif
+#ifndef INCLUDED_openfl__legacy_events_EventDispatcher
+#include <openfl/_legacy/events/EventDispatcher.h>
+#endif
+#ifndef INCLUDED_openfl__legacy_events_IEventDispatcher
+#include <openfl/_legacy/events/IEventDispatcher.h>
 #endif
 #ifndef INCLUDED_openfl__legacy_ui_Mouse
 #include <openfl/_legacy/ui/Mouse.h>
@@ -52,12 +94,18 @@ bool VCRFrontEnd_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void VCRFrontEnd_obj::pause(){
-            	HX_STACKFRAME(&_hx_pos_9c3075758433de87_60_pause)
+            	HX_GC_STACKFRAME(&_hx_pos_9c3075758433de87_60_pause)
 HXLINE(  60)		if (!(this->paused)) {
 HXLINE(  63)			if (!(::flixel::FlxG_obj::mouse->useSystemCursor)) {
 HXLINE(  64)				::openfl::_legacy::ui::Mouse_obj::show();
             			}
 HXLINE(  67)			this->paused = true;
+HXLINE(  70)			{
+HXLINE(  70)				 ::flixel::_hx_system::debug::VCR _this = ::flixel::FlxG_obj::game->debugger->vcr;
+HXDLIN(  70)				_this->playbackToggleBtn->upHandler = ::flixel::FlxG_obj::vcr->resume_dyn();
+HXDLIN(  70)				 ::flixel::_hx_system::ui::FlxSystemButton _this1 = _this->playbackToggleBtn;
+HXDLIN(  70)				_this1->changeIcon( ::flixel::_hx_system::debug::GraphicArrowRight_obj::__alloc( HX_CTX ,(int)0,(int)0,null(),null()));
+            			}
             		}
             	}
 
@@ -65,12 +113,18 @@ HXLINE(  67)			this->paused = true;
 HX_DEFINE_DYNAMIC_FUNC0(VCRFrontEnd_obj,pause,(void))
 
 void VCRFrontEnd_obj::resume(){
-            	HX_STACKFRAME(&_hx_pos_9c3075758433de87_80_resume)
+            	HX_GC_STACKFRAME(&_hx_pos_9c3075758433de87_80_resume)
 HXLINE(  80)		if (this->paused) {
 HXLINE(  83)			if (!(::flixel::FlxG_obj::mouse->useSystemCursor)) {
 HXLINE(  84)				::openfl::_legacy::ui::Mouse_obj::hide();
             			}
 HXLINE(  87)			this->paused = false;
+HXLINE(  90)			{
+HXLINE(  90)				 ::flixel::_hx_system::debug::VCR _this = ::flixel::FlxG_obj::game->debugger->vcr;
+HXDLIN(  90)				_this->playbackToggleBtn->upHandler = ::flixel::FlxG_obj::vcr->pause_dyn();
+HXDLIN(  90)				 ::flixel::_hx_system::ui::FlxSystemButton _this1 = _this->playbackToggleBtn;
+HXDLIN(  90)				_this1->changeIcon( ::flixel::_hx_system::debug::_VCR::GraphicPause_obj::__alloc( HX_CTX ,(int)0,(int)0,null(),null()));
+            			}
             		}
             	}
 

@@ -63,6 +63,8 @@ class PlayState extends FlxState
 	
 	private var _stumps:FlxSprite;
 	
+	private var _script:FlxSprite;
+	
 	override public function create():Void
 	{
 		FlxG.worldBounds.setSize(TILE_WIDTH * 100000, 1000);
@@ -76,6 +78,7 @@ class PlayState extends FlxState
 		setupPlayer();
 		initPlayer();
 		setupUI();
+		initUI();
 		
 		_stumps = new Stump();
 		
@@ -115,7 +118,8 @@ class PlayState extends FlxState
 	private function setupPlayer():Void
 	{
 		_player = new FlxSprite();
-		_player.makeGraphic(70, 100);
+		_player.loadGraphic("assets/images/running.png", true, 144, 144);
+		
 		
 		_emitter = new FlxEmitter(_player.x - 5, _player.y + 45);
 		_emitter.makeParticles(2, 3, FlxColor.WHITE, 10);
@@ -196,6 +200,8 @@ class PlayState extends FlxState
 		_player.maxVelocity.set(BASE_SPEED, yVelocity);
 		_player.acceleration.set(xAcceleration, yAcceleration);
 		
+		
+		
 		//this is for later??
 		setAnimations();
 		
@@ -206,6 +212,7 @@ class PlayState extends FlxState
 	{
 		_scoreText.y = 20;
 		_score = 0;
+		positionText();
 	}
 	
 	private inline function initPlatforms():Void
@@ -282,7 +289,7 @@ class PlayState extends FlxState
 			}
 		}
 		
-		//playerAnimation();
+		playerAnimation();
 		super.update(elapsed);
 		
 		updateUI();
@@ -291,8 +298,8 @@ class PlayState extends FlxState
 	private inline function updateUI():Void
 	{
 		_score += FlxG.elapsed;
-		//_scoreText.text = Std.string(_score);
-		FlxG.watch.add(FlxG.sound.music, "time");
+		_scoreText.text = Std.string(_score);
+		//FlxG.watch.add(FlxG.sound.music, "time");
 		positionText();
 		
 		_ghost.x = _player.x - (TILE_WIDTH * .2) + (FlxG.width * .5);
@@ -474,9 +481,20 @@ class PlayState extends FlxState
 		_collisions.add(_block);
 	}
 	
+	private inline function playerAnimation():Void
+	{
+		if (_player.velocity.y != 0)
+			_player.animation.play("fall");
+		else
+			_player.animation.play("run");
+	}
+	
 	private inline function setAnimations():Void
 	{
 		var line:Int = FlxG.random.int(0, 5) * 6;
+		
+		_player.animation.add("run", [1, 2, 3, 4], 7);
+		_player.animation.add("fall", [2]);
 	}
 	
 	private inline function positionText():Void

@@ -150,6 +150,7 @@ class HXCPP_CLASS_ATTRIBUTES FlxCamera_obj : public  ::flixel::FlxBasic_obj
 		 ::openfl::_legacy::display::Sprite _scrollRect;
 		 ::flixel::math::FlxRect _bounds;
 		 ::openfl::_legacy::display::Sprite canvas;
+		 ::openfl::_legacy::display::Sprite debugLayer;
 		 ::openfl::_legacy::geom::Matrix _transform;
 		 ::flixel::math::FlxMatrix _helperMatrix;
 		 ::flixel::graphics::tile::FlxDrawBaseItem _currentDrawItem;

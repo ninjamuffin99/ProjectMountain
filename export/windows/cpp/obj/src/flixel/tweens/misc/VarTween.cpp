@@ -68,6 +68,14 @@ HXLINE(  21)		this->_properties = null();
 
  ::flixel::tweens::misc::VarTween VarTween_obj::tween( ::Dynamic object, ::Dynamic properties,Float duration){
             	HX_STACKFRAME(&_hx_pos_a4370a0a6fec63c7_37_tween)
+HXLINE(  39)		if (hx::IsNull( object )) {
+HXLINE(  41)			HX_STACK_DO_THROW(HX_("Cannot tween variables of an object that is null.",4e,3a,13,2f));
+            		}
+            		else {
+HXLINE(  43)			if (hx::IsNull( properties )) {
+HXLINE(  45)				HX_STACK_DO_THROW(HX_("Cannot tween null properties.",74,80,03,52));
+            			}
+            		}
 HXLINE(  49)		this->_object = object;
 HXLINE(  50)		this->_properties = properties;
 HXLINE(  51)		this->duration = duration;

@@ -74,7 +74,7 @@ class HXCPP_CLASS_ATTRIBUTES DisplayObjectContainer_obj : public  ::openfl::_leg
 		static Dynamic lime_doc_swap_children_dyn() { return lime_doc_swap_children;}
 		int numChildren;
 		::Array< ::Dynamic> _hx___children;
-		 ::openfl::_legacy::display::DisplayObject addChild( ::openfl::_legacy::display::DisplayObject child);
+		virtual  ::openfl::_legacy::display::DisplayObject addChild( ::openfl::_legacy::display::DisplayObject child);
 		::Dynamic addChild_dyn();
 
 		 ::openfl::_legacy::display::DisplayObject addChildAt( ::openfl::_legacy::display::DisplayObject child,int index);

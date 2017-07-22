@@ -474,7 +474,7 @@ HXLINE( 252)		if (::flixel::FlxG_obj::renderBlit) {
 HXLINE( 254)			::flixel::util::FlxSpriteUtil_obj::flashGfx->clear();
 HXLINE( 255)			return ::flixel::util::FlxSpriteUtil_obj::flashGfx;
             		}
-HXLINE( 262)		return null();
+HXLINE( 259)		return ::flixel::FlxG_obj::camera->debugLayer->get_graphics();
             	}
 
 

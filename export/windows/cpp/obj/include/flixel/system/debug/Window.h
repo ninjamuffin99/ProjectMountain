@@ -95,10 +95,10 @@ class HXCPP_CLASS_ATTRIBUTES Window_obj : public  ::openfl::_legacy::display::Sp
 		virtual void destroy();
 		::Dynamic destroy_dyn();
 
-		void resize(Float Width,Float Height);
+		virtual void resize(Float Width,Float Height);
 		::Dynamic resize_dyn();
 
-		void reposition(Float X,Float Y);
+		virtual void reposition(Float X,Float Y);
 		::Dynamic reposition_dyn();
 
 		void updateBounds( ::openfl::_legacy::geom::Rectangle Bounds);
@@ -137,7 +137,7 @@ class HXCPP_CLASS_ATTRIBUTES Window_obj : public  ::openfl::_legacy::display::Sp
 		void bound();
 		::Dynamic bound_dyn();
 
-		void updateSize();
+		virtual void updateSize();
 		::Dynamic updateSize_dyn();
 
 		void close();

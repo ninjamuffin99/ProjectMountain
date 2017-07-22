@@ -38,6 +38,9 @@
 #ifndef INCLUDED_flixel_math_FlxRandom
 #include <flixel/math/FlxRandom.h>
 #endif
+#ifndef INCLUDED_flixel_system_debug_log_LogStyle
+#include <flixel/system/debug/log/LogStyle.h>
+#endif
 #ifndef INCLUDED_flixel_system_frontEnds_LogFrontEnd
 #include <flixel/system/frontEnds/LogFrontEnd.h>
 #endif
@@ -192,7 +195,7 @@ HXLINE( 156)				basic->draw();
  ::Dynamic FlxTypedGroup_obj::add( ::Dynamic Object){
             	HX_STACKFRAME(&_hx_pos_bfa1de30d9ec9fbd_172_add)
 HXLINE( 173)		if (hx::IsNull( Object )) {
-HXLINE( 175)			 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
+HXLINE( 175)			::flixel::FlxG_obj::log->advanced(HX_("Cannot add a `null` object to a FlxGroup.",f2,f4,c0,70),::flixel::_hx_system::debug::log::LogStyle_obj::WARNING,true);
 HXLINE( 176)			return null();
             		}
 HXLINE( 180)		if ((this->members->indexOf(Object,null()) >= (int)0)) {
@@ -227,7 +230,7 @@ HX_DEFINE_DYNAMIC_FUNC1(FlxTypedGroup_obj,add,return )
  ::Dynamic FlxTypedGroup_obj::insert(int position, ::Dynamic object){
             	HX_STACKFRAME(&_hx_pos_bfa1de30d9ec9fbd_224_insert)
 HXLINE( 225)		if (hx::IsNull( object )) {
-HXLINE( 227)			 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
+HXLINE( 227)			::flixel::FlxG_obj::log->advanced(HX_("Cannot insert a `null` object into a FlxGroup.",a5,36,f4,8f),::flixel::_hx_system::debug::log::LogStyle_obj::WARNING,true);
 HXLINE( 228)			return null();
             		}
 HXLINE( 232)		if ((this->members->indexOf(object,null()) >= (int)0)) {

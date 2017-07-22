@@ -7,6 +7,9 @@
 #ifndef INCLUDED_flixel_FlxG
 #include <flixel/FlxG.h>
 #endif
+#ifndef INCLUDED_flixel_system_debug_log_LogStyle
+#include <flixel/system/debug/log/LogStyle.h>
+#endif
 #ifndef INCLUDED_flixel_system_frontEnds_LogFrontEnd
 #include <flixel/system/frontEnds/LogFrontEnd.h>
 #endif
@@ -102,7 +105,7 @@ HXLINE(  64)			this->_sharedObject = ::openfl::_legacy::net::SharedObject_obj::g
             			if (_hx_e.IsClass<  ::openfl::errors::Error >() ){
             				HX_STACK_BEGIN_CATCH
             				 ::openfl::errors::Error e = _hx_e;
-HXLINE(  68)				 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
+HXLINE(  68)				::flixel::FlxG_obj::log->advanced(HX_("There was a problem binding to\nthe shared object data from FlxSave.",75,65,d7,ba),::flixel::_hx_system::debug::log::LogStyle_obj::ERROR,true);
 HXLINE(  69)				this->destroy();
 HXLINE(  70)				return false;
             			}
@@ -179,11 +182,11 @@ bool FlxSave_obj::onDone( ::flixel::util::FlxSaveStatus Result){
             	HX_STACKFRAME(&_hx_pos_2a670326751daced_144_onDone)
 HXLINE( 145)		switch((int)(_hx_getEnumValueIndex(Result))){
             			case (int)1: {
-HXLINE( 148)				 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
+HXLINE( 148)				::flixel::FlxG_obj::log->advanced(HX_("FlxSave is requesting extra storage space.",65,ed,43,59),::flixel::_hx_system::debug::log::LogStyle_obj::WARNING,true);
             			}
             			break;
             			case (int)2: {
-HXLINE( 150)				 ::flixel::_hx_system::frontEnds::LogFrontEnd _this1 = ::flixel::FlxG_obj::log;
+HXLINE( 150)				::flixel::FlxG_obj::log->advanced(HX_("There was a problem flushing\nthe shared object data from FlxSave.",0d,4e,e5,ad),::flixel::_hx_system::debug::log::LogStyle_obj::ERROR,true);
             			}
             			break;
             			default:{
@@ -205,7 +208,7 @@ HX_DEFINE_DYNAMIC_FUNC1(FlxSave_obj,onDone,return )
 bool FlxSave_obj::checkBinding(){
             	HX_STACKFRAME(&_hx_pos_2a670326751daced_169_checkBinding)
 HXLINE( 170)		if (hx::IsNull( this->_sharedObject )) {
-HXLINE( 172)			 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
+HXLINE( 172)			::flixel::FlxG_obj::log->advanced(HX_("You must call FlxSave.bind()\nbefore you can read or write data.",7f,af,d9,ea),::flixel::_hx_system::debug::log::LogStyle_obj::WARNING,true);
 HXLINE( 173)			return false;
             		}
 HXLINE( 175)		return true;

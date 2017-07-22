@@ -107,6 +107,7 @@
 #include <openfl/events/FocusEvent.h>
 #endif
 
+HX_DEFINE_STACK_FRAME(_hx_pos_d4acca48e18394dd_158_new,"openfl._legacy.display.Stage","new",0x8f657500,"openfl._legacy.display.Stage.new","openfl/_legacy/display/Stage.hx",158,0x8b30a073)
 HX_DEFINE_STACK_FRAME(_hx_pos_d4acca48e18394dd_119_new,"openfl._legacy.display.Stage","new",0x8f657500,"openfl._legacy.display.Stage.new","openfl/_legacy/display/Stage.hx",119,0x8b30a073)
 HX_LOCAL_STACK_FRAME(_hx_pos_d4acca48e18394dd_179_invalidate,"openfl._legacy.display.Stage","invalidate",0x7cdc48db,"openfl._legacy.display.Stage.invalidate","openfl/_legacy/display/Stage.hx",179,0x8b30a073)
 HX_LOCAL_STACK_FRAME(_hx_pos_d4acca48e18394dd_186_resize,"openfl._legacy.display.Stage","resize",0x4aca5954,"openfl._legacy.display.Stage.resize","openfl/_legacy/display/Stage.hx",186,0x8b30a073)
@@ -124,7 +125,7 @@ HX_LOCAL_STACK_FRAME(_hx_pos_d4acca48e18394dd_619___nextFrameDue,"openfl._legacy
 HX_LOCAL_STACK_FRAME(_hx_pos_d4acca48e18394dd_643___onChange,"openfl._legacy.display.Stage","__onChange",0x300a2a6f,"openfl._legacy.display.Stage.__onChange","openfl/_legacy/display/Stage.hx",643,0x8b30a073)
 HX_LOCAL_STACK_FRAME(_hx_pos_d4acca48e18394dd_656___onFocus,"openfl._legacy.display.Stage","__onFocus",0x8b642bb9,"openfl._legacy.display.Stage.__onFocus","openfl/_legacy/display/Stage.hx",656,0x8b30a073)
 HX_LOCAL_STACK_FRAME(_hx_pos_d4acca48e18394dd_688___onJoystick,"openfl._legacy.display.Stage","__onJoystick",0x1c60f77b,"openfl._legacy.display.Stage.__onJoystick","openfl/_legacy/display/Stage.hx",688,0x8b30a073)
-static const Float _hx_array_data_10cf350e_23[] = {
+static const Float _hx_array_data_10cf350e_24[] = {
 	0.0,0.0,0.0,0.0,
 };
 HX_LOCAL_STACK_FRAME(_hx_pos_d4acca48e18394dd_824___onKey,"openfl._legacy.display.Stage","__onKey",0x5f97eb40,"openfl._legacy.display.Stage.__onKey","openfl/_legacy/display/Stage.hx",824,0x8b30a073)
@@ -185,15 +186,15 @@ HX_LOCAL_STACK_FRAME(_hx_pos_d4acca48e18394dd_89_boot,"openfl._legacy.display.St
 HX_LOCAL_STACK_FRAME(_hx_pos_d4acca48e18394dd_90_boot,"openfl._legacy.display.Stage","boot",0xe179eb92,"openfl._legacy.display.Stage.boot","openfl/_legacy/display/Stage.hx",90,0x8b30a073)
 HX_LOCAL_STACK_FRAME(_hx_pos_d4acca48e18394dd_91_boot,"openfl._legacy.display.Stage","boot",0xe179eb92,"openfl._legacy.display.Stage.boot","openfl/_legacy/display/Stage.hx",91,0x8b30a073)
 HX_LOCAL_STACK_FRAME(_hx_pos_d4acca48e18394dd_92_boot,"openfl._legacy.display.Stage","boot",0xe179eb92,"openfl._legacy.display.Stage.boot","openfl/_legacy/display/Stage.hx",92,0x8b30a073)
-static const ::String _hx_array_data_10cf350e_82[] = {
+static const ::String _hx_array_data_10cf350e_83[] = {
 	HX_("click",48,7c,5e,48),HX_("middleClick",b3,e4,e5,43),HX_("rightClick",cc,62,23,4b),
 };
 HX_LOCAL_STACK_FRAME(_hx_pos_d4acca48e18394dd_93_boot,"openfl._legacy.display.Stage","boot",0xe179eb92,"openfl._legacy.display.Stage.boot","openfl/_legacy/display/Stage.hx",93,0x8b30a073)
-static const ::String _hx_array_data_10cf350e_84[] = {
+static const ::String _hx_array_data_10cf350e_85[] = {
 	HX_("mouseDown",27,b1,c2,ee),HX_("middleMouseDown",12,2b,fe,01),HX_("rightMouseDown",ab,29,d7,cd),
 };
 HX_LOCAL_STACK_FRAME(_hx_pos_d4acca48e18394dd_94_boot,"openfl._legacy.display.Stage","boot",0xe179eb92,"openfl._legacy.display.Stage.boot","openfl/_legacy/display/Stage.hx",94,0x8b30a073)
-static const ::String _hx_array_data_10cf350e_86[] = {
+static const ::String _hx_array_data_10cf350e_87[] = {
 	HX_("mouseUp",e0,f3,72,c0),HX_("middleMouseUp",0b,8d,f5,3a),HX_("rightMouseUp",64,83,21,ab),
 };
 HX_LOCAL_STACK_FRAME(_hx_pos_d4acca48e18394dd_96_boot,"openfl._legacy.display.Stage","boot",0xe179eb92,"openfl._legacy.display.Stage.boot","openfl/_legacy/display/Stage.hx",96,0x8b30a073)
@@ -233,6 +234,13 @@ namespace _legacy{
 namespace display{
 
 void Stage_obj::__construct( ::Dynamic handle,int width,int height){
+            		HX_BEGIN_LOCAL_FUNC_S0(hx::LocalFunc,_hx_Closure_0) HXARGC(1)
+            		void _hx_run(::String message){
+            			HX_GC_STACKFRAME(&_hx_pos_d4acca48e18394dd_158_new)
+HXLINE( 158)			HX_STACK_DO_THROW(message);
+            		}
+            		HX_END_LOCAL_FUNC1((void))
+
             	HX_GC_STACKFRAME(&_hx_pos_d4acca48e18394dd_119_new)
 HXLINE( 125)		super::__construct(handle,HX_("Stage",9e,da,38,17));
 HXLINE( 127)		this->_hx___mouseOverObjects = ::Array_obj< ::Dynamic>::__new(0);
@@ -257,6 +265,7 @@ HXLINE( 155)		{
 HXLINE( 155)			::Array< ::Dynamic> this2 = this->stage3Ds;
 HXDLIN( 155)			this2->push( ::openfl::display::Stage3D_obj::__alloc( HX_CTX ));
             		}
+HXLINE( 158)		::__hxcpp_set_critical_error_handler( ::Dynamic(new _hx_Closure_0()));
             	}
 
 Dynamic Stage_obj::__CreateEmpty() { return new Stage_obj; }
@@ -427,11 +436,11 @@ HXLINE( 285)					_hx_tmp = hx::IsEq( stack->__get(common).StaticCast<  ::openfl:
 HXLINE( 285)					_hx_tmp = false;
             				}
 HXDLIN( 285)				if (!(_hx_tmp)) {
-HXLINE( 285)					goto _hx_goto_8;
+HXLINE( 285)					goto _hx_goto_9;
             				}
 HXLINE( 287)				common = (common + (int)1);
             			}
-            			_hx_goto_8:;
+            			_hx_goto_9:;
 HXLINE( 291)			 ::openfl::_legacy::events::MouseEvent rollOut = event->_hx___createSimilar(events->__get((int)2),newObject,oldObject);
 HXLINE( 293)			int i = (oldLength - (int)1);
 HXLINE( 294)			while((i >= common)){
@@ -792,7 +801,7 @@ HXLINE( 692)		::String _hx_switch_0 = type;
             		if (  (_hx_switch_0==HX_("axisMove",52,90,f4,8f)) ){
 HXLINE( 696)			::Array< Float > data = ( (::Array< Float >)(::haxe::IMap_obj::get(this->_hx___joyAxisData,( (int)(event->__Field(HX_("id",db,5b,00,00),hx::paccDynamic)) ))) );
 HXLINE( 697)			if (hx::IsNull( data )) {
-HXLINE( 699)				data = ::Array_obj< Float >::fromData( _hx_array_data_10cf350e_23,4);
+HXLINE( 699)				data = ::Array_obj< Float >::fromData( _hx_array_data_10cf350e_24,4);
             			}
 HXLINE( 703)			Float value = ((Float) ::Dynamic(event->__Field(HX_("value",71,7f,b8,31),hx::paccDynamic)) / (Float)(int)32767);
 HXLINE( 704)			if ((value < (int)-1)) {
@@ -823,19 +832,19 @@ HXLINE( 732)				 ::Dynamic event2 =  ::Dynamic(event->__Field(HX_("id",db,5b,00,
 HXDLIN( 732)				joystickEvent =  ::openfl::_legacy::events::JoystickEvent_obj::__alloc( HX_CTX ,type,false,false,event2,(int)0,data->__get((int)0),data->__get((int)1),data->__get((int)2));
 HXLINE( 733)				joystickEvent->axis = data->copy();
             			}
-HXLINE( 694)			goto _hx_goto_20;
+HXLINE( 694)			goto _hx_goto_21;
             		}
             		if (  (_hx_switch_0==HX_("ballMove",b0,5c,fd,37)) ){
 HXLINE( 738)			joystickEvent =  ::openfl::_legacy::events::JoystickEvent_obj::__alloc( HX_CTX ,type,false,false, ::Dynamic(event->__Field(HX_("id",db,5b,00,00),hx::paccDynamic)), ::Dynamic(event->__Field(HX_("code",2d,b1,c4,41),hx::paccDynamic)), ::Dynamic(event->__Field(HX_("x",78,00,00,00),hx::paccDynamic)), ::Dynamic(event->__Field(HX_("y",79,00,00,00),hx::paccDynamic)),null());
-HXDLIN( 738)			goto _hx_goto_20;
+HXDLIN( 738)			goto _hx_goto_21;
             		}
             		if (  (_hx_switch_0==HX_("deviceAdded",4a,08,84,0b)) ){
 HXLINE( 742)			joystickEvent =  ::openfl::_legacy::events::JoystickEvent_obj::__alloc( HX_CTX ,type,false,false, ::Dynamic(event->__Field(HX_("id",db,5b,00,00),hx::paccDynamic)),(int)0, ::Dynamic(event->__Field(HX_("x",78,00,00,00),hx::paccDynamic)),null(),null());
-HXDLIN( 742)			goto _hx_goto_20;
+HXDLIN( 742)			goto _hx_goto_21;
             		}
             		if (  (_hx_switch_0==HX_("deviceRemoved",aa,c9,5b,59)) ){
 HXLINE( 746)			joystickEvent =  ::openfl::_legacy::events::JoystickEvent_obj::__alloc( HX_CTX ,type,false,false, ::Dynamic(event->__Field(HX_("id",db,5b,00,00),hx::paccDynamic)),null(),null(),null(),null());
-HXDLIN( 746)			goto _hx_goto_20;
+HXDLIN( 746)			goto _hx_goto_21;
             		}
             		if (  (_hx_switch_0==HX_("hatMove",0c,98,0b,ab)) ){
 HXLINE( 750)			int x = (int)0;
@@ -857,12 +866,12 @@ HXLINE( 769)					x = (int)-1;
             				}
             			}
 HXLINE( 773)			joystickEvent =  ::openfl::_legacy::events::JoystickEvent_obj::__alloc( HX_CTX ,type,false,false, ::Dynamic(event->__Field(HX_("id",db,5b,00,00),hx::paccDynamic)), ::Dynamic(event->__Field(HX_("code",2d,b1,c4,41),hx::paccDynamic)),x,y,null());
-HXLINE( 748)			goto _hx_goto_20;
+HXLINE( 748)			goto _hx_goto_21;
             		}
             		/* default */{
 HXLINE( 815)			joystickEvent =  ::openfl::_legacy::events::JoystickEvent_obj::__alloc( HX_CTX ,type,false,false, ::Dynamic(event->__Field(HX_("id",db,5b,00,00),hx::paccDynamic)), ::Dynamic(event->__Field(HX_("code",2d,b1,c4,41),hx::paccDynamic)),null(),null(),null());
             		}
-            		_hx_goto_20:;
+            		_hx_goto_21:;
 HXLINE( 819)		this->_hx___dispatchEvent(joystickEvent);
             	}
 
@@ -2667,15 +2676,15 @@ HXLINE(  91)		efNoNativeClick = (int)65536;
             	}
 {
             	HX_STACKFRAME(&_hx_pos_d4acca48e18394dd_92_boot)
-HXLINE(  92)		sClickEvents = ::Array_obj< ::String >::fromData( _hx_array_data_10cf350e_82,3);
+HXLINE(  92)		sClickEvents = ::Array_obj< ::String >::fromData( _hx_array_data_10cf350e_83,3);
             	}
 {
             	HX_STACKFRAME(&_hx_pos_d4acca48e18394dd_93_boot)
-HXLINE(  93)		sDownEvents = ::Array_obj< ::String >::fromData( _hx_array_data_10cf350e_84,3);
+HXLINE(  93)		sDownEvents = ::Array_obj< ::String >::fromData( _hx_array_data_10cf350e_85,3);
             	}
 {
             	HX_STACKFRAME(&_hx_pos_d4acca48e18394dd_94_boot)
-HXLINE(  94)		sUpEvents = ::Array_obj< ::String >::fromData( _hx_array_data_10cf350e_86,3);
+HXLINE(  94)		sUpEvents = ::Array_obj< ::String >::fromData( _hx_array_data_10cf350e_87,3);
             	}
 {
             	HX_STACKFRAME(&_hx_pos_d4acca48e18394dd_96_boot)

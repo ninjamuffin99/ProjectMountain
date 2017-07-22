@@ -27,8 +27,8 @@ HX_DEFINE_STACK_FRAME(_hx_pos_a86a375242b5e1cf_10_new,"flixel.FlxBasic","new",0x
 HX_LOCAL_STACK_FRAME(_hx_pos_a86a375242b5e1cf_71_destroy,"flixel.FlxBasic","destroy",0xc50151da,"flixel.FlxBasic.destroy","flixel/FlxBasic.hx",71,0xd8d6cfcf)
 HX_LOCAL_STACK_FRAME(_hx_pos_a86a375242b5e1cf_81_kill,"flixel.FlxBasic","kill",0x1748eebe,"flixel.FlxBasic.kill","flixel/FlxBasic.hx",81,0xd8d6cfcf)
 HX_LOCAL_STACK_FRAME(_hx_pos_a86a375242b5e1cf_91_revive,"flixel.FlxBasic","revive",0xb3f01175,"flixel.FlxBasic.revive","flixel/FlxBasic.hx",91,0xd8d6cfcf)
-HX_LOCAL_STACK_FRAME(_hx_pos_a86a375242b5e1cf_101_update,"flixel.FlxBasic","update",0x307e9d29,"flixel.FlxBasic.update","flixel/FlxBasic.hx",101,0xd8d6cfcf)
-HX_LOCAL_STACK_FRAME(_hx_pos_a86a375242b5e1cf_112_draw,"flixel.FlxBasic","draw",0x12af3b24,"flixel.FlxBasic.draw","flixel/FlxBasic.hx",112,0xd8d6cfcf)
+HX_LOCAL_STACK_FRAME(_hx_pos_a86a375242b5e1cf_103_update,"flixel.FlxBasic","update",0x307e9d29,"flixel.FlxBasic.update","flixel/FlxBasic.hx",103,0xd8d6cfcf)
+HX_LOCAL_STACK_FRAME(_hx_pos_a86a375242b5e1cf_114_draw,"flixel.FlxBasic","draw",0x12af3b24,"flixel.FlxBasic.draw","flixel/FlxBasic.hx",114,0xd8d6cfcf)
 HX_LOCAL_STACK_FRAME(_hx_pos_a86a375242b5e1cf_120_toString,"flixel.FlxBasic","toString",0x03b3efcc,"flixel.FlxBasic.toString","flixel/FlxBasic.hx",120,0xd8d6cfcf)
 HX_LOCAL_STACK_FRAME(_hx_pos_a86a375242b5e1cf_130_set_visible,"flixel.FlxBasic","set_visible",0x942af475,"flixel.FlxBasic.set_visible","flixel/FlxBasic.hx",130,0xd8d6cfcf)
 HX_LOCAL_STACK_FRAME(_hx_pos_a86a375242b5e1cf_136_set_active,"flixel.FlxBasic","set_active",0x086e7723,"flixel.FlxBasic.set_active","flixel/FlxBasic.hx",136,0xd8d6cfcf)
@@ -38,6 +38,8 @@ HX_LOCAL_STACK_FRAME(_hx_pos_a86a375242b5e1cf_154_get_camera,"flixel.FlxBasic","
 HX_LOCAL_STACK_FRAME(_hx_pos_a86a375242b5e1cf_159_set_camera,"flixel.FlxBasic","set_camera",0xa9b47c02,"flixel.FlxBasic.set_camera","flixel/FlxBasic.hx",159,0xd8d6cfcf)
 HX_LOCAL_STACK_FRAME(_hx_pos_a86a375242b5e1cf_170_get_cameras,"flixel.FlxBasic","get_cameras",0xc9caff25,"flixel.FlxBasic.get_cameras","flixel/FlxBasic.hx",170,0xd8d6cfcf)
 HX_LOCAL_STACK_FRAME(_hx_pos_a86a375242b5e1cf_176_set_cameras,"flixel.FlxBasic","set_cameras",0xd4380631,"flixel.FlxBasic.set_cameras","flixel/FlxBasic.hx",176,0xd8d6cfcf)
+HX_LOCAL_STACK_FRAME(_hx_pos_a86a375242b5e1cf_17_boot,"flixel.FlxBasic","boot",0x115a9352,"flixel.FlxBasic.boot","flixel/FlxBasic.hx",17,0xd8d6cfcf)
+HX_LOCAL_STACK_FRAME(_hx_pos_a86a375242b5e1cf_19_boot,"flixel.FlxBasic","boot",0x115a9352,"flixel.FlxBasic.boot","flixel/FlxBasic.hx",19,0xd8d6cfcf)
 namespace flixel{
 
 void FlxBasic_obj::__construct(){
@@ -108,14 +110,16 @@ HXLINE(  93)		this->set_exists(true);
 HX_DEFINE_DYNAMIC_FUNC0(FlxBasic_obj,revive,(void))
 
 void FlxBasic_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_a86a375242b5e1cf_101_update)
+            	HX_STACKFRAME(&_hx_pos_a86a375242b5e1cf_103_update)
+HXLINE( 103)		::flixel::FlxBasic_obj::activeCount++;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(FlxBasic_obj,update,(void))
 
 void FlxBasic_obj::draw(){
-            	HX_STACKFRAME(&_hx_pos_a86a375242b5e1cf_112_draw)
+            	HX_STACKFRAME(&_hx_pos_a86a375242b5e1cf_114_draw)
+HXLINE( 114)		::flixel::FlxBasic_obj::visibleCount++;
             	}
 
 
@@ -237,6 +241,10 @@ HXLINE( 176)		return (this->_cameras = Value);
 
 HX_DEFINE_DYNAMIC_FUNC1(FlxBasic_obj,set_cameras,return )
 
+int FlxBasic_obj::activeCount;
+
+int FlxBasic_obj::visibleCount;
+
 
 hx::ObjectPtr< FlxBasic_obj > FlxBasic_obj::__new() {
 	hx::ObjectPtr< FlxBasic_obj > __this = new FlxBasic_obj();
@@ -326,6 +334,18 @@ hx::Val FlxBasic_obj::__Field(const ::String &inName,hx::PropertyAccess inCallPr
 	return super::__Field(inName,inCallProp);
 }
 
+bool FlxBasic_obj::__GetStatic(const ::String &inName, Dynamic &outValue, hx::PropertyAccess inCallProp)
+{
+	switch(inName.length) {
+	case 11:
+		if (HX_FIELD_EQ(inName,"activeCount") ) { outValue = activeCount; return true; }
+		break;
+	case 12:
+		if (HX_FIELD_EQ(inName,"visibleCount") ) { outValue = visibleCount; return true; }
+	}
+	return false;
+}
+
 hx::Val FlxBasic_obj::__SetField(const ::String &inName,const hx::Val &inValue,hx::PropertyAccess inCallProp)
 {
 	switch(inName.length) {
@@ -353,6 +373,18 @@ hx::Val FlxBasic_obj::__SetField(const ::String &inName,const hx::Val &inValue,h
 	return super::__SetField(inName,inValue,inCallProp);
 }
 
+bool FlxBasic_obj::__SetStatic(const ::String &inName,Dynamic &ioValue,hx::PropertyAccess inCallProp)
+{
+	switch(inName.length) {
+	case 11:
+		if (HX_FIELD_EQ(inName,"activeCount") ) { activeCount=ioValue.Cast< int >(); return true; }
+		break;
+	case 12:
+		if (HX_FIELD_EQ(inName,"visibleCount") ) { visibleCount=ioValue.Cast< int >(); return true; }
+	}
+	return false;
+}
+
 void FlxBasic_obj::__GetFields(Array< ::String> &outFields)
 {
 	outFields->push(HX_HCSTRING("ID","\xdb","\x3f","\x00","\x00"));
@@ -378,7 +410,11 @@ static hx::StorageInfo FlxBasic_obj_sMemberStorageInfo[] = {
 	{hx::fsObject /*Array< ::Dynamic >*/ ,(int)offsetof(FlxBasic_obj,_cameras),HX_HCSTRING("_cameras","\xaf","\xe3","\xe9","\x1c")},
 	{ hx::fsUnknown, 0, null()}
 };
-static hx::StaticInfo *FlxBasic_obj_sStaticStorageInfo = 0;
+static hx::StaticInfo FlxBasic_obj_sStaticStorageInfo[] = {
+	{hx::fsInt,(void *) &FlxBasic_obj::activeCount,HX_HCSTRING("activeCount","\x29","\x45","\xa8","\xa6")},
+	{hx::fsInt,(void *) &FlxBasic_obj::visibleCount,HX_HCSTRING("visibleCount","\xfd","\x5e","\xe8","\xbf")},
+	{ hx::fsUnknown, 0, null()}
+};
 #endif
 
 static ::String FlxBasic_obj_sMemberFields[] = {
@@ -407,16 +443,26 @@ static ::String FlxBasic_obj_sMemberFields[] = {
 
 static void FlxBasic_obj_sMarkStatics(HX_MARK_PARAMS) {
 	HX_MARK_MEMBER_NAME(FlxBasic_obj::__mClass,"__mClass");
+	HX_MARK_MEMBER_NAME(FlxBasic_obj::activeCount,"activeCount");
+	HX_MARK_MEMBER_NAME(FlxBasic_obj::visibleCount,"visibleCount");
 };
 
 #ifdef HXCPP_VISIT_ALLOCS
 static void FlxBasic_obj_sVisitStatics(HX_VISIT_PARAMS) {
 	HX_VISIT_MEMBER_NAME(FlxBasic_obj::__mClass,"__mClass");
+	HX_VISIT_MEMBER_NAME(FlxBasic_obj::activeCount,"activeCount");
+	HX_VISIT_MEMBER_NAME(FlxBasic_obj::visibleCount,"visibleCount");
 };
 
 #endif
 
 hx::Class FlxBasic_obj::__mClass;
+
+static ::String FlxBasic_obj_sStaticFields[] = {
+	HX_HCSTRING("activeCount","\x29","\x45","\xa8","\xa6"),
+	HX_HCSTRING("visibleCount","\xfd","\x5e","\xe8","\xbf"),
+	::String(null())
+};
 
 void FlxBasic_obj::__register()
 {
@@ -427,10 +473,10 @@ void FlxBasic_obj::__register()
 	__mClass->mSuper = &super::__SGetClass();
 	__mClass->mConstructEmpty = &__CreateEmpty;
 	__mClass->mConstructArgs = &__Create;
-	__mClass->mGetStaticField = &hx::Class_obj::GetNoStaticField;
-	__mClass->mSetStaticField = &hx::Class_obj::SetNoStaticField;
+	__mClass->mGetStaticField = &FlxBasic_obj::__GetStatic;
+	__mClass->mSetStaticField = &FlxBasic_obj::__SetStatic;
 	__mClass->mMarkFunc = FlxBasic_obj_sMarkStatics;
-	__mClass->mStatics = hx::Class_obj::dupFunctions(0 /* sStaticFields */);
+	__mClass->mStatics = hx::Class_obj::dupFunctions(FlxBasic_obj_sStaticFields);
 	__mClass->mMembers = hx::Class_obj::dupFunctions(FlxBasic_obj_sMemberFields);
 	__mClass->mCanCast = hx::TCanCast< FlxBasic_obj >;
 #ifdef HXCPP_VISIT_ALLOCS
@@ -443,6 +489,18 @@ void FlxBasic_obj::__register()
 	__mClass->mStaticStorageInfo = FlxBasic_obj_sStaticStorageInfo;
 #endif
 	hx::_hx_RegisterClass(__mClass->mName, __mClass);
+}
+
+void FlxBasic_obj::__boot()
+{
+{
+            	HX_STACKFRAME(&_hx_pos_a86a375242b5e1cf_17_boot)
+HXLINE(  17)		activeCount = (int)0;
+            	}
+{
+            	HX_STACKFRAME(&_hx_pos_a86a375242b5e1cf_19_boot)
+HXLINE(  19)		visibleCount = (int)0;
+            	}
 }
 
 } // end namespace flixel

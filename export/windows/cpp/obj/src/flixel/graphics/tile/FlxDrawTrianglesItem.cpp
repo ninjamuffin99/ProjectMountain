@@ -44,6 +44,9 @@
 #ifndef INCLUDED_flixel_math_FlxRect
 #include <flixel/math/FlxRect.h>
 #endif
+#ifndef INCLUDED_flixel_system_frontEnds_DebuggerFrontEnd
+#include <flixel/system/frontEnds/DebuggerFrontEnd.h>
+#endif
 #ifndef INCLUDED_flixel_util_FlxPool_flixel_math_FlxPoint
 #include <flixel/util/FlxPool_flixel_math_FlxPoint.h>
 #endif
@@ -65,6 +68,9 @@
 #ifndef INCLUDED_openfl__legacy_display_BitmapData
 #include <openfl/_legacy/display/BitmapData.h>
 #endif
+#ifndef INCLUDED_openfl__legacy_display_CapsStyle
+#include <openfl/_legacy/display/CapsStyle.h>
+#endif
 #ifndef INCLUDED_openfl__legacy_display_DisplayObject
 #include <openfl/_legacy/display/DisplayObject.h>
 #endif
@@ -79,6 +85,12 @@
 #endif
 #ifndef INCLUDED_openfl__legacy_display_InteractiveObject
 #include <openfl/_legacy/display/InteractiveObject.h>
+#endif
+#ifndef INCLUDED_openfl__legacy_display_JointStyle
+#include <openfl/_legacy/display/JointStyle.h>
+#endif
+#ifndef INCLUDED_openfl__legacy_display_LineScaleMode
+#include <openfl/_legacy/display/LineScaleMode.h>
 #endif
 #ifndef INCLUDED_openfl__legacy_display_Sprite
 #include <openfl/_legacy/display/Sprite.h>
@@ -182,6 +194,11 @@ HXLINE(  58)			_hx_tmp1 = null();
             		}
 HXDLIN(  58)		camera->canvas->get_graphics()->drawTriangles(this->vertices,this->indices,this->uvtData,::openfl::_legacy::display::TriangleCulling_obj::NONE_dyn(),_hx_tmp1,this->blending);
 HXLINE(  60)		camera->canvas->get_graphics()->endFill();
+HXLINE(  62)		if (::flixel::FlxG_obj::debugger->drawDebug) {
+HXLINE(  64)			 ::openfl::_legacy::display::Graphics gfx = camera->debugLayer->get_graphics();
+HXLINE(  65)			gfx->lineStyle((int)1,(int)-16776961,((Float)0.5),null(),null(),null(),null(),null());
+HXLINE(  66)			gfx->drawTriangles(this->vertices,this->indices,null(),null(),null(),null());
+            		}
 HXLINE(  70)		::flixel::graphics::tile::FlxTilesheet_obj::_DRAWCALLS++;
             	}
 

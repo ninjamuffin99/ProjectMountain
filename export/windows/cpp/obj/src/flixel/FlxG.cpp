@@ -77,6 +77,9 @@
 #ifndef INCLUDED_flixel_system_FlxVersion
 #include <flixel/system/FlxVersion.h>
 #endif
+#ifndef INCLUDED_flixel_system_debug_log_LogStyle
+#include <flixel/system/debug/log/LogStyle.h>
+#endif
 #ifndef INCLUDED_flixel_system_frontEnds_BitmapFrontEnd
 #include <flixel/system/frontEnds/BitmapFrontEnd.h>
 #endif
@@ -622,7 +625,7 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC1(FlxG_obj,set_mouse,return )
 int FlxG_obj::set_updateFramerate(int Framerate){
             	HX_STACKFRAME(&_hx_pos_5f7463bd5b510fa4_656_set_updateFramerate)
 HXLINE( 657)		if ((Framerate < ::flixel::FlxG_obj::drawFramerate)) {
-HXLINE( 659)			 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
+HXLINE( 659)			::flixel::FlxG_obj::log->advanced(HX_("FlxG.framerate: The game's framerate shouldn't be smaller than the flash framerate, since it can stop your game from updating.",7a,eb,0b,ac),::flixel::_hx_system::debug::log::LogStyle_obj::WARNING,true);
             		}
 HXLINE( 662)		::flixel::FlxG_obj::updateFramerate = Framerate;
 HXLINE( 664)		::flixel::FlxG_obj::game->_stepMS = ::Math_obj::abs(((Float)(int)1000 / (Float)Framerate));
@@ -639,7 +642,7 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC1(FlxG_obj,set_updateFramerate,return )
 int FlxG_obj::set_drawFramerate(int Framerate){
             	HX_STACKFRAME(&_hx_pos_5f7463bd5b510fa4_676_set_drawFramerate)
 HXLINE( 677)		if ((Framerate > ::flixel::FlxG_obj::updateFramerate)) {
-HXLINE( 679)			 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
+HXLINE( 679)			::flixel::FlxG_obj::log->advanced(HX_("FlxG.drawFramerate: The update framerate shouldn't be smaller than the draw framerate, since it can stop your game from updating.",99,27,6a,bf),::flixel::_hx_system::debug::log::LogStyle_obj::WARNING,true);
             		}
 HXLINE( 682)		::flixel::FlxG_obj::drawFramerate = ::Std_obj::_hx_int(::Math_obj::abs(Framerate));
 HXLINE( 684)		if (hx::IsNotNull( ::flixel::FlxG_obj::game->get_stage() )) {

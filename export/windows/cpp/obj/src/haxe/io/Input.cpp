@@ -10,13 +10,19 @@
 #ifndef INCLUDED_haxe_io_Eof
 #include <haxe/io/Eof.h>
 #endif
+#ifndef INCLUDED_haxe_io_Error
+#include <haxe/io/Error.h>
+#endif
 #ifndef INCLUDED_haxe_io_Input
 #include <haxe/io/Input.h>
 #endif
 
 HX_LOCAL_STACK_FRAME(_hx_pos_63b8fa1e9f95a159_51_readByte,"haxe.io.Input","readByte",0x4de8a3c2,"haxe.io.Input.readByte","C:\\HaxeToolkit\\haxe\\std/haxe/io/Input.hx",51,0x854a6ecd)
+HX_LOCAL_STACK_FRAME(_hx_pos_63b8fa1e9f95a159_64_readBytes,"haxe.io.Input","readBytes",0xdda6a671,"haxe.io.Input.readBytes","C:\\HaxeToolkit\\haxe\\std/haxe/io/Input.hx",64,0x854a6ecd)
 HX_LOCAL_STACK_FRAME(_hx_pos_63b8fa1e9f95a159_92_close,"haxe.io.Input","close",0xfc421af4,"haxe.io.Input.close","C:\\HaxeToolkit\\haxe\\std/haxe/io/Input.hx",92,0x854a6ecd)
+HX_LOCAL_STACK_FRAME(_hx_pos_63b8fa1e9f95a159_135_readFullBytes,"haxe.io.Input","readFullBytes",0x3db9a162,"haxe.io.Input.readFullBytes","C:\\HaxeToolkit\\haxe\\std/haxe/io/Input.hx",135,0x854a6ecd)
 HX_LOCAL_STACK_FRAME(_hx_pos_63b8fa1e9f95a159_177_readLine,"haxe.io.Input","readLine",0x54789cae,"haxe.io.Input.readLine","C:\\HaxeToolkit\\haxe\\std/haxe/io/Input.hx",177,0x854a6ecd)
+HX_LOCAL_STACK_FRAME(_hx_pos_63b8fa1e9f95a159_303_readString,"haxe.io.Input","readString",0xfdebd00b,"haxe.io.Input.readString","C:\\HaxeToolkit\\haxe\\std/haxe/io/Input.hx",303,0x854a6ecd)
 namespace haxe{
 namespace io{
 
@@ -46,12 +52,71 @@ HXDLIN(  51)		return (int)0;
 
 HX_DEFINE_DYNAMIC_FUNC0(Input_obj,readByte,return )
 
+int Input_obj::readBytes( ::haxe::io::Bytes s,int pos,int len){
+            	HX_STACKFRAME(&_hx_pos_63b8fa1e9f95a159_64_readBytes)
+HXLINE(  65)		int k = len;
+HXLINE(  66)		::Array< unsigned char > b = s->b;
+HXLINE(  67)		bool _hx_tmp;
+HXDLIN(  67)		bool _hx_tmp1;
+HXDLIN(  67)		if ((pos >= (int)0)) {
+HXLINE(  67)			_hx_tmp1 = (len < (int)0);
+            		}
+            		else {
+HXLINE(  67)			_hx_tmp1 = true;
+            		}
+HXDLIN(  67)		if (!(_hx_tmp1)) {
+HXLINE(  67)			_hx_tmp = ((pos + len) > s->length);
+            		}
+            		else {
+HXLINE(  67)			_hx_tmp = true;
+            		}
+HXDLIN(  67)		if (_hx_tmp) {
+HXLINE(  68)			HX_STACK_DO_THROW(::haxe::io::Error_obj::OutsideBounds_dyn());
+            		}
+HXLINE(  69)		try {
+            			HX_STACK_CATCHABLE( ::haxe::io::Eof, 0);
+HXLINE(  70)			while((k > (int)0)){
+HXLINE(  76)				b[pos] = this->readByte();
+HXLINE(  80)				pos = (pos + (int)1);
+HXLINE(  81)				k = (k - (int)1);
+            			}
+            		}
+            		catch( ::Dynamic _hx_e){
+            			if (_hx_e.IsClass<  ::haxe::io::Eof >() ){
+            				HX_STACK_BEGIN_CATCH
+            				 ::haxe::io::Eof eof = _hx_e;
+            			}
+            			else {
+            				HX_STACK_DO_THROW(_hx_e);
+            			}
+            		}
+HXLINE(  84)		return (len - k);
+            	}
+
+
+HX_DEFINE_DYNAMIC_FUNC3(Input_obj,readBytes,return )
+
 void Input_obj::close(){
             	HX_STACKFRAME(&_hx_pos_63b8fa1e9f95a159_92_close)
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(Input_obj,close,(void))
+
+void Input_obj::readFullBytes( ::haxe::io::Bytes s,int pos,int len){
+            	HX_STACKFRAME(&_hx_pos_63b8fa1e9f95a159_135_readFullBytes)
+HXLINE( 135)		while((len > (int)0)){
+HXLINE( 136)			int k = this->readBytes(s,pos,len);
+HXLINE( 137)			if ((k == (int)0)) {
+HXLINE( 138)				HX_STACK_DO_THROW(::haxe::io::Error_obj::Blocked_dyn());
+            			}
+HXLINE( 139)			pos = (pos + k);
+HXLINE( 140)			len = (len - k);
+            		}
+            	}
+
+
+HX_DEFINE_DYNAMIC_FUNC3(Input_obj,readFullBytes,(void))
 
 ::String Input_obj::readLine(){
             	HX_GC_STACKFRAME(&_hx_pos_63b8fa1e9f95a159_177_readLine)
@@ -63,11 +128,11 @@ HXLINE( 181)		try {
 HXLINE( 182)			while(true){
 HXLINE( 182)				last = this->readByte();
 HXDLIN( 182)				if (!((last != (int)10))) {
-HXLINE( 182)					goto _hx_goto_2;
+HXLINE( 182)					goto _hx_goto_6;
             				}
 HXLINE( 183)				buf->b->push(last);
             			}
-            			_hx_goto_2:;
+            			_hx_goto_6:;
 HXLINE( 184)			s = buf->getBytes()->toString();
 HXLINE( 185)			if (hx::IsEq( s.charCodeAt((s.length - (int)1)),(int)13 )) {
 HXLINE( 185)				s = s.substr((int)0,(int)-1);
@@ -92,6 +157,16 @@ HXLINE( 191)		return s;
 
 HX_DEFINE_DYNAMIC_FUNC0(Input_obj,readLine,return )
 
+::String Input_obj::readString(int len){
+            	HX_STACKFRAME(&_hx_pos_63b8fa1e9f95a159_303_readString)
+HXLINE( 304)		 ::haxe::io::Bytes b = ::haxe::io::Bytes_obj::alloc(len);
+HXLINE( 305)		this->readFullBytes(b,(int)0,len);
+HXLINE( 309)		return b->toString();
+            	}
+
+
+HX_DEFINE_DYNAMIC_FUNC1(Input_obj,readString,return )
+
 
 Input_obj::Input_obj()
 {
@@ -106,6 +181,15 @@ hx::Val Input_obj::__Field(const ::String &inName,hx::PropertyAccess inCallProp)
 	case 8:
 		if (HX_FIELD_EQ(inName,"readByte") ) { return hx::Val( readByte_dyn()); }
 		if (HX_FIELD_EQ(inName,"readLine") ) { return hx::Val( readLine_dyn()); }
+		break;
+	case 9:
+		if (HX_FIELD_EQ(inName,"readBytes") ) { return hx::Val( readBytes_dyn()); }
+		break;
+	case 10:
+		if (HX_FIELD_EQ(inName,"readString") ) { return hx::Val( readString_dyn()); }
+		break;
+	case 13:
+		if (HX_FIELD_EQ(inName,"readFullBytes") ) { return hx::Val( readFullBytes_dyn()); }
 	}
 	return super::__Field(inName,inCallProp);
 }
@@ -117,8 +201,11 @@ static hx::StaticInfo *Input_obj_sStaticStorageInfo = 0;
 
 static ::String Input_obj_sMemberFields[] = {
 	HX_HCSTRING("readByte","\x7e","\xf9","\x1a","\x69"),
+	HX_HCSTRING("readBytes","\x35","\x55","\x7f","\x8e"),
 	HX_HCSTRING("close","\xb8","\x17","\x63","\x48"),
+	HX_HCSTRING("readFullBytes","\x26","\x02","\x0b","\xce"),
 	HX_HCSTRING("readLine","\x6a","\xf2","\xaa","\x6f"),
+	HX_HCSTRING("readString","\xc7","\x0c","\xac","\x0a"),
 	::String(null()) };
 
 static void Input_obj_sMarkStatics(HX_MARK_PARAMS) {

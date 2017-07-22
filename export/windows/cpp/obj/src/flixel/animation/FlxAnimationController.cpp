@@ -40,6 +40,9 @@
 #ifndef INCLUDED_flixel_math_FlxRandom
 #include <flixel/math/FlxRandom.h>
 #endif
+#ifndef INCLUDED_flixel_system_debug_log_LogStyle
+#include <flixel/system/debug/log/LogStyle.h>
+#endif
 #ifndef INCLUDED_flixel_system_frontEnds_LogFrontEnd
 #include <flixel/system/frontEnds/LogFrontEnd.h>
 #endif
@@ -292,7 +295,7 @@ void FlxAnimationController_obj::append(::String Name,::Array< int > Frames){
             	HX_STACKFRAME(&_hx_pos_5ed655cc53689dfd_231_append)
 HXLINE( 232)		 ::flixel::animation::FlxAnimation anim = this->_animations->get(Name).StaticCast<  ::flixel::animation::FlxAnimation >();
 HXLINE( 234)		if (hx::IsNull( anim )) {
-HXLINE( 237)			 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
+HXLINE( 237)			::flixel::FlxG_obj::log->advanced(((HX_("No animation called \"",ba,9e,0f,3e) + Name) + HX_("\"",22,00,00,00)),::flixel::_hx_system::debug::log::LogStyle_obj::WARNING,true);
 HXLINE( 238)			return;
             		}
 HXLINE( 242)		int numFrames = (Frames->length - (int)1);
@@ -332,7 +335,7 @@ void FlxAnimationController_obj::appendByNames(::String Name,::Array< ::String >
             	HX_STACKFRAME(&_hx_pos_5ed655cc53689dfd_289_appendByNames)
 HXLINE( 290)		 ::flixel::animation::FlxAnimation anim = this->_animations->get(Name).StaticCast<  ::flixel::animation::FlxAnimation >();
 HXLINE( 292)		if (hx::IsNull( anim )) {
-HXLINE( 294)			 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
+HXLINE( 294)			::flixel::FlxG_obj::log->advanced(((HX_("No animation called \"",ba,9e,0f,3e) + Name) + HX_("\"",22,00,00,00)),::flixel::_hx_system::debug::log::LogStyle_obj::WARNING,true);
 HXLINE( 295)			return;
             		}
 HXLINE( 298)		if (hx::IsNotNull( this->_sprite->frames )) {
@@ -366,7 +369,7 @@ void FlxAnimationController_obj::appendByStringIndices(::String Name,::String Pr
             	HX_STACKFRAME(&_hx_pos_5ed655cc53689dfd_342_appendByStringIndices)
 HXLINE( 343)		 ::flixel::animation::FlxAnimation anim = this->_animations->get(Name).StaticCast<  ::flixel::animation::FlxAnimation >();
 HXLINE( 345)		if (hx::IsNull( anim )) {
-HXLINE( 347)			 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
+HXLINE( 347)			::flixel::FlxG_obj::log->advanced(((HX_("No animation called \"",ba,9e,0f,3e) + Name) + HX_("\"",22,00,00,00)),::flixel::_hx_system::debug::log::LogStyle_obj::WARNING,true);
 HXLINE( 348)			return;
             		}
 HXLINE( 351)		if (hx::IsNotNull( this->_sprite->frames )) {
@@ -400,7 +403,7 @@ void FlxAnimationController_obj::appendByIndices(::String Name,::String Prefix,:
             	HX_STACKFRAME(&_hx_pos_5ed655cc53689dfd_396_appendByIndices)
 HXLINE( 397)		 ::flixel::animation::FlxAnimation anim = this->_animations->get(Name).StaticCast<  ::flixel::animation::FlxAnimation >();
 HXLINE( 398)		if (hx::IsNull( anim )) {
-HXLINE( 400)			 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
+HXLINE( 400)			::flixel::FlxG_obj::log->advanced(((HX_("No animation called \"",ba,9e,0f,3e) + Name) + HX_("\"",22,00,00,00)),::flixel::_hx_system::debug::log::LogStyle_obj::WARNING,true);
 HXLINE( 401)			return;
             		}
 HXLINE( 404)		if (hx::IsNotNull( this->_sprite->frames )) {
@@ -478,7 +481,7 @@ void FlxAnimationController_obj::appendByPrefix(::String Name,::String Prefix){
             	HX_STACKFRAME(&_hx_pos_5ed655cc53689dfd_477_appendByPrefix)
 HXLINE( 478)		 ::flixel::animation::FlxAnimation anim = this->_animations->get(Name).StaticCast<  ::flixel::animation::FlxAnimation >();
 HXLINE( 479)		if (hx::IsNull( anim )) {
-HXLINE( 481)			 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
+HXLINE( 481)			::flixel::FlxG_obj::log->advanced(((HX_("No animation called \"",ba,9e,0f,3e) + Name) + HX_("\"",22,00,00,00)),::flixel::_hx_system::debug::log::LogStyle_obj::WARNING,true);
 HXLINE( 482)			return;
             		}
 HXLINE( 485)		if (hx::IsNotNull( this->_sprite->frames )) {
@@ -512,7 +515,7 @@ HXLINE( 518)			_hx_tmp = hx::IsNull( this->_animations->get(AnimName).StaticCast
 HXLINE( 518)			_hx_tmp = true;
             		}
 HXDLIN( 518)		if (_hx_tmp) {
-HXLINE( 520)			 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
+HXLINE( 520)			::flixel::FlxG_obj::log->advanced(((HX_("No animation called \"",ba,9e,0f,3e) + AnimName) + HX_("\"",22,00,00,00)),::flixel::_hx_system::debug::log::LogStyle_obj::WARNING,true);
 HXLINE( 521)			return;
             		}
 HXLINE( 524)		bool oldFlipX = false;

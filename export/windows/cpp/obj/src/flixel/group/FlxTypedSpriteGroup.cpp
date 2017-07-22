@@ -11,6 +11,9 @@
 #ifndef INCLUDED_flixel_FlxCamera
 #include <flixel/FlxCamera.h>
 #endif
+#ifndef INCLUDED_flixel_FlxG
+#include <flixel/FlxG.h>
+#endif
 #ifndef INCLUDED_flixel_FlxObject
 #include <flixel/FlxObject.h>
 #endif
@@ -37,6 +40,9 @@
 #endif
 #ifndef INCLUDED_flixel_math_FlxPoint
 #include <flixel/math/FlxPoint.h>
+#endif
+#ifndef INCLUDED_flixel_system_frontEnds_DebuggerFrontEnd
+#include <flixel/system/frontEnds/DebuggerFrontEnd.h>
 #endif
 #ifndef INCLUDED_flixel_util_FlxDestroyUtil
 #include <flixel/util/FlxDestroyUtil.h>
@@ -78,7 +84,7 @@ HX_LOCAL_STACK_FRAME(_hx_pos_790ec110ce1e7f7f_133_isOnScreen,"flixel.group.FlxTy
 HX_LOCAL_STACK_FRAME(_hx_pos_790ec110ce1e7f7f_154_overlapsPoint,"flixel.group.FlxTypedSpriteGroup","overlapsPoint",0xe77cba57,"flixel.group.FlxTypedSpriteGroup.overlapsPoint","flixel/group/FlxSpriteGroup.hx",154,0xeb1fa7f3)
 HX_LOCAL_STACK_FRAME(_hx_pos_790ec110ce1e7f7f_177_pixelsOverlapPoint,"flixel.group.FlxTypedSpriteGroup","pixelsOverlapPoint",0xc3b2a483,"flixel.group.FlxTypedSpriteGroup.pixelsOverlapPoint","flixel/group/FlxSpriteGroup.hx",177,0xeb1fa7f3)
 HX_LOCAL_STACK_FRAME(_hx_pos_790ec110ce1e7f7f_191_update,"flixel.group.FlxTypedSpriteGroup","update",0x579c78f6,"flixel.group.FlxTypedSpriteGroup.update","flixel/group/FlxSpriteGroup.hx",191,0xeb1fa7f3)
-HX_LOCAL_STACK_FRAME(_hx_pos_790ec110ce1e7f7f_202_draw,"flixel.group.FlxTypedSpriteGroup","draw",0x0c4e99b1,"flixel.group.FlxTypedSpriteGroup.draw","flixel/group/FlxSpriteGroup.hx",202,0xeb1fa7f3)
+HX_LOCAL_STACK_FRAME(_hx_pos_790ec110ce1e7f7f_201_draw,"flixel.group.FlxTypedSpriteGroup","draw",0x0c4e99b1,"flixel.group.FlxTypedSpriteGroup.draw","flixel/group/FlxSpriteGroup.hx",201,0xeb1fa7f3)
 HX_LOCAL_STACK_FRAME(_hx_pos_790ec110ce1e7f7f_219_replaceColor,"flixel.group.FlxTypedSpriteGroup","replaceColor",0x6ca2bf3c,"flixel.group.FlxTypedSpriteGroup.replaceColor","flixel/group/FlxSpriteGroup.hx",219,0xeb1fa7f3)
 HX_LOCAL_STACK_FRAME(_hx_pos_790ec110ce1e7f7f_249_add,"flixel.group.FlxTypedSpriteGroup","add",0x9f9d9914,"flixel.group.FlxTypedSpriteGroup.add","flixel/group/FlxSpriteGroup.hx",249,0xeb1fa7f3)
 HX_LOCAL_STACK_FRAME(_hx_pos_790ec110ce1e7f7f_269_recycle,"flixel.group.FlxTypedSpriteGroup","recycle",0xeb09ac86,"flixel.group.FlxTypedSpriteGroup.recycle","flixel/group/FlxSpriteGroup.hx",269,0xeb1fa7f3)
@@ -156,10 +162,10 @@ HX_LOCAL_STACK_FRAME(_hx_pos_790ec110ce1e7f7f_858_offsetCallback,"flixel.group.F
 HX_LOCAL_STACK_FRAME(_hx_pos_790ec110ce1e7f7f_859_originCallback,"flixel.group.FlxTypedSpriteGroup","originCallback",0xfa35edb8,"flixel.group.FlxTypedSpriteGroup.originCallback","flixel/group/FlxSpriteGroup.hx",859,0xeb1fa7f3)
 HX_LOCAL_STACK_FRAME(_hx_pos_790ec110ce1e7f7f_860_scaleCallback,"flixel.group.FlxTypedSpriteGroup","scaleCallback",0xf9e6b322,"flixel.group.FlxTypedSpriteGroup.scaleCallback","flixel/group/FlxSpriteGroup.hx",860,0xeb1fa7f3)
 HX_LOCAL_STACK_FRAME(_hx_pos_790ec110ce1e7f7f_861_scrollFactorCallback,"flixel.group.FlxTypedSpriteGroup","scrollFactorCallback",0x26aab64e,"flixel.group.FlxTypedSpriteGroup.scrollFactorCallback","flixel/group/FlxSpriteGroup.hx",861,0xeb1fa7f3)
-HX_LOCAL_STACK_FRAME(_hx_pos_790ec110ce1e7f7f_875_loadGraphicFromSprite,"flixel.group.FlxTypedSpriteGroup","loadGraphicFromSprite",0x6f12dc84,"flixel.group.FlxTypedSpriteGroup.loadGraphicFromSprite","flixel/group/FlxSpriteGroup.hx",875,0xeb1fa7f3)
+HX_LOCAL_STACK_FRAME(_hx_pos_790ec110ce1e7f7f_873_loadGraphicFromSprite,"flixel.group.FlxTypedSpriteGroup","loadGraphicFromSprite",0x6f12dc84,"flixel.group.FlxTypedSpriteGroup.loadGraphicFromSprite","flixel/group/FlxSpriteGroup.hx",873,0xeb1fa7f3)
 HX_LOCAL_STACK_FRAME(_hx_pos_790ec110ce1e7f7f_884_loadGraphic,"flixel.group.FlxTypedSpriteGroup","loadGraphic",0xb4356b15,"flixel.group.FlxTypedSpriteGroup.loadGraphic","flixel/group/FlxSpriteGroup.hx",884,0xeb1fa7f3)
-HX_LOCAL_STACK_FRAME(_hx_pos_790ec110ce1e7f7f_896_loadRotatedGraphic,"flixel.group.FlxTypedSpriteGroup","loadRotatedGraphic",0x45e23732,"flixel.group.FlxTypedSpriteGroup.loadRotatedGraphic","flixel/group/FlxSpriteGroup.hx",896,0xeb1fa7f3)
-HX_LOCAL_STACK_FRAME(_hx_pos_790ec110ce1e7f7f_908_makeGraphic,"flixel.group.FlxTypedSpriteGroup","makeGraphic",0x27a1d44d,"flixel.group.FlxTypedSpriteGroup.makeGraphic","flixel/group/FlxSpriteGroup.hx",908,0xeb1fa7f3)
+HX_LOCAL_STACK_FRAME(_hx_pos_790ec110ce1e7f7f_894_loadRotatedGraphic,"flixel.group.FlxTypedSpriteGroup","loadRotatedGraphic",0x45e23732,"flixel.group.FlxTypedSpriteGroup.loadRotatedGraphic","flixel/group/FlxSpriteGroup.hx",894,0xeb1fa7f3)
+HX_LOCAL_STACK_FRAME(_hx_pos_790ec110ce1e7f7f_906_makeGraphic,"flixel.group.FlxTypedSpriteGroup","makeGraphic",0x27a1d44d,"flixel.group.FlxTypedSpriteGroup.makeGraphic","flixel/group/FlxSpriteGroup.hx",906,0xeb1fa7f3)
 HX_LOCAL_STACK_FRAME(_hx_pos_790ec110ce1e7f7f_917_set_pixels,"flixel.group.FlxTypedSpriteGroup","set_pixels",0xc29e6ad7,"flixel.group.FlxTypedSpriteGroup.set_pixels","flixel/group/FlxSpriteGroup.hx",917,0xeb1fa7f3)
 HX_LOCAL_STACK_FRAME(_hx_pos_790ec110ce1e7f7f_926_set_frame,"flixel.group.FlxTypedSpriteGroup","set_frame",0xf0f19fc3,"flixel.group.FlxTypedSpriteGroup.set_frame","flixel/group/FlxSpriteGroup.hx",926,0xeb1fa7f3)
 HX_LOCAL_STACK_FRAME(_hx_pos_790ec110ce1e7f7f_935_get_pixels,"flixel.group.FlxTypedSpriteGroup","get_pixels",0xbf20cc63,"flixel.group.FlxTypedSpriteGroup.get_pixels","flixel/group/FlxSpriteGroup.hx",935,0xeb1fa7f3)
@@ -551,8 +557,11 @@ HXLINE( 196)			this->updateMotion(elapsed);
 
 
 void FlxTypedSpriteGroup_obj::draw(){
-            	HX_STACKFRAME(&_hx_pos_790ec110ce1e7f7f_202_draw)
+            	HX_STACKFRAME(&_hx_pos_790ec110ce1e7f7f_201_draw)
 HXLINE( 202)		this->group->draw();
+HXLINE( 205)		if (::flixel::FlxG_obj::debugger->drawDebug) {
+HXLINE( 206)			this->drawDebug();
+            		}
             	}
 
 
@@ -1488,8 +1497,9 @@ HXLINE( 861)		this->transformChildren_flixel_math_FlxPoint(this->scrollFactorTra
 HX_DEFINE_DYNAMIC_FUNC1(FlxTypedSpriteGroup_obj,scrollFactorCallback,(void))
 
  ::flixel::FlxSprite FlxTypedSpriteGroup_obj::loadGraphicFromSprite( ::flixel::FlxSprite Sprite){
-            	HX_STACKFRAME(&_hx_pos_790ec110ce1e7f7f_875_loadGraphicFromSprite)
-HXLINE( 875)		return hx::ObjectPtr<OBJ_>(this);
+            	HX_STACKFRAME(&_hx_pos_790ec110ce1e7f7f_873_loadGraphicFromSprite)
+HXLINE( 873)		HX_STACK_DO_THROW(HX_("This function is not supported in FlxSpriteGroup",d4,53,54,91));
+HXDLIN( 873)		return null();
             	}
 
 
@@ -1508,17 +1518,19 @@ int Rotations = __o_Rotations.Default(16);
 int Frame = __o_Frame.Default(-1);
 bool AntiAliasing = __o_AntiAliasing.Default(false);
 bool AutoBuffer = __o_AutoBuffer.Default(false);
-            	HX_STACKFRAME(&_hx_pos_790ec110ce1e7f7f_896_loadRotatedGraphic)
-HXLINE( 896)		return hx::ObjectPtr<OBJ_>(this);
+            	HX_STACKFRAME(&_hx_pos_790ec110ce1e7f7f_894_loadRotatedGraphic)
+HXLINE( 894)		HX_STACK_DO_THROW(HX_("This function is not supported in FlxSpriteGroup",d4,53,54,91));
+HXDLIN( 894)		return null();
             	}
 
 
  ::flixel::FlxSprite FlxTypedSpriteGroup_obj::makeGraphic(int Width,int Height,hx::Null< int >  __o__tmp_Color,hx::Null< bool >  __o_Unique,::String Key){
 int _tmp_Color = __o__tmp_Color.Default(-1);
 bool Unique = __o_Unique.Default(false);
-            	HX_STACKFRAME(&_hx_pos_790ec110ce1e7f7f_908_makeGraphic)
-HXLINE( 908)		int Color = _tmp_Color;
-HXDLIN( 908)		return hx::ObjectPtr<OBJ_>(this);
+            	HX_STACKFRAME(&_hx_pos_790ec110ce1e7f7f_906_makeGraphic)
+HXLINE( 906)		int Color = _tmp_Color;
+HXDLIN( 906)		HX_STACK_DO_THROW(HX_("This function is not supported in FlxSpriteGroup",d4,53,54,91));
+HXDLIN( 906)		return null();
             	}
 
 

@@ -69,37 +69,37 @@ class HXCPP_CLASS_ATTRIBUTES FlxBaseTilemap_obj : public  ::flixel::FlxObject_ob
 		::Array< int > _data;
 		int _drawIndex;
 		int _collideIndex;
-		void updateTile(int Index);
+		virtual void updateTile(int Index);
 		::Dynamic updateTile_dyn();
 
-		void cacheGraphics(int TileWidth,int TileHeight, ::Dynamic TileGraphic);
+		virtual void cacheGraphics(int TileWidth,int TileHeight, ::Dynamic TileGraphic);
 		::Dynamic cacheGraphics_dyn();
 
-		void initTileObjects();
+		virtual void initTileObjects();
 		::Dynamic initTileObjects_dyn();
 
-		void updateMap();
+		virtual void updateMap();
 		::Dynamic updateMap_dyn();
 
-		void computeDimensions();
+		virtual void computeDimensions();
 		::Dynamic computeDimensions_dyn();
 
-		int getTileIndexByCoords( ::flixel::math::FlxPoint Coord);
+		virtual int getTileIndexByCoords( ::flixel::math::FlxPoint Coord);
 		::Dynamic getTileIndexByCoords_dyn();
 
-		 ::flixel::math::FlxPoint getTileCoordsByIndex(int Index,hx::Null< bool >  Midpoint);
+		virtual  ::flixel::math::FlxPoint getTileCoordsByIndex(int Index,hx::Null< bool >  Midpoint);
 		::Dynamic getTileCoordsByIndex_dyn();
 
-		bool ray( ::flixel::math::FlxPoint Start, ::flixel::math::FlxPoint End, ::flixel::math::FlxPoint Result,hx::Null< Float >  Resolution);
+		virtual bool ray( ::flixel::math::FlxPoint Start, ::flixel::math::FlxPoint End, ::flixel::math::FlxPoint Result,hx::Null< Float >  Resolution);
 		::Dynamic ray_dyn();
 
-		bool overlapsWithCallback( ::flixel::FlxObject Object, ::Dynamic Callback,hx::Null< bool >  FlipCallbackParams, ::flixel::math::FlxPoint Position);
+		virtual bool overlapsWithCallback( ::flixel::FlxObject Object, ::Dynamic Callback,hx::Null< bool >  FlipCallbackParams, ::flixel::math::FlxPoint Position);
 		::Dynamic overlapsWithCallback_dyn();
 
-		void setDirty(hx::Null< bool >  Dirty);
+		virtual void setDirty(hx::Null< bool >  Dirty);
 		::Dynamic setDirty_dyn();
 
-		void destroy();
+		virtual void destroy();
 
 		 ::flixel::tile::FlxBaseTilemap loadMapFromCSV(::String MapData, ::Dynamic TileGraphic,hx::Null< int >  TileWidth,hx::Null< int >  TileHeight, ::flixel::tile::FlxTilemapAutoTiling AutoTile,hx::Null< int >  StartingIndex,hx::Null< int >  DrawIndex,hx::Null< int >  CollideIndex);
 		::Dynamic loadMapFromCSV_dyn();

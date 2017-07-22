@@ -31,6 +31,9 @@
 #ifndef INCLUDED_flixel_system_FlxSoundGroup
 #include <flixel/system/FlxSoundGroup.h>
 #endif
+#ifndef INCLUDED_flixel_system_debug_log_LogStyle
+#include <flixel/system/debug/log/LogStyle.h>
+#endif
 #ifndef INCLUDED_flixel_system_frontEnds_LogFrontEnd
 #include <flixel/system/frontEnds/LogFrontEnd.h>
 #endif
@@ -181,7 +184,7 @@ HXLINE( 114)			_hx_tmp = hx::IsNull( URL );
 HXLINE( 114)			_hx_tmp = false;
             		}
 HXDLIN( 114)		if (_hx_tmp) {
-HXLINE( 116)			 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
+HXLINE( 116)			::flixel::FlxG_obj::log->advanced(HX_("FlxG.loadSound() requires either\nan embedded sound or a URL to work.",4f,8f,a4,ef),::flixel::_hx_system::debug::log::LogStyle_obj::WARNING,true);
 HXLINE( 117)			return null();
             		}
 HXLINE( 120)		 ::flixel::_hx_system::FlxSound sound = this->list->recycle(hx::ClassOf< ::flixel::_hx_system::FlxSound >(),null(),null(),null()).StaticCast<  ::flixel::_hx_system::FlxSound >();
@@ -221,7 +224,7 @@ HXLINE( 152)			_hx_tmp = true;
 HXDLIN( 152)		if (_hx_tmp) {
 HXLINE( 154)			return ::openfl::_legacy::Assets_obj::getSound(EmbeddedSound,true);
             		}
-HXLINE( 155)		 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
+HXLINE( 155)		::flixel::FlxG_obj::log->advanced(((HX_("Could not find a Sound asset with an ID of '",6f,0e,1e,66) + EmbeddedSound) + HX_("'.",27,22,00,00)),::flixel::_hx_system::debug::log::LogStyle_obj::ERROR,true);
 HXLINE( 156)		return null();
             	}
 
@@ -246,7 +249,7 @@ HXDLIN( 168)			if (_hx_tmp) {
 HXLINE( 168)				::openfl::_legacy::Assets_obj::getSound(id,true);
             			}
             			else {
-HXLINE( 168)				 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
+HXLINE( 168)				::flixel::FlxG_obj::log->advanced(((HX_("Could not find a Sound asset with an ID of '",6f,0e,1e,66) + id) + HX_("'.",27,22,00,00)),::flixel::_hx_system::debug::log::LogStyle_obj::ERROR,true);
             			}
             		}
             	}
@@ -272,7 +275,7 @@ HXDLIN( 187)			if (EmbeddedSound2) {
 HXLINE( 187)				EmbeddedSound1 = ::openfl::_legacy::Assets_obj::getSound(( (::String)(EmbeddedSound) ),true);
             			}
             			else {
-HXLINE( 187)				 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
+HXLINE( 187)				::flixel::FlxG_obj::log->advanced(((HX_("Could not find a Sound asset with an ID of '",6f,0e,1e,66) + EmbeddedSound) + HX_("'.",27,22,00,00)),::flixel::_hx_system::debug::log::LogStyle_obj::ERROR,true);
 HXDLIN( 187)				EmbeddedSound1 = null();
             			}
 HXDLIN( 187)			EmbeddedSound = EmbeddedSound1;

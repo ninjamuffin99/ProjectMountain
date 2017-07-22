@@ -128,7 +128,7 @@ class HXCPP_CLASS_ATTRIBUTES FlxSprite_obj : public  ::flixel::FlxObject_obj
 		virtual  ::flixel::FlxSprite makeGraphic(int Width,int Height,hx::Null< int >  Color,hx::Null< bool >  Unique,::String Key);
 		::Dynamic makeGraphic_dyn();
 
-		void graphicLoaded();
+		virtual void graphicLoaded();
 		::Dynamic graphicLoaded_dyn();
 
 		void resetSize();

@@ -59,6 +59,9 @@
 #ifndef INCLUDED_flixel_system_frontEnds_BitmapFrontEnd
 #include <flixel/system/frontEnds/BitmapFrontEnd.h>
 #endif
+#ifndef INCLUDED_flixel_system_frontEnds_DebuggerFrontEnd
+#include <flixel/system/frontEnds/DebuggerFrontEnd.h>
+#endif
 #ifndef INCLUDED_flixel_util_FlxBitmapDataUtil
 #include <flixel/util/FlxBitmapDataUtil.h>
 #endif
@@ -693,7 +696,11 @@ HXLINE( 654)					this->drawSimple(camera);
             				else {
 HXLINE( 656)					this->drawComplex(camera);
             				}
+HXLINE( 659)				::flixel::FlxBasic_obj::visibleCount++;
             			}
+            		}
+HXLINE( 664)		if (::flixel::FlxG_obj::debugger->drawDebug) {
+HXLINE( 665)			this->drawDebug();
             		}
             	}
 

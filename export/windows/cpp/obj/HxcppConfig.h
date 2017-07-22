@@ -5,6 +5,10 @@
 #define HX_WINDOWS 
 #endif
 
+#if !defined(HXCPP_DEBUG) && !defined(NO_HXCPP_DEBUG)
+#define HXCPP_DEBUG 
+#endif
+
 #if !defined(HXCPP_VISIT_ALLOCS) && !defined(NO_HXCPP_VISIT_ALLOCS)
 #define HXCPP_VISIT_ALLOCS 
 #endif

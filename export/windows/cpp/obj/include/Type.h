@@ -53,6 +53,9 @@ class HXCPP_CLASS_ATTRIBUTES Type_obj : public hx::Object
 		static hx::Class getClass( ::Dynamic o);
 		static ::Dynamic getClass_dyn();
 
+		static hx::Class getEnum( ::Dynamic o);
+		static ::Dynamic getEnum_dyn();
+
 		static hx::Class getSuperClass(hx::Class c);
 		static ::Dynamic getSuperClass_dyn();
 
@@ -80,6 +83,9 @@ class HXCPP_CLASS_ATTRIBUTES Type_obj : public hx::Object
 		static  ::Dynamic createEnumIndex(hx::Class e,int index,::cpp::VirtualArray params);
 		static ::Dynamic createEnumIndex_dyn();
 
+		static ::Array< ::String > getInstanceFields(hx::Class c);
+		static ::Dynamic getInstanceFields_dyn();
+
 		static ::Array< ::String > getClassFields(hx::Class c);
 		static ::Dynamic getClassFields_dyn();
 
@@ -92,8 +98,17 @@ class HXCPP_CLASS_ATTRIBUTES Type_obj : public hx::Object
 		static bool enumEq( ::Dynamic a, ::Dynamic b);
 		static ::Dynamic enumEq_dyn();
 
+		static ::String enumConstructor( ::Dynamic e);
+		static ::Dynamic enumConstructor_dyn();
+
 		static ::cpp::VirtualArray enumParameters( ::Dynamic e);
 		static ::Dynamic enumParameters_dyn();
+
+		static int enumIndex( ::Dynamic e);
+		static ::Dynamic enumIndex_dyn();
+
+		static ::cpp::VirtualArray allEnums(hx::Class e);
+		static ::Dynamic allEnums_dyn();
 
 };
 

@@ -88,8 +88,6 @@ HXLINE(  84)		return result;
             	}
 
 
-HX_DEFINE_DYNAMIC_FUNC3(Stdout_obj,readBytes,return )
-
 
 hx::ObjectPtr< Stdout_obj > Stdout_obj::__new( ::Dynamic p,bool out) {
 	hx::ObjectPtr< Stdout_obj > __this = new Stdout_obj();

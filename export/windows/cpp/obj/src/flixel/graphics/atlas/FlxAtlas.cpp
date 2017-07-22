@@ -270,14 +270,14 @@ HX_DEFINE_DYNAMIC_FUNC0(FlxAtlas_obj,initRoot,(void))
             	HX_STACKFRAME(&_hx_pos_f38becfab6571882_171_addNode)
 HXLINE( 172)		::String key = ::flixel::_hx_system::FlxAssets_obj::resolveKey(Graphic,Key);
 HXLINE( 174)		if (hx::IsNull( key )) {
-HXLINE( 179)			return null();
+HXLINE( 177)			HX_STACK_DO_THROW(HX_("addNode can't find the key for specified bitmapdata. Please provide not null value as a Key argument.",92,54,24,2b));
             		}
 HXLINE( 182)		if (this->hasNodeWithName(key)) {
 HXLINE( 183)			return this->nodes->get(key).StaticCast<  ::flixel::graphics::atlas::FlxNode >();
             		}
 HXLINE( 185)		 ::openfl::_legacy::display::BitmapData data = ::flixel::_hx_system::FlxAssets_obj::resolveBitmapData(Graphic);
 HXLINE( 187)		if (hx::IsNull( data )) {
-HXLINE( 192)			return null();
+HXLINE( 190)			HX_STACK_DO_THROW(((HX_("addNode can't find bitmapdata with specified key: ",bb,33,14,9a) + Graphic) + HX_(". Please provide valid value.",84,e6,88,32)));
             		}
 HXLINE( 196)		if (hx::IsNull( this->root->left )) {
 HXLINE( 197)			return this->insertFirstNodeInRoot(data,key);
@@ -570,7 +570,10 @@ HXLINE( 368)					_hx_tmp = false;
 HXLINE( 368)				_hx_tmp = true;
             			}
 HXDLIN( 368)			if (_hx_tmp) {
-HXLINE( 373)				return null();
+HXLINE( 371)				::String _hx_tmp2 = ((((HX_("Can't insert node ",5a,c7,4d,53) + key) + HX_(" with the size of (",b5,20,c2,55)) + data->get_width()) + HX_("; ",85,33,00,00));
+HXDLIN( 371)				::String _hx_tmp3 = ((_hx_tmp2 + data->get_height()) + HX_(") in atlas ",99,70,14,d3));
+HXDLIN( 371)				::String _hx_tmp4 = ((((((_hx_tmp3 + this->name) + HX_(" with the max size of (",b9,b3,66,74)) + this->maxWidth) + HX_("; ",85,33,00,00)) + this->maxHeight) + HX_(") and powerOfTwo: ",d6,69,4d,94));
+HXDLIN( 371)				HX_STACK_DO_THROW((_hx_tmp4 + ::Std_obj::string(this->powerOfTwo)));
             			}
 HXLINE( 376)			this->root->set_width(rootWidth);
 HXLINE( 377)			this->root->set_height(rootHeight);
@@ -734,7 +737,10 @@ HXLINE( 450)				_hx_tmp8 = !(canExpandBottomRotate);
 HXLINE( 450)				_hx_tmp8 = false;
             			}
 HXDLIN( 450)			if (_hx_tmp8) {
-HXLINE( 455)				return null();
+HXLINE( 453)				::String _hx_tmp11 = ((((HX_("Can't insert node ",5a,c7,4d,53) + key) + HX_(" with the size of (",b5,20,c2,55)) + data->get_width()) + HX_("; ",85,33,00,00));
+HXDLIN( 453)				::String _hx_tmp12 = ((_hx_tmp11 + data->get_height()) + HX_(") in atlas ",99,70,14,d3));
+HXDLIN( 453)				::String _hx_tmp13 = ((((((_hx_tmp12 + this->name) + HX_(" with the max size of (",b9,b3,66,74)) + this->maxWidth) + HX_("; ",85,33,00,00)) + this->maxHeight) + HX_(") and powerOfTwo: ",d6,69,4d,94));
+HXDLIN( 453)				HX_STACK_DO_THROW((_hx_tmp13 + ::Std_obj::string(this->powerOfTwo)));
             			}
 HXLINE( 460)			int addRightArea = (addRightWidth * addRightHeight);
 HXLINE( 461)			int addBottomArea = (addBottomWidth * addBottomHeight);
@@ -743,92 +749,92 @@ HXLINE( 464)			int addBottomAreaRotate = (addBottomWidthRotate * addBottomHeight
 HXLINE( 466)			bool rotateRight = false;
 HXLINE( 467)			bool rotateBottom = false;
 HXLINE( 468)			bool rotateNode = false;
-HXLINE( 470)			bool _hx_tmp11;
-HXDLIN( 470)			bool _hx_tmp12;
-HXDLIN( 470)			bool _hx_tmp13;
+HXLINE( 470)			bool _hx_tmp14;
+HXDLIN( 470)			bool _hx_tmp15;
+HXDLIN( 470)			bool _hx_tmp16;
 HXDLIN( 470)			if (canExpandRight) {
-HXLINE( 470)				_hx_tmp13 = canExpandRightRotate;
+HXLINE( 470)				_hx_tmp16 = canExpandRightRotate;
             			}
             			else {
-HXLINE( 470)				_hx_tmp13 = false;
+HXLINE( 470)				_hx_tmp16 = false;
             			}
-HXDLIN( 470)			if (_hx_tmp13) {
-HXLINE( 470)				_hx_tmp12 = (addRightArea > addRightAreaRotate);
+HXDLIN( 470)			if (_hx_tmp16) {
+HXLINE( 470)				_hx_tmp15 = (addRightArea > addRightAreaRotate);
             			}
             			else {
-HXLINE( 470)				_hx_tmp12 = false;
+HXLINE( 470)				_hx_tmp15 = false;
             			}
-HXDLIN( 470)			if (!(_hx_tmp12)) {
+HXDLIN( 470)			if (!(_hx_tmp15)) {
 HXLINE( 470)				if (!(canExpandRight)) {
-HXLINE( 470)					_hx_tmp11 = canExpandRightRotate;
+HXLINE( 470)					_hx_tmp14 = canExpandRightRotate;
             				}
             				else {
-HXLINE( 470)					_hx_tmp11 = false;
+HXLINE( 470)					_hx_tmp14 = false;
             				}
             			}
             			else {
-HXLINE( 470)				_hx_tmp11 = true;
+HXLINE( 470)				_hx_tmp14 = true;
             			}
-HXDLIN( 470)			if (_hx_tmp11) {
+HXDLIN( 470)			if (_hx_tmp14) {
 HXLINE( 472)				addRightArea = addBottomAreaRotate;
 HXLINE( 473)				addRightWidth = addRightWidthRotate;
 HXLINE( 474)				addRightHeight = addRightHeightRotate;
 HXLINE( 475)				canExpandRight = true;
 HXLINE( 476)				rotateRight = true;
             			}
-HXLINE( 479)			bool _hx_tmp14;
-HXDLIN( 479)			bool _hx_tmp15;
-HXDLIN( 479)			bool _hx_tmp16;
+HXLINE( 479)			bool _hx_tmp17;
+HXDLIN( 479)			bool _hx_tmp18;
+HXDLIN( 479)			bool _hx_tmp19;
 HXDLIN( 479)			if (canExpandBottom) {
-HXLINE( 479)				_hx_tmp16 = canExpandBottomRotate;
+HXLINE( 479)				_hx_tmp19 = canExpandBottomRotate;
             			}
             			else {
-HXLINE( 479)				_hx_tmp16 = false;
+HXLINE( 479)				_hx_tmp19 = false;
             			}
-HXDLIN( 479)			if (_hx_tmp16) {
-HXLINE( 479)				_hx_tmp15 = (addBottomArea > addBottomAreaRotate);
+HXDLIN( 479)			if (_hx_tmp19) {
+HXLINE( 479)				_hx_tmp18 = (addBottomArea > addBottomAreaRotate);
             			}
             			else {
-HXLINE( 479)				_hx_tmp15 = false;
+HXLINE( 479)				_hx_tmp18 = false;
             			}
-HXDLIN( 479)			if (!(_hx_tmp15)) {
+HXDLIN( 479)			if (!(_hx_tmp18)) {
 HXLINE( 479)				if (!(canExpandBottom)) {
-HXLINE( 479)					_hx_tmp14 = canExpandBottomRotate;
+HXLINE( 479)					_hx_tmp17 = canExpandBottomRotate;
             				}
             				else {
-HXLINE( 479)					_hx_tmp14 = false;
+HXLINE( 479)					_hx_tmp17 = false;
             				}
             			}
             			else {
-HXLINE( 479)				_hx_tmp14 = true;
+HXLINE( 479)				_hx_tmp17 = true;
             			}
-HXDLIN( 479)			if (_hx_tmp14) {
+HXDLIN( 479)			if (_hx_tmp17) {
 HXLINE( 481)				addBottomArea = addBottomAreaRotate;
 HXLINE( 482)				addBottomWidth = addBottomWidthRotate;
 HXLINE( 483)				addBottomHeight = addBottomHeightRotate;
 HXLINE( 484)				canExpandBottom = true;
 HXLINE( 485)				rotateBottom = true;
             			}
-HXLINE( 488)			bool _hx_tmp17;
+HXLINE( 488)			bool _hx_tmp20;
 HXDLIN( 488)			if (!(canExpandRight)) {
-HXLINE( 488)				_hx_tmp17 = canExpandBottom;
+HXLINE( 488)				_hx_tmp20 = canExpandBottom;
             			}
             			else {
-HXLINE( 488)				_hx_tmp17 = false;
+HXLINE( 488)				_hx_tmp20 = false;
             			}
-HXDLIN( 488)			if (_hx_tmp17) {
+HXDLIN( 488)			if (_hx_tmp20) {
 HXLINE( 490)				addRightArea = (addBottomArea + (int)1);
 HXLINE( 491)				rotateNode = rotateRight;
             			}
             			else {
-HXLINE( 493)				bool _hx_tmp18;
+HXLINE( 493)				bool _hx_tmp21;
 HXDLIN( 493)				if (canExpandRight) {
-HXLINE( 493)					_hx_tmp18 = !(canExpandBottom);
+HXLINE( 493)					_hx_tmp21 = !(canExpandBottom);
             				}
             				else {
-HXLINE( 493)					_hx_tmp18 = false;
+HXLINE( 493)					_hx_tmp21 = false;
             				}
-HXDLIN( 493)				if (_hx_tmp18) {
+HXDLIN( 493)				if (_hx_tmp21) {
 HXLINE( 495)					addBottomArea = (addRightArea + (int)1);
 HXLINE( 496)					rotateNode = rotateBottom;
             				}
@@ -842,8 +848,8 @@ HXLINE( 507)				if (rotateRight) {
 HXLINE( 509)					insertNodeWidth = insertHeight1;
 HXLINE( 510)					insertNodeHeight = insertWidth1;
             				}
-HXLINE( 513)				int _hx_tmp19 = (::Std_obj::_hx_int(temp->rect->width) + insertNodeWidth);
-HXDLIN( 513)				this->expandRoot(_hx_tmp19,::Math_obj::max(::Std_obj::_hx_int(temp->rect->height),insertNodeHeight),true,null());
+HXLINE( 513)				int _hx_tmp22 = (::Std_obj::_hx_int(temp->rect->width) + insertNodeWidth);
+HXDLIN( 513)				this->expandRoot(_hx_tmp22,::Math_obj::max(::Std_obj::_hx_int(temp->rect->height),insertNodeHeight),true,null());
 HXLINE( 514)				dataNode = this->divideNode(this->root->right,insertNodeWidth,insertNodeHeight,true,data,key,rotateRight);
 HXLINE( 515)				this->expandRoot(addRightWidth,addRightHeight,false,true);
             			}
@@ -852,8 +858,8 @@ HXLINE( 519)				if (rotateBottom) {
 HXLINE( 521)					insertNodeWidth = insertHeight1;
 HXLINE( 522)					insertNodeHeight = insertWidth1;
             				}
-HXLINE( 525)				Float _hx_tmp20 = ::Math_obj::max(::Std_obj::_hx_int(temp->rect->width),insertNodeWidth);
-HXDLIN( 525)				this->expandRoot(_hx_tmp20,(::Std_obj::_hx_int(temp->rect->height) + insertNodeHeight),false,null());
+HXLINE( 525)				Float _hx_tmp23 = ::Math_obj::max(::Std_obj::_hx_int(temp->rect->width),insertNodeWidth);
+HXDLIN( 525)				this->expandRoot(_hx_tmp23,(::Std_obj::_hx_int(temp->rect->height) + insertNodeHeight),false,null());
 HXLINE( 526)				dataNode = this->divideNode(this->root->right,insertNodeWidth,insertNodeHeight,true,data,key,rotateBottom);
 HXLINE( 527)				this->expandRoot(addBottomWidth,addBottomHeight,false,true);
             			}
@@ -966,7 +972,7 @@ HX_DEFINE_DYNAMIC_FUNC1(FlxAtlas_obj,getNextPowerOfTwo,return )
             	HX_STACKFRAME(&_hx_pos_f38becfab6571882_594_addNodeWithSpacesAndBorders)
 HXLINE( 595)		::String key = ::flixel::_hx_system::FlxAssets_obj::resolveKey(Graphic,Key);
 HXLINE( 597)		if (hx::IsNull( key )) {
-HXLINE( 602)			return null();
+HXLINE( 600)			HX_STACK_DO_THROW(HX_("addNodeWithSpacings can't find the key for specified bitmapdata. Please provide not null value as a Key argument.",68,27,93,19));
             		}
 HXLINE( 605)		key = ::flixel::FlxG_obj::bitmap->getKeyWithSpacesAndBorders(key,tileSize,tileSpacing,tileBorder,region);
 HXLINE( 607)		if (this->hasNodeWithName(key)) {
@@ -974,12 +980,12 @@ HXLINE( 608)			return this->nodes->get(key).StaticCast<  ::flixel::graphics::atl
             		}
 HXLINE( 610)		 ::openfl::_legacy::display::BitmapData data = ::flixel::_hx_system::FlxAssets_obj::resolveBitmapData(Graphic);
 HXLINE( 612)		if (hx::IsNull( data )) {
-HXLINE( 617)			return null();
+HXLINE( 615)			HX_STACK_DO_THROW(((HX_("addNodeWithSpacings can't find bitmapdata with specified key: ",25,03,32,92) + Graphic) + HX_(". Please provide valid value.",84,e6,88,32)));
             		}
 HXLINE( 620)		 ::openfl::_legacy::display::BitmapData nodeData = ::flixel::util::FlxBitmapDataUtil_obj::addSpacesAndBorders(data,tileSize,tileSpacing,tileBorder,region);
 HXLINE( 621)		 ::flixel::graphics::atlas::FlxNode node = this->addNode(nodeData,key);
 HXLINE( 623)		if (hx::IsNull( node )) {
-HXLINE( 628)			return null();
+HXLINE( 626)			HX_STACK_DO_THROW(((HX_("addNodeWithSpacings can't insert provided image: ",a1,49,3a,35) + Graphic) + HX_(") in atlas. It's probably too big.",a7,39,69,92)));
             		}
 HXLINE( 631)		if (hx::IsNotNull( tileBorder )) {
 HXLINE( 633)			Float Y = ((int)2 * tileBorder->y);
@@ -1117,7 +1123,7 @@ HX_DEFINE_DYNAMIC_FUNC1(FlxAtlas_obj,getNode,return )
 HXLINE( 706)		int numKeys = keys->length;
 HXLINE( 707)		int numBitmaps = bitmaps->length;
 HXLINE( 709)		if ((numBitmaps != numKeys)) {
-HXLINE( 714)			return null();
+HXLINE( 712)			HX_STACK_DO_THROW(((((HX_("The number of bitmaps (",cb,e8,a2,a6) + numBitmaps) + HX_(") should be equal to number of keys (",a0,90,37,97)) + numKeys) + HX_(")",29,00,00,00)));
             		}
 HXLINE( 717)		this->_tempStorage = ::Array_obj< ::Dynamic>::__new();
 HXLINE( 718)		{
@@ -1663,7 +1669,7 @@ HXLINE(1107)						_hx_tmp3 = false;
 HXLINE(1107)					_hx_tmp3 = true;
             				}
 HXDLIN(1107)				if (_hx_tmp3) {
-HXLINE(1112)					return false;
+HXLINE(1110)					HX_STACK_DO_THROW(HX_("Can't set powerOfTwo property to true, since it requires to increase atlas size which is bigger that max size",9a,7f,9f,bb));
             				}
 HXLINE(1115)				 ::flixel::graphics::atlas::FlxNode temp = this->root;
 HXLINE(1116)				 ::flixel::math::FlxRect _this = ::flixel::math::FlxRect_obj::_pool->get();

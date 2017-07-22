@@ -14,13 +14,13 @@
 #include <openfl/_legacy/text/FontType.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_8c395429170d5493_541_new,"__ASSET__flixel_fonts_nokiafc22_ttf","new",0x22f03f2a,"__ASSET__flixel_fonts_nokiafc22_ttf.new","DefaultAssetLibrary.hx",541,0x0fc48912)
+HX_DEFINE_STACK_FRAME(_hx_pos_8c395429170d5493_549_new,"__ASSET__flixel_fonts_nokiafc22_ttf","new",0x22f03f2a,"__ASSET__flixel_fonts_nokiafc22_ttf.new","DefaultAssetLibrary.hx",549,0x0fc48912)
 HX_LOCAL_STACK_FRAME(_hx_pos_0014efcf238264cc_1_boot,"__ASSET__flixel_fonts_nokiafc22_ttf","boot",0x67600628,"__ASSET__flixel_fonts_nokiafc22_ttf.boot","?",1,0x0000003f)
 
 void __ASSET__flixel_fonts_nokiafc22_ttf_obj::__construct(::String __o_filename, ::openfl::_legacy::text::FontStyle style, ::openfl::_legacy::text::FontType type){
 ::String filename = __o_filename.Default(HX_HCSTRING("","\x00","\x00","\x00","\x00"));
-            	HX_STACKFRAME(&_hx_pos_8c395429170d5493_541_new)
-HXLINE( 541)		super::__construct(filename,style,type);
+            	HX_STACKFRAME(&_hx_pos_8c395429170d5493_549_new)
+HXLINE( 549)		super::__construct(filename,style,type);
             	}
 
 Dynamic __ASSET__flixel_fonts_nokiafc22_ttf_obj::__CreateEmpty() { return new __ASSET__flixel_fonts_nokiafc22_ttf_obj; }

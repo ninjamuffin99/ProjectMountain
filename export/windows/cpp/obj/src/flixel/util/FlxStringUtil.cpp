@@ -23,6 +23,9 @@
 #ifndef INCLUDED_flixel_math_FlxMath
 #include <flixel/math/FlxMath.h>
 #endif
+#ifndef INCLUDED_flixel_system_debug_log_LogStyle
+#include <flixel/system/debug/log/LogStyle.h>
+#endif
 #ifndef INCLUDED_flixel_system_frontEnds_DebuggerFrontEnd
 #include <flixel/system/frontEnds/DebuggerFrontEnd.h>
 #endif
@@ -617,7 +620,7 @@ HXDLIN( 523)			if (::openfl::_legacy::Assets_obj::exists(id,null())) {
 HXLINE( 523)				tempBitmapData = ::openfl::_legacy::Assets_obj::getBitmapData(id,false);
             			}
             			else {
-HXLINE( 523)				 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
+HXLINE( 523)				::flixel::FlxG_obj::log->advanced(((HX_("Could not find a BitmapData asset with ID '",5f,79,a9,21) + id) + HX_("'.",27,22,00,00)),::flixel::_hx_system::debug::log::LogStyle_obj::ERROR,true);
 HXDLIN( 523)				tempBitmapData = null();
             			}
             		}

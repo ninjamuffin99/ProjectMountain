@@ -18,6 +18,8 @@ HX_LOCAL_STACK_FRAME(_hx_pos_4da882ff114ca894_73_compareMethods,"Reflect","compa
 HX_LOCAL_STACK_FRAME(_hx_pos_4da882ff114ca894_81_isObject,"Reflect","isObject",0xd04960ba,"Reflect.isObject","C:\\HaxeToolkit\\haxe\\std/cpp/_std/Reflect.hx",81,0x487b3827)
 HX_LOCAL_STACK_FRAME(_hx_pos_4da882ff114ca894_89_isEnumValue,"Reflect","isEnumValue",0x97884d95,"Reflect.isEnumValue","C:\\HaxeToolkit\\haxe\\std/cpp/_std/Reflect.hx",89,0x487b3827)
 HX_LOCAL_STACK_FRAME(_hx_pos_4da882ff114ca894_92_deleteField,"Reflect","deleteField",0x21895ebe,"Reflect.deleteField","C:\\HaxeToolkit\\haxe\\std/cpp/_std/Reflect.hx",92,0x487b3827)
+HX_LOCAL_STACK_FRAME(_hx_pos_4da882ff114ca894_97_copy,"Reflect","copy",0x47e2b5a6,"Reflect.copy","C:\\HaxeToolkit\\haxe\\std/cpp/_std/Reflect.hx",97,0x487b3827)
+HX_LOCAL_STACK_FRAME(_hx_pos_4da882ff114ca894_110_makeVarArgs,"Reflect","makeVarArgs",0x978955c5,"Reflect.makeVarArgs","C:\\HaxeToolkit\\haxe\\std/cpp/_std/Reflect.hx",110,0x487b3827)
 
 void Reflect_obj::__construct() { }
 
@@ -166,6 +168,41 @@ HXLINE(  94)		return ::__hxcpp_anon_remove(o,field);
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC2(Reflect_obj,deleteField,return )
 
+ ::Dynamic Reflect_obj::copy( ::Dynamic o){
+            	HX_STACKFRAME(&_hx_pos_4da882ff114ca894_97_copy)
+HXLINE(  98)		if (hx::IsNull( o )) {
+HXLINE(  98)			return null();
+            		}
+HXLINE(  99)		if ((( (int)(o->__GetType()) ) == (int)3)) {
+HXLINE(  99)			return o;
+            		}
+HXLINE( 100)		if ((( (int)(o->__GetType()) ) == (int)5)) {
+HXLINE( 101)			return o->__Field(HX_("copy",b5,bb,c4,41),hx::paccDynamic)();
+            		}
+HXLINE( 102)		 ::Dynamic o2 =  ::Dynamic(hx::Anon_obj::Create(0));
+HXLINE( 103)		{
+HXLINE( 103)			int _g = (int)0;
+HXDLIN( 103)			::Array< ::String > _g1 = ::Reflect_obj::fields(o);
+HXDLIN( 103)			while((_g < _g1->length)){
+HXLINE( 103)				::String f = _g1->__get(_g);
+HXDLIN( 103)				++_g;
+HXLINE( 104)				::Reflect_obj::setField(o2,f,::Reflect_obj::field(o,f));
+            			}
+            		}
+HXLINE( 105)		return o2;
+            	}
+
+
+STATIC_HX_DEFINE_DYNAMIC_FUNC1(Reflect_obj,copy,return )
+
+ ::Dynamic Reflect_obj::makeVarArgs( ::Dynamic f){
+            	HX_STACKFRAME(&_hx_pos_4da882ff114ca894_110_makeVarArgs)
+HXLINE( 110)		return ::__hxcpp_create_var_args(f);
+            	}
+
+
+STATIC_HX_DEFINE_DYNAMIC_FUNC1(Reflect_obj,makeVarArgs,return )
+
 
 Reflect_obj::Reflect_obj()
 {
@@ -174,6 +211,9 @@ Reflect_obj::Reflect_obj()
 bool Reflect_obj::__GetStatic(const ::String &inName, Dynamic &outValue, hx::PropertyAccess inCallProp)
 {
 	switch(inName.length) {
+	case 4:
+		if (HX_FIELD_EQ(inName,"copy") ) { outValue = copy_dyn(); return true; }
+		break;
 	case 5:
 		if (HX_FIELD_EQ(inName,"field") ) { outValue = field_dyn(); return true; }
 		break;
@@ -197,6 +237,7 @@ bool Reflect_obj::__GetStatic(const ::String &inName, Dynamic &outValue, hx::Pro
 		if (HX_FIELD_EQ(inName,"setProperty") ) { outValue = setProperty_dyn(); return true; }
 		if (HX_FIELD_EQ(inName,"isEnumValue") ) { outValue = isEnumValue_dyn(); return true; }
 		if (HX_FIELD_EQ(inName,"deleteField") ) { outValue = deleteField_dyn(); return true; }
+		if (HX_FIELD_EQ(inName,"makeVarArgs") ) { outValue = makeVarArgs_dyn(); return true; }
 		break;
 	case 14:
 		if (HX_FIELD_EQ(inName,"compareMethods") ) { outValue = compareMethods_dyn(); return true; }
@@ -236,6 +277,8 @@ static ::String Reflect_obj_sStaticFields[] = {
 	HX_HCSTRING("isObject","\x49","\x1a","\xa9","\x6d"),
 	HX_HCSTRING("isEnumValue","\x66","\xb7","\x87","\x06"),
 	HX_HCSTRING("deleteField","\x8f","\xc8","\x88","\x90"),
+	HX_HCSTRING("copy","\xb5","\xbb","\xc4","\x41"),
+	HX_HCSTRING("makeVarArgs","\x96","\xbf","\x88","\x06"),
 	::String(null())
 };
 

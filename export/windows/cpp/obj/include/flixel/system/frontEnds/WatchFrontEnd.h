@@ -6,7 +6,6 @@
 #include <hxcpp.h>
 #endif
 
-HX_DECLARE_STACK_FRAME(_hx_pos_25766fbc3da200fe_7_new)
 HX_DECLARE_CLASS3(flixel,_hx_system,frontEnds,WatchFrontEnd)
 
 namespace flixel{
@@ -29,23 +28,8 @@ class HXCPP_CLASS_ATTRIBUTES WatchFrontEnd_obj : public hx::Object
 			{ return hx::Object::operator new(inSize,inContainer,inName); }
 		inline void *operator new(size_t inSize, int extra)
 			{ return hx::Object::operator new(inSize+extra,false,"flixel.system.frontEnds.WatchFrontEnd"); }
-
-		hx::ObjectPtr< WatchFrontEnd_obj > __new() {
-			hx::ObjectPtr< WatchFrontEnd_obj > __this = new WatchFrontEnd_obj();
-			__this->__construct();
-			return __this;
-		}
-
-		static hx::ObjectPtr< WatchFrontEnd_obj > __alloc(hx::Ctx *_hx_ctx) {
-			WatchFrontEnd_obj *__this = (WatchFrontEnd_obj*)(hx::Ctx::alloc(_hx_ctx, sizeof(WatchFrontEnd_obj), false, "flixel.system.frontEnds.WatchFrontEnd"));
-			*(void **)__this = WatchFrontEnd_obj::_hx_vtable;
-{
-            	HX_STACKFRAME(&_hx_pos_25766fbc3da200fe_7_new)
-            	}
-		
-			return __this;
-		}
-
+		static hx::ObjectPtr< WatchFrontEnd_obj > __new();
+		static hx::ObjectPtr< WatchFrontEnd_obj > __alloc(hx::Ctx *_hx_ctx);
 		static void * _hx_vtable;
 		static Dynamic __CreateEmpty();
 		static Dynamic __Create(hx::DynamicArray inArgs);
