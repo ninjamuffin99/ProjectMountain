@@ -65,9 +65,6 @@
 #ifndef INCLUDED_flixel_system_frontEnds_CameraFrontEnd
 #include <flixel/system/frontEnds/CameraFrontEnd.h>
 #endif
-#ifndef INCLUDED_flixel_system_frontEnds_DebuggerFrontEnd
-#include <flixel/system/frontEnds/DebuggerFrontEnd.h>
-#endif
 #ifndef INCLUDED_flixel_system_scaleModes_BaseScaleMode
 #include <flixel/system/scaleModes/BaseScaleMode.h>
 #endif
@@ -85,9 +82,6 @@
 #endif
 #ifndef INCLUDED_flixel_util_FlxPool_flixel_math_FlxRect
 #include <flixel/util/FlxPool_flixel_math_FlxRect.h>
-#endif
-#ifndef INCLUDED_flixel_util_FlxSpriteUtil
-#include <flixel/util/FlxSpriteUtil.h>
 #endif
 #ifndef INCLUDED_flixel_util_IFlxDestroyable
 #include <flixel/util/IFlxDestroyable.h>
@@ -116,9 +110,6 @@
 #ifndef INCLUDED_openfl__legacy_display_BlendMode
 #include <openfl/_legacy/display/BlendMode.h>
 #endif
-#ifndef INCLUDED_openfl__legacy_display_CapsStyle
-#include <openfl/_legacy/display/CapsStyle.h>
-#endif
 #ifndef INCLUDED_openfl__legacy_display_DisplayObject
 #include <openfl/_legacy/display/DisplayObject.h>
 #endif
@@ -133,12 +124,6 @@
 #endif
 #ifndef INCLUDED_openfl__legacy_display_InteractiveObject
 #include <openfl/_legacy/display/InteractiveObject.h>
-#endif
-#ifndef INCLUDED_openfl__legacy_display_JointStyle
-#include <openfl/_legacy/display/JointStyle.h>
-#endif
-#ifndef INCLUDED_openfl__legacy_display_LineScaleMode
-#include <openfl/_legacy/display/LineScaleMode.h>
 #endif
 #ifndef INCLUDED_openfl__legacy_display_PixelSnapping
 #include <openfl/_legacy/display/PixelSnapping.h>
@@ -330,8 +315,6 @@ HXLINE( 756)			this->_fill =  ::openfl::_legacy::display::BitmapData_obj::__allo
 HXLINE( 760)			this->canvas =  ::openfl::_legacy::display::Sprite_obj::__alloc( HX_CTX );
 HXLINE( 761)			this->_scrollRect->addChild(this->canvas);
 HXLINE( 762)			this->_transform =  ::openfl::_legacy::geom::Matrix_obj::__alloc( HX_CTX ,null(),null(),null(),null(),null(),null());
-HXLINE( 765)			this->debugLayer =  ::openfl::_legacy::display::Sprite_obj::__alloc( HX_CTX );
-HXLINE( 766)			this->_scrollRect->addChild(this->debugLayer);
             		}
 HXLINE( 770)		this->set_color((int)-1);
 HXLINE( 772)		this->set_zoom(Zoom);
@@ -759,13 +742,6 @@ HXLINE( 695)				::flixel::FlxCamera_obj::trianglesSprite->get_graphics()->beginB
 HXLINE( 696)				::flixel::FlxCamera_obj::trianglesSprite->get_graphics()->drawTriangles(::flixel::FlxCamera_obj::drawVertices,indices,uvtData,null(),null(),null());
 HXLINE( 697)				::flixel::FlxCamera_obj::trianglesSprite->get_graphics()->endFill();
 HXLINE( 698)				this->buffer->draw(::flixel::FlxCamera_obj::trianglesSprite,null(),null(),null(),null(),null());
-HXLINE( 700)				if (::flixel::FlxG_obj::debugger->drawDebug) {
-HXLINE( 702)					 ::openfl::_legacy::display::Graphics gfx = ::flixel::util::FlxSpriteUtil_obj::flashGfx;
-HXLINE( 703)					gfx->clear();
-HXLINE( 704)					gfx->lineStyle((int)1,(int)-16776961,((Float)0.5),null(),null(),null(),null(),null());
-HXLINE( 705)					gfx->drawTriangles(::flixel::FlxCamera_obj::drawVertices,indices,null(),null(),null(),null());
-HXLINE( 706)					this->get_camera()->buffer->draw(::flixel::util::FlxSpriteUtil_obj::flashGfxSprite,null(),null(),null(),null(),null());
-            				}
             			}
 HXLINE( 711)			if (!(bounds->_inPool)) {
 HXLINE( 711)				bounds->_inPool = true;
@@ -807,8 +783,6 @@ HXLINE( 795)			this->_flashBitmap = null();
 HXLINE( 796)			this->_fill = ::flixel::util::FlxDestroyUtil_obj::dispose(this->_fill);
             		}
             		else {
-HXLINE( 801)			::flixel::util::FlxDestroyUtil_obj::removeChild(this->_scrollRect,this->debugLayer);
-HXLINE( 802)			this->debugLayer = null();
 HXLINE( 805)			::flixel::util::FlxDestroyUtil_obj::removeChild(this->_scrollRect,this->canvas);
 HXLINE( 806)			if (hx::IsNotNull( this->canvas )) {
 HXLINE( 808)				{
@@ -1274,14 +1248,6 @@ HXDLIN(1109)				Float _hx_tmp11 = (((Float)-0.5) * this->height);
 HXDLIN(1109)				_hx_tmp10->set_y(((_hx_tmp11 * (this->scaleY - this->initialZoom)) * ::flixel::FlxG_obj::scaleMode->scale->y));
 HXLINE(1111)				this->canvas->set_scaleX(this->totalScaleX);
 HXLINE(1112)				this->canvas->set_scaleY(this->totalScaleY);
-HXLINE(1115)				if (hx::IsNotNull( this->debugLayer )) {
-HXLINE(1117)					 ::openfl::_legacy::display::Sprite _hx_tmp12 = this->debugLayer;
-HXDLIN(1117)					_hx_tmp12->set_x(this->canvas->get_x());
-HXLINE(1118)					 ::openfl::_legacy::display::Sprite _hx_tmp13 = this->debugLayer;
-HXDLIN(1118)					_hx_tmp13->set_y(this->canvas->get_y());
-HXLINE(1120)					this->debugLayer->set_scaleX(this->totalScaleX);
-HXLINE(1121)					this->debugLayer->set_scaleY(this->totalScaleY);
-            				}
             			}
             		}
             	}
@@ -2083,7 +2049,6 @@ void FlxCamera_obj::__Mark(HX_MARK_PARAMS)
 	HX_MARK_MEMBER_NAME(_scrollRect,"_scrollRect");
 	HX_MARK_MEMBER_NAME(_bounds,"_bounds");
 	HX_MARK_MEMBER_NAME(canvas,"canvas");
-	HX_MARK_MEMBER_NAME(debugLayer,"debugLayer");
 	HX_MARK_MEMBER_NAME(_transform,"_transform");
 	HX_MARK_MEMBER_NAME(_helperMatrix,"_helperMatrix");
 	HX_MARK_MEMBER_NAME(_currentDrawItem,"_currentDrawItem");
@@ -2155,7 +2120,6 @@ void FlxCamera_obj::__Visit(HX_VISIT_PARAMS)
 	HX_VISIT_MEMBER_NAME(_scrollRect,"_scrollRect");
 	HX_VISIT_MEMBER_NAME(_bounds,"_bounds");
 	HX_VISIT_MEMBER_NAME(canvas,"canvas");
-	HX_VISIT_MEMBER_NAME(debugLayer,"debugLayer");
 	HX_VISIT_MEMBER_NAME(_transform,"_transform");
 	HX_VISIT_MEMBER_NAME(_helperMatrix,"_helperMatrix");
 	HX_VISIT_MEMBER_NAME(_currentDrawItem,"_currentDrawItem");
@@ -2236,7 +2200,6 @@ hx::Val FlxCamera_obj::__Field(const ::String &inName,hx::PropertyAccess inCallP
 		if (HX_FIELD_EQ(inName,"maxScrollY") ) { return hx::Val( maxScrollY); }
 		if (HX_FIELD_EQ(inName,"followLead") ) { return hx::Val( followLead); }
 		if (HX_FIELD_EQ(inName,"_flashRect") ) { return hx::Val( _flashRect); }
-		if (HX_FIELD_EQ(inName,"debugLayer") ) { return hx::Val( debugLayer); }
 		if (HX_FIELD_EQ(inName,"_transform") ) { return hx::Val( _transform); }
 		if (HX_FIELD_EQ(inName,"_headTiles") ) { return hx::Val( _headTiles); }
 		if (HX_FIELD_EQ(inName,"drawPixels") ) { return hx::Val( drawPixels_dyn()); }
@@ -2403,7 +2366,6 @@ hx::Val FlxCamera_obj::__SetField(const ::String &inName,const hx::Val &inValue,
 		if (HX_FIELD_EQ(inName,"maxScrollY") ) { maxScrollY=inValue.Cast<  ::Dynamic >(); return inValue; }
 		if (HX_FIELD_EQ(inName,"followLead") ) { followLead=inValue.Cast<  ::flixel::math::FlxPoint >(); return inValue; }
 		if (HX_FIELD_EQ(inName,"_flashRect") ) { _flashRect=inValue.Cast<  ::openfl::_legacy::geom::Rectangle >(); return inValue; }
-		if (HX_FIELD_EQ(inName,"debugLayer") ) { debugLayer=inValue.Cast<  ::openfl::_legacy::display::Sprite >(); return inValue; }
 		if (HX_FIELD_EQ(inName,"_transform") ) { _transform=inValue.Cast<  ::openfl::_legacy::geom::Matrix >(); return inValue; }
 		if (HX_FIELD_EQ(inName,"_headTiles") ) { _headTiles=inValue.Cast<  ::flixel::graphics::tile::FlxDrawTilesItem >(); return inValue; }
 		break;
@@ -2546,7 +2508,6 @@ void FlxCamera_obj::__GetFields(Array< ::String> &outFields)
 	outFields->push(HX_HCSTRING("_scrollRect","\xf0","\xa8","\xf0","\xdb"));
 	outFields->push(HX_HCSTRING("_bounds","\x14","\x98","\x94","\xd4"));
 	outFields->push(HX_HCSTRING("canvas","\xd8","\x54","\x42","\xb8"));
-	outFields->push(HX_HCSTRING("debugLayer","\x7e","\x52","\xa4","\x6e"));
 	outFields->push(HX_HCSTRING("_transform","\x2d","\xa9","\x35","\xa1"));
 	outFields->push(HX_HCSTRING("_helperMatrix","\x2e","\x81","\xce","\xde"));
 	outFields->push(HX_HCSTRING("_currentDrawItem","\x11","\x6b","\x5a","\x19"));
@@ -2617,7 +2578,6 @@ static hx::StorageInfo FlxCamera_obj_sMemberStorageInfo[] = {
 	{hx::fsObject /*::openfl::_legacy::display::Sprite*/ ,(int)offsetof(FlxCamera_obj,_scrollRect),HX_HCSTRING("_scrollRect","\xf0","\xa8","\xf0","\xdb")},
 	{hx::fsObject /*::flixel::math::FlxRect*/ ,(int)offsetof(FlxCamera_obj,_bounds),HX_HCSTRING("_bounds","\x14","\x98","\x94","\xd4")},
 	{hx::fsObject /*::openfl::_legacy::display::Sprite*/ ,(int)offsetof(FlxCamera_obj,canvas),HX_HCSTRING("canvas","\xd8","\x54","\x42","\xb8")},
-	{hx::fsObject /*::openfl::_legacy::display::Sprite*/ ,(int)offsetof(FlxCamera_obj,debugLayer),HX_HCSTRING("debugLayer","\x7e","\x52","\xa4","\x6e")},
 	{hx::fsObject /*::openfl::_legacy::geom::Matrix*/ ,(int)offsetof(FlxCamera_obj,_transform),HX_HCSTRING("_transform","\x2d","\xa9","\x35","\xa1")},
 	{hx::fsObject /*::flixel::math::FlxMatrix*/ ,(int)offsetof(FlxCamera_obj,_helperMatrix),HX_HCSTRING("_helperMatrix","\x2e","\x81","\xce","\xde")},
 	{hx::fsObject /*::flixel::graphics::tile::FlxDrawBaseItem*/ ,(int)offsetof(FlxCamera_obj,_currentDrawItem),HX_HCSTRING("_currentDrawItem","\x11","\x6b","\x5a","\x19")},
@@ -2699,7 +2659,6 @@ static ::String FlxCamera_obj_sMemberFields[] = {
 	HX_HCSTRING("_scrollRect","\xf0","\xa8","\xf0","\xdb"),
 	HX_HCSTRING("_bounds","\x14","\x98","\x94","\xd4"),
 	HX_HCSTRING("canvas","\xd8","\x54","\x42","\xb8"),
-	HX_HCSTRING("debugLayer","\x7e","\x52","\xa4","\x6e"),
 	HX_HCSTRING("_transform","\x2d","\xa9","\x35","\xa1"),
 	HX_HCSTRING("_helperMatrix","\x2e","\x81","\xce","\xde"),
 	HX_HCSTRING("_currentDrawItem","\x11","\x6b","\x5a","\x19"),

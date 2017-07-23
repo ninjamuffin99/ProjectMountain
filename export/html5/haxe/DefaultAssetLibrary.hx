@@ -69,6 +69,28 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_monsterrat_ttf);
 		
@@ -80,8 +102,24 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/data/data-goes-here.txt", __ASSET__assets_data_data_goes_here_txt);
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
+		className.set ("assets/images/bearded.png", __ASSET__assets_images_bearded_png);
+		type.set ("assets/images/bearded.png", AssetType.IMAGE);
+		className.set ("assets/images/boulder.png", __ASSET__assets_images_boulder_png);
+		type.set ("assets/images/boulder.png", AssetType.IMAGE);
+		className.set ("assets/images/cardboardrun.png", __ASSET__assets_images_cardboardrun_png);
+		type.set ("assets/images/cardboardrun.png", AssetType.IMAGE);
+		className.set ("assets/images/dead.png", __ASSET__assets_images_dead_png);
+		type.set ("assets/images/dead.png", AssetType.IMAGE);
 		className.set ("assets/images/images-go-here.txt", __ASSET__assets_images_images_go_here_txt);
 		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
+		className.set ("assets/images/marshmellow.png", __ASSET__assets_images_marshmellow_png);
+		type.set ("assets/images/marshmellow.png", AssetType.IMAGE);
+		className.set ("assets/images/marshmellowblue.png", __ASSET__assets_images_marshmellowblue_png);
+		type.set ("assets/images/marshmellowblue.png", AssetType.IMAGE);
+		className.set ("assets/images/marshmellowfire.png", __ASSET__assets_images_marshmellowfire_png);
+		type.set ("assets/images/marshmellowfire.png", AssetType.IMAGE);
+		className.set ("assets/images/old.png", __ASSET__assets_images_old_png);
+		type.set ("assets/images/old.png", AssetType.IMAGE);
 		className.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png", __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_bg_png);
 		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png", AssetType.IMAGE);
 		className.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-foreground-trees.png", __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_foreground_trees_png);
@@ -98,10 +136,38 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/parallax-mountain.psd", AssetType.BINARY);
 		className.set ("assets/images/parallax_mountain_pack.zip", __ASSET__assets_images_parallax_mountain_pack_zip);
 		type.set ("assets/images/parallax_mountain_pack.zip", AssetType.BINARY);
+		className.set ("assets/images/penguin.png", __ASSET__assets_images_penguin_png);
+		type.set ("assets/images/penguin.png", AssetType.IMAGE);
+		className.set ("assets/images/poof.png", __ASSET__assets_images_poof_png);
+		type.set ("assets/images/poof.png", AssetType.IMAGE);
+		className.set ("assets/images/reset.png", __ASSET__assets_images_reset_png);
+		type.set ("assets/images/reset.png", AssetType.IMAGE);
+		className.set ("assets/images/run.png", __ASSET__assets_images_run_png);
+		type.set ("assets/images/run.png", AssetType.IMAGE);
+		className.set ("assets/images/run2.png", __ASSET__assets_images_run2_png);
+		type.set ("assets/images/run2.png", AssetType.IMAGE);
+		className.set ("assets/images/running.png", __ASSET__assets_images_running_png);
+		type.set ("assets/images/running.png", AssetType.IMAGE);
+		className.set ("assets/images/running.txt", __ASSET__assets_images_running_txt);
+		type.set ("assets/images/running.txt", AssetType.TEXT);
+		className.set ("assets/images/run_nolegs.png", __ASSET__assets_images_run_nolegs_png);
+		type.set ("assets/images/run_nolegs.png", AssetType.IMAGE);
+		className.set ("assets/images/sky.jpg", __ASSET__assets_images_sky_jpg);
+		type.set ("assets/images/sky.jpg", AssetType.IMAGE);
+		className.set ("assets/images/skynight.jpg", __ASSET__assets_images_skynight_jpg);
+		type.set ("assets/images/skynight.jpg", AssetType.IMAGE);
+		className.set ("assets/images/space.png", __ASSET__assets_images_space_png);
+		type.set ("assets/images/space.png", AssetType.IMAGE);
 		className.set ("assets/images/tiles.jpg", __ASSET__assets_images_tiles_jpg);
 		type.set ("assets/images/tiles.jpg", AssetType.IMAGE);
 		className.set ("assets/images/tiles.png", __ASSET__assets_images_tiles_png);
 		type.set ("assets/images/tiles.png", AssetType.IMAGE);
+		className.set ("assets/images/title.jpg", __ASSET__assets_images_title_jpg);
+		type.set ("assets/images/title.jpg", AssetType.IMAGE);
+		className.set ("assets/images/tree.png", __ASSET__assets_images_tree_png);
+		type.set ("assets/images/tree.png", AssetType.IMAGE);
+		className.set ("assets/images/whiteface.png", __ASSET__assets_images_whiteface_png);
+		type.set ("assets/images/whiteface.png", AssetType.IMAGE);
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
 		className.set ("assets/music/Oof.mp3", __ASSET__assets_music_oof_mp3);
@@ -131,10 +197,42 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
+		id = "assets/images/bearded.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/boulder.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/cardboardrun.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/dead.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/images-go-here.txt";
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
+		id = "assets/images/marshmellow.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/marshmellowblue.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/marshmellowfire.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/old.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png";
 		path.set (id, id);
 		
@@ -167,11 +265,67 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.BINARY);
+		id = "assets/images/penguin.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/poof.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/reset.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/run.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/run2.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/running.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/running.txt";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/images/run_nolegs.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/sky.jpg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/skynight.jpg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/space.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/tiles.jpg";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/tiles.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/title.jpg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/tree.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/whiteface.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -236,8 +390,32 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/data/data-goes-here.txt", __ASSET__assets_data_data_goes_here_txt);
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
 		
+		className.set ("assets/images/bearded.png", __ASSET__assets_images_bearded_png);
+		type.set ("assets/images/bearded.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/boulder.png", __ASSET__assets_images_boulder_png);
+		type.set ("assets/images/boulder.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/cardboardrun.png", __ASSET__assets_images_cardboardrun_png);
+		type.set ("assets/images/cardboardrun.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/dead.png", __ASSET__assets_images_dead_png);
+		type.set ("assets/images/dead.png", AssetType.IMAGE);
+		
 		className.set ("assets/images/images-go-here.txt", __ASSET__assets_images_images_go_here_txt);
 		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
+		
+		className.set ("assets/images/marshmellow.png", __ASSET__assets_images_marshmellow_png);
+		type.set ("assets/images/marshmellow.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/marshmellowblue.png", __ASSET__assets_images_marshmellowblue_png);
+		type.set ("assets/images/marshmellowblue.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/marshmellowfire.png", __ASSET__assets_images_marshmellowfire_png);
+		type.set ("assets/images/marshmellowfire.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/old.png", __ASSET__assets_images_old_png);
+		type.set ("assets/images/old.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png", __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_bg_png);
 		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png", AssetType.IMAGE);
@@ -263,11 +441,53 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/images/parallax_mountain_pack.zip", __ASSET__assets_images_parallax_mountain_pack_zip);
 		type.set ("assets/images/parallax_mountain_pack.zip", AssetType.BINARY);
 		
+		className.set ("assets/images/penguin.png", __ASSET__assets_images_penguin_png);
+		type.set ("assets/images/penguin.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/poof.png", __ASSET__assets_images_poof_png);
+		type.set ("assets/images/poof.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/reset.png", __ASSET__assets_images_reset_png);
+		type.set ("assets/images/reset.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/run.png", __ASSET__assets_images_run_png);
+		type.set ("assets/images/run.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/run2.png", __ASSET__assets_images_run2_png);
+		type.set ("assets/images/run2.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/running.png", __ASSET__assets_images_running_png);
+		type.set ("assets/images/running.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/running.txt", __ASSET__assets_images_running_txt);
+		type.set ("assets/images/running.txt", AssetType.TEXT);
+		
+		className.set ("assets/images/run_nolegs.png", __ASSET__assets_images_run_nolegs_png);
+		type.set ("assets/images/run_nolegs.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/sky.jpg", __ASSET__assets_images_sky_jpg);
+		type.set ("assets/images/sky.jpg", AssetType.IMAGE);
+		
+		className.set ("assets/images/skynight.jpg", __ASSET__assets_images_skynight_jpg);
+		type.set ("assets/images/skynight.jpg", AssetType.IMAGE);
+		
+		className.set ("assets/images/space.png", __ASSET__assets_images_space_png);
+		type.set ("assets/images/space.png", AssetType.IMAGE);
+		
 		className.set ("assets/images/tiles.jpg", __ASSET__assets_images_tiles_jpg);
 		type.set ("assets/images/tiles.jpg", AssetType.IMAGE);
 		
 		className.set ("assets/images/tiles.png", __ASSET__assets_images_tiles_png);
 		type.set ("assets/images/tiles.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/title.jpg", __ASSET__assets_images_title_jpg);
+		type.set ("assets/images/title.jpg", AssetType.IMAGE);
+		
+		className.set ("assets/images/tree.png", __ASSET__assets_images_tree_png);
+		type.set ("assets/images/tree.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/whiteface.png", __ASSET__assets_images_whiteface_png);
+		type.set ("assets/images/whiteface.png", AssetType.IMAGE);
 		
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
@@ -944,7 +1164,15 @@ class DefaultAssetLibrary extends AssetLibrary {
 #if flash
 
 @:keep @:bind #if display private #end class __ASSET__assets_data_data_goes_here_txt extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images_bearded_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_boulder_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_cardboardrun_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_dead_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_images_go_here_txt extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images_marshmellow_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_marshmellowblue_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_marshmellowfire_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_old_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_bg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_foreground_trees_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_montain_far_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -953,8 +1181,22 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_license_txt extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_parallax_mountain_psd extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_parallax_mountain_pack_zip extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images_penguin_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_poof_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_reset_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_run_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_run2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_running_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_running_txt extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images_run_nolegs_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_sky_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_skynight_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_space_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_tiles_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_tiles_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_title_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_tree_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_whiteface_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_music_music_goes_here_txt extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_music_oof_mp3 extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_music_oof_ogg extends null { }
@@ -968,6 +1210,28 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 #elseif html5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1001,7 +1265,15 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 @:file("assets/data/data-goes-here.txt") #if display private #end class __ASSET__assets_data_data_goes_here_txt extends lime.utils.Bytes {}
+@:image("assets/images/bearded.png") #if display private #end class __ASSET__assets_images_bearded_png extends lime.graphics.Image {}
+@:image("assets/images/boulder.png") #if display private #end class __ASSET__assets_images_boulder_png extends lime.graphics.Image {}
+@:image("assets/images/cardboardrun.png") #if display private #end class __ASSET__assets_images_cardboardrun_png extends lime.graphics.Image {}
+@:image("assets/images/dead.png") #if display private #end class __ASSET__assets_images_dead_png extends lime.graphics.Image {}
 @:file("assets/images/images-go-here.txt") #if display private #end class __ASSET__assets_images_images_go_here_txt extends lime.utils.Bytes {}
+@:image("assets/images/marshmellow.png") #if display private #end class __ASSET__assets_images_marshmellow_png extends lime.graphics.Image {}
+@:image("assets/images/marshmellowblue.png") #if display private #end class __ASSET__assets_images_marshmellowblue_png extends lime.graphics.Image {}
+@:image("assets/images/marshmellowfire.png") #if display private #end class __ASSET__assets_images_marshmellowfire_png extends lime.graphics.Image {}
+@:image("assets/images/old.png") #if display private #end class __ASSET__assets_images_old_png extends lime.graphics.Image {}
 @:image("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png") #if display private #end class __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_bg_png extends lime.graphics.Image {}
 @:image("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-foreground-trees.png") #if display private #end class __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_foreground_trees_png extends lime.graphics.Image {}
 @:image("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-montain-far.png") #if display private #end class __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_layers_parallax_mountain_montain_far_png extends lime.graphics.Image {}
@@ -1010,8 +1282,22 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:file("assets/images/parallax_mountain_pack/parallax_mountain_pack/license.txt") #if display private #end class __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_license_txt extends lime.utils.Bytes {}
 @:file("assets/images/parallax_mountain_pack/parallax_mountain_pack/parallax-mountain.psd") #if display private #end class __ASSET__assets_images_parallax_mountain_pack_parallax_mountain_pack_parallax_mountain_psd extends lime.utils.Bytes {}
 @:file("assets/images/parallax_mountain_pack.zip") #if display private #end class __ASSET__assets_images_parallax_mountain_pack_zip extends lime.utils.Bytes {}
+@:image("assets/images/penguin.png") #if display private #end class __ASSET__assets_images_penguin_png extends lime.graphics.Image {}
+@:image("assets/images/poof.png") #if display private #end class __ASSET__assets_images_poof_png extends lime.graphics.Image {}
+@:image("assets/images/reset.png") #if display private #end class __ASSET__assets_images_reset_png extends lime.graphics.Image {}
+@:image("assets/images/run.png") #if display private #end class __ASSET__assets_images_run_png extends lime.graphics.Image {}
+@:image("assets/images/run2.png") #if display private #end class __ASSET__assets_images_run2_png extends lime.graphics.Image {}
+@:image("assets/images/running.png") #if display private #end class __ASSET__assets_images_running_png extends lime.graphics.Image {}
+@:file("assets/images/running.txt") #if display private #end class __ASSET__assets_images_running_txt extends lime.utils.Bytes {}
+@:image("assets/images/run_nolegs.png") #if display private #end class __ASSET__assets_images_run_nolegs_png extends lime.graphics.Image {}
+@:image("assets/images/sky.jpg") #if display private #end class __ASSET__assets_images_sky_jpg extends lime.graphics.Image {}
+@:image("assets/images/skynight.jpg") #if display private #end class __ASSET__assets_images_skynight_jpg extends lime.graphics.Image {}
+@:image("assets/images/space.png") #if display private #end class __ASSET__assets_images_space_png extends lime.graphics.Image {}
 @:image("assets/images/tiles.jpg") #if display private #end class __ASSET__assets_images_tiles_jpg extends lime.graphics.Image {}
 @:image("assets/images/tiles.png") #if display private #end class __ASSET__assets_images_tiles_png extends lime.graphics.Image {}
+@:image("assets/images/title.jpg") #if display private #end class __ASSET__assets_images_title_jpg extends lime.graphics.Image {}
+@:image("assets/images/tree.png") #if display private #end class __ASSET__assets_images_tree_png extends lime.graphics.Image {}
+@:image("assets/images/whiteface.png") #if display private #end class __ASSET__assets_images_whiteface_png extends lime.graphics.Image {}
 @:file("assets/music/music-goes-here.txt") #if display private #end class __ASSET__assets_music_music_goes_here_txt extends lime.utils.Bytes {}
 @:file("assets/music/Oof.mp3") #if display private #end class __ASSET__assets_music_oof_mp3 extends lime.utils.Bytes {}
 @:file("assets/music/Oof.ogg") #if display private #end class __ASSET__assets_music_oof_ogg extends lime.utils.Bytes {}

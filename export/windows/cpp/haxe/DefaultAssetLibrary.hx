@@ -85,6 +85,17 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		Font.registerFont (__ASSET__flixel_fonts_nokiafc22_ttf);
 		Font.registerFont (__ASSET__flixel_fonts_monsterrat_ttf);
 		
@@ -94,6 +105,17 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -651,6 +673,17 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_monsterrat_ttf);
 		
@@ -662,10 +695,24 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		path.set ("assets/data/data-goes-here.txt", "assets/data/data-goes-here.txt");
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
+		path.set ("assets/images/bearded.png", "assets/images/bearded.png");
+		type.set ("assets/images/bearded.png", AssetType.IMAGE);
 		path.set ("assets/images/boulder.png", "assets/images/boulder.png");
 		type.set ("assets/images/boulder.png", AssetType.IMAGE);
+		path.set ("assets/images/cardboardrun.png", "assets/images/cardboardrun.png");
+		type.set ("assets/images/cardboardrun.png", AssetType.IMAGE);
+		path.set ("assets/images/dead.png", "assets/images/dead.png");
+		type.set ("assets/images/dead.png", AssetType.IMAGE);
 		path.set ("assets/images/images-go-here.txt", "assets/images/images-go-here.txt");
 		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
+		path.set ("assets/images/marshmellow.png", "assets/images/marshmellow.png");
+		type.set ("assets/images/marshmellow.png", AssetType.IMAGE);
+		path.set ("assets/images/marshmellowblue.png", "assets/images/marshmellowblue.png");
+		type.set ("assets/images/marshmellowblue.png", AssetType.IMAGE);
+		path.set ("assets/images/marshmellowfire.png", "assets/images/marshmellowfire.png");
+		type.set ("assets/images/marshmellowfire.png", AssetType.IMAGE);
+		path.set ("assets/images/old.png", "assets/images/old.png");
+		type.set ("assets/images/old.png", AssetType.IMAGE);
 		path.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png", "assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png");
 		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png", AssetType.IMAGE);
 		path.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-foreground-trees.png", "assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-foreground-trees.png");
@@ -682,6 +729,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/parallax_mountain_pack/parallax_mountain_pack/parallax-mountain.psd", AssetType.BINARY);
 		path.set ("assets/images/parallax_mountain_pack.zip", "assets/images/parallax_mountain_pack.zip");
 		type.set ("assets/images/parallax_mountain_pack.zip", AssetType.BINARY);
+		path.set ("assets/images/penguin.png", "assets/images/penguin.png");
+		type.set ("assets/images/penguin.png", AssetType.IMAGE);
 		path.set ("assets/images/poof.png", "assets/images/poof.png");
 		type.set ("assets/images/poof.png", AssetType.IMAGE);
 		path.set ("assets/images/reset.png", "assets/images/reset.png");
@@ -700,12 +749,18 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/sky.jpg", AssetType.IMAGE);
 		path.set ("assets/images/skynight.jpg", "assets/images/skynight.jpg");
 		type.set ("assets/images/skynight.jpg", AssetType.IMAGE);
+		path.set ("assets/images/space.png", "assets/images/space.png");
+		type.set ("assets/images/space.png", AssetType.IMAGE);
 		path.set ("assets/images/tiles.jpg", "assets/images/tiles.jpg");
 		type.set ("assets/images/tiles.jpg", AssetType.IMAGE);
 		path.set ("assets/images/tiles.png", "assets/images/tiles.png");
 		type.set ("assets/images/tiles.png", AssetType.IMAGE);
+		path.set ("assets/images/title.jpg", "assets/images/title.jpg");
+		type.set ("assets/images/title.jpg", AssetType.IMAGE);
 		path.set ("assets/images/tree.png", "assets/images/tree.png");
 		type.set ("assets/images/tree.png", AssetType.IMAGE);
+		path.set ("assets/images/whiteface.png", "assets/images/whiteface.png");
+		type.set ("assets/images/whiteface.png", AssetType.IMAGE);
 		path.set ("assets/music/music-goes-here.txt", "assets/music/music-goes-here.txt");
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
 		path.set ("assets/music/Oof.mp3", "assets/music/Oof.mp3");
@@ -734,12 +789,33 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/data/data-goes-here.txt";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
+		id = "assets/images/bearded.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/boulder.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/cardboardrun.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/dead.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/images-go-here.txt";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
+		id = "assets/images/marshmellow.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/marshmellowblue.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/marshmellowfire.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/old.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
@@ -764,6 +840,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/images/parallax_mountain_pack.zip";
 		path.set (id, id);
 		type.set (id, AssetType.BINARY);
+		id = "assets/images/penguin.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/poof.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
@@ -791,13 +870,22 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/images/skynight.jpg";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
+		id = "assets/images/space.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/tiles.jpg";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/tiles.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
+		id = "assets/images/title.jpg";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/tree.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/whiteface.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/music/music-goes-here.txt";
@@ -853,6 +941,17 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -1643,6 +1742,17 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_beep_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_flixel_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends null { }
@@ -1652,6 +1762,17 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 #elseif html5
+
+
+
+
+
+
+
+
+
+
+
 
 
 

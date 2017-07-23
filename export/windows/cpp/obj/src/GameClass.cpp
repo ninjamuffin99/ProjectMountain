@@ -4,8 +4,8 @@
 #ifndef INCLUDED_GameClass
 #include <GameClass.h>
 #endif
-#ifndef INCLUDED_PlayState
-#include <PlayState.h>
+#ifndef INCLUDED_MainMenuState
+#include <MainMenuState.h>
 #endif
 #ifndef INCLUDED_flixel_FlxBasic
 #include <flixel/FlxBasic.h>
@@ -59,7 +59,7 @@ void GameClass_obj::__construct(){
             	HX_STACKFRAME(&_hx_pos_340016b198213dff_14_new)
 HXLINE(  15)		int stageWidth = ::openfl::_legacy::Lib_obj::get_current()->get_stage()->get_stageWidth();
 HXLINE(  16)		int stageHeight = ::openfl::_legacy::Lib_obj::get_current()->get_stage()->get_stageHeight();
-HXLINE(  18)		super::__construct(stageWidth,stageWidth,hx::ClassOf< ::PlayState >(),(int)1,(int)60,(int)60,false,false);
+HXLINE(  18)		super::__construct(stageWidth,stageWidth,hx::ClassOf< ::MainMenuState >(),(int)1,(int)60,(int)60,false,false);
             	}
 
 Dynamic GameClass_obj::__CreateEmpty() { return new GameClass_obj; }

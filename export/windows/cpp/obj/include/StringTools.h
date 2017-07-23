@@ -45,23 +45,15 @@ class HXCPP_CLASS_ATTRIBUTES StringTools_obj : public hx::Object
 
 		HX_DO_RTTI_ALL;
 		static bool __GetStatic(const ::String &inString, Dynamic &outValue, hx::PropertyAccess inCallProp);
-		static bool __SetStatic(const ::String &inString, Dynamic &ioValue, hx::PropertyAccess inCallProp);
 		static void __register();
 		bool _hx_isInstanceOf(int inClassId);
 		::String __ToString() const { return HX_HCSTRING("StringTools","\x6a","\xdb","\x63","\x03"); }
 
-		static void __boot();
 		static ::String urlEncode(::String s);
 		static ::Dynamic urlEncode_dyn();
 
 		static ::String urlDecode(::String s);
 		static ::Dynamic urlDecode_dyn();
-
-		static ::String htmlEscape(::String s, ::Dynamic quotes);
-		static ::Dynamic htmlEscape_dyn();
-
-		static ::String htmlUnescape(::String s);
-		static ::Dynamic htmlUnescape_dyn();
 
 		static bool startsWith(::String s,::String start);
 		static ::Dynamic startsWith_dyn();
@@ -81,30 +73,11 @@ class HXCPP_CLASS_ATTRIBUTES StringTools_obj : public hx::Object
 		static ::String trim(::String s);
 		static ::Dynamic trim_dyn();
 
-		static ::String lpad(::String s,::String c,int l);
-		static ::Dynamic lpad_dyn();
-
-		static ::String rpad(::String s,::String c,int l);
-		static ::Dynamic rpad_dyn();
-
 		static ::String replace(::String s,::String sub,::String by);
 		static ::Dynamic replace_dyn();
 
 		static ::String hex(int n, ::Dynamic digits);
 		static ::Dynamic hex_dyn();
-
-		static int fastCodeAt(::String s,int index);
-		static ::Dynamic fastCodeAt_dyn();
-
-		static bool isEof(int c);
-		static ::Dynamic isEof_dyn();
-
-		static ::String quoteUnixArg(::String argument);
-		static ::Dynamic quoteUnixArg_dyn();
-
-		static ::Array< int > winMetaCharacters;
-		static ::String quoteWinArg(::String argument,bool escapeMetaCharacters);
-		static ::Dynamic quoteWinArg_dyn();
 
 };
 

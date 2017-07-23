@@ -66,9 +66,6 @@ class HXCPP_CLASS_ATTRIBUTES StringBuf_obj : public hx::Object
 		void flush();
 		::Dynamic flush_dyn();
 
-		int get_length();
-		::Dynamic get_length_dyn();
-
 		virtual ::String toString();
 		::Dynamic toString_dyn();
 

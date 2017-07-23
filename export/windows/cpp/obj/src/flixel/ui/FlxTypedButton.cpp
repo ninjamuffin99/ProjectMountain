@@ -146,7 +146,6 @@ HX_LOCAL_STACK_FRAME(_hx_pos_6947f0146d371c6d_257_destroy,"flixel.ui.FlxTypedBut
 HX_LOCAL_STACK_FRAME(_hx_pos_6947f0146d371c6d_283_update,"flixel.ui.FlxTypedButton","update",0xc4b5d5e5,"flixel.ui.FlxTypedButton.update","flixel/ui/FlxButton.hx",283,0xc64cf442)
 HX_LOCAL_STACK_FRAME(_hx_pos_6947f0146d371c6d_306_updateStatusAnimation,"flixel.ui.FlxTypedButton","updateStatusAnimation",0x00250d0d,"flixel.ui.FlxTypedButton.updateStatusAnimation","flixel/ui/FlxButton.hx",306,0xc64cf442)
 HX_LOCAL_STACK_FRAME(_hx_pos_6947f0146d371c6d_313_draw,"flixel.ui.FlxTypedButton","draw",0x18618ce0,"flixel.ui.FlxTypedButton.draw","flixel/ui/FlxButton.hx",313,0xc64cf442)
-HX_LOCAL_STACK_FRAME(_hx_pos_6947f0146d371c6d_328_drawDebug,"flixel.ui.FlxTypedButton","drawDebug",0xd8c08953,"flixel.ui.FlxTypedButton.drawDebug","flixel/ui/FlxButton.hx",328,0xc64cf442)
 HX_LOCAL_STACK_FRAME(_hx_pos_6947f0146d371c6d_347_stampOnAtlas,"flixel.ui.FlxTypedButton","stampOnAtlas",0xa90d96c5,"flixel.ui.FlxTypedButton.stampOnAtlas","flixel/ui/FlxButton.hx",347,0xc64cf442)
 HX_LOCAL_STACK_FRAME(_hx_pos_6947f0146d371c6d_378_updateButton,"flixel.ui.FlxTypedButton","updateButton",0x576ba5b7,"flixel.ui.FlxTypedButton.updateButton","flixel/ui/FlxButton.hx",378,0xc64cf442)
 HX_LOCAL_STACK_FRAME(_hx_pos_6947f0146d371c6d_399_checkMouseOverlap,"flixel.ui.FlxTypedButton","checkMouseOverlap",0xee0aca6e,"flixel.ui.FlxTypedButton.checkMouseOverlap","flixel/ui/FlxButton.hx",399,0xc64cf442)
@@ -324,15 +323,6 @@ HXLINE( 319)			this->_spriteLabel->draw();
             	}
 
 
-void FlxTypedButton_obj::drawDebug(){
-            	HX_STACKFRAME(&_hx_pos_6947f0146d371c6d_328_drawDebug)
-HXLINE( 329)		this->super::drawDebug();
-HXLINE( 331)		if (hx::IsNotNull( this->_spriteLabel )) {
-HXLINE( 333)			this->_spriteLabel->drawDebug();
-            		}
-            	}
-
-
 bool FlxTypedButton_obj::stampOnAtlas( ::flixel::graphics::atlas::FlxAtlas atlas){
             	HX_STACKFRAME(&_hx_pos_6947f0146d371c6d_347_stampOnAtlas)
 HXLINE( 348)		 ::flixel::graphics::atlas::FlxNode buttonNode = atlas->addNode(this->graphic->bitmap,this->graphic->key);
@@ -383,7 +373,7 @@ HXLINE( 391)		bool _hx_tmp;
 HXDLIN( 391)		if ((this->status != (int)0)) {
 HXLINE( 392)			if (!(!(overlapFound))) {
 HXLINE( 392)				if (hx::IsNotNull( this->currentInput )) {
-HXLINE( 391)					_hx_tmp = ( (bool)(this->currentInput->__Field(HX_("get_justReleased",92,07,fa,6a),hx::paccDynamic)()) );
+HXLINE( 391)					_hx_tmp = ::flixel::input::IFlxInput_obj::get_justReleased(this->currentInput);
             				}
             				else {
 HXLINE( 391)					_hx_tmp = false;
@@ -482,7 +472,7 @@ HX_DEFINE_DYNAMIC_FUNC4(FlxTypedButton_obj,checkInput,return )
 
 void FlxTypedButton_obj::updateStatus(::Dynamic input){
             	HX_STACKFRAME(&_hx_pos_6947f0146d371c6d_457_updateStatus)
-HXLINE( 457)		if (( (bool)(input->__Field(HX_("get_justPressed",6d,c5,88,b3),hx::paccDynamic)()) )) {
+HXLINE( 457)		if (::flixel::input::IFlxInput_obj::get_justPressed(input)) {
 HXLINE( 459)			this->currentInput = input;
 HXLINE( 460)			this->onDownHandler();
             		}
@@ -490,7 +480,7 @@ HXLINE( 460)			this->onDownHandler();
 HXLINE( 462)			if ((this->status == (int)0)) {
 HXLINE( 465)				bool _hx_tmp;
 HXDLIN( 465)				if (this->allowSwiping) {
-HXLINE( 465)					_hx_tmp = ( (bool)(input->__Field(HX_("get_pressed",b9,32,e1,bf),hx::paccDynamic)()) );
+HXLINE( 465)					_hx_tmp = ::flixel::input::IFlxInput_obj::get_pressed(input);
             				}
             				else {
 HXLINE( 465)					_hx_tmp = false;
@@ -842,7 +832,6 @@ hx::Val FlxTypedButton_obj::__Field(const ::String &inName,hx::PropertyAccess in
 		if (HX_FIELD_EQ(inName,"released") ) { if (inCallProp == hx::paccAlways) return hx::Val(get_released()); }
 		break;
 	case 9:
-		if (HX_FIELD_EQ(inName,"drawDebug") ) { return hx::Val( drawDebug_dyn()); }
 		if (HX_FIELD_EQ(inName,"set_label") ) { return hx::Val( set_label_dyn()); }
 		if (HX_FIELD_EQ(inName,"set_alpha") ) { return hx::Val( set_alpha_dyn()); }
 		break;
@@ -1012,7 +1001,6 @@ static ::String FlxTypedButton_obj_sMemberFields[] = {
 	HX_HCSTRING("update","\x09","\x86","\x05","\x87"),
 	HX_HCSTRING("updateStatusAnimation","\x69","\x25","\xc1","\x4d"),
 	HX_HCSTRING("draw","\x04","\x2c","\x70","\x42"),
-	HX_HCSTRING("drawDebug","\xaf","\x87","\x2a","\x9f"),
 	HX_HCSTRING("stampOnAtlas","\xe9","\xf9","\x45","\x2b"),
 	HX_HCSTRING("updateButton","\xdb","\x08","\xa4","\xd9"),
 	HX_HCSTRING("checkMouseOverlap","\xca","\x84","\x64","\x1a"),

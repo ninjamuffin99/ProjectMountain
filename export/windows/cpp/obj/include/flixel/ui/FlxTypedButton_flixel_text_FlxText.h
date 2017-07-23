@@ -97,8 +97,6 @@ class HXCPP_CLASS_ATTRIBUTES FlxTypedButton_flixel_text_FlxText_obj : public  ::
 
 		void draw();
 
-		void drawDebug();
-
 		bool stampOnAtlas( ::flixel::graphics::atlas::FlxAtlas atlas);
 		::Dynamic stampOnAtlas_dyn();
 

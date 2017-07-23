@@ -6,19 +6,10 @@
 #include <hxcpp.h>
 #endif
 
-HX_DECLARE_CLASS3(flixel,_hx_system,debug,Window)
-HX_DECLARE_CLASS4(flixel,_hx_system,debug,watch,WatchEntry)
 HX_DECLARE_CLASS2(flixel,tweens,FlxTween)
 HX_DECLARE_CLASS2(flixel,util,FlxArrayUtil)
 HX_DECLARE_CLASS2(flixel,util,FlxTimer)
 HX_DECLARE_CLASS2(flixel,util,IFlxDestroyable)
-HX_DECLARE_CLASS3(openfl,_legacy,display,DisplayObject)
-HX_DECLARE_CLASS3(openfl,_legacy,display,DisplayObjectContainer)
-HX_DECLARE_CLASS3(openfl,_legacy,display,IBitmapDrawable)
-HX_DECLARE_CLASS3(openfl,_legacy,display,InteractiveObject)
-HX_DECLARE_CLASS3(openfl,_legacy,display,Sprite)
-HX_DECLARE_CLASS3(openfl,_legacy,events,EventDispatcher)
-HX_DECLARE_CLASS3(openfl,_legacy,events,IEventDispatcher)
 
 namespace flixel{
 namespace util{
@@ -63,20 +54,14 @@ class HXCPP_CLASS_ATTRIBUTES FlxArrayUtil_obj : public hx::Object
 		bool _hx_isInstanceOf(int inClassId);
 		::String __ToString() const { return HX_HCSTRING("FlxArrayUtil","\x89","\x7b","\x08","\xb4"); }
 
+		static ::cpp::VirtualArray setLength_flixel_group_FlxTypedGroup_T(::cpp::VirtualArray array,int newLength);
+		static ::Dynamic setLength_flixel_group_FlxTypedGroup_T_dyn();
+
 		static ::Array< int > setLength_Int(::Array< int > array,int newLength);
 		static ::Dynamic setLength_Int_dyn();
 
 		static ::Array< int > flatten2DArray_Int(::Array< ::Dynamic> array);
 		static ::Dynamic flatten2DArray_Int_dyn();
-
-		static ::cpp::VirtualArray setLength_flixel_group_FlxTypedGroup_T(::cpp::VirtualArray array,int newLength);
-		static ::Dynamic setLength_flixel_group_FlxTypedGroup_T_dyn();
-
-		static ::Array< ::Dynamic> fastSplice_flixel_system_debug_Window(::Array< ::Dynamic> array, ::flixel::_hx_system::debug::Window element);
-		static ::Dynamic fastSplice_flixel_system_debug_Window_dyn();
-
-		static ::Array< ::Dynamic> fastSplice_flixel_system_debug_watch_WatchEntry(::Array< ::Dynamic> array, ::flixel::_hx_system::debug::watch::WatchEntry element);
-		static ::Dynamic fastSplice_flixel_system_debug_watch_WatchEntry_dyn();
 
 		static ::Array< ::Dynamic> fastSplice_flixel_tweens_FlxTween(::Array< ::Dynamic> array, ::flixel::tweens::FlxTween element);
 		static ::Dynamic fastSplice_flixel_tweens_FlxTween_dyn();

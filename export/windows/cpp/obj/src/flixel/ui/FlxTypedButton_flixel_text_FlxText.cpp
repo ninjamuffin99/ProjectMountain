@@ -152,7 +152,6 @@ HX_LOCAL_STACK_FRAME(_hx_pos_ffa67752db428172_257_destroy,"flixel.ui.FlxTypedBut
 HX_LOCAL_STACK_FRAME(_hx_pos_ffa67752db428172_283_update,"flixel.ui.FlxTypedButton_flixel_text_FlxText","update",0x1dcc7db4,"flixel.ui.FlxTypedButton_flixel_text_FlxText.update","flixel/ui/FlxButton.hx",283,0xc64cf442)
 HX_LOCAL_STACK_FRAME(_hx_pos_ffa67752db428172_306_updateStatusAnimation,"flixel.ui.FlxTypedButton_flixel_text_FlxText","updateStatusAnimation",0xca93861e,"flixel.ui.FlxTypedButton_flixel_text_FlxText.updateStatusAnimation","flixel/ui/FlxButton.hx",306,0xc64cf442)
 HX_LOCAL_STACK_FRAME(_hx_pos_ffa67752db428172_313_draw,"flixel.ui.FlxTypedButton_flixel_text_FlxText","draw",0x9def52ef,"flixel.ui.FlxTypedButton_flixel_text_FlxText.draw","flixel/ui/FlxButton.hx",313,0xc64cf442)
-HX_LOCAL_STACK_FRAME(_hx_pos_ffa67752db428172_328_drawDebug,"flixel.ui.FlxTypedButton_flixel_text_FlxText","drawDebug",0xbcdf6ce4,"flixel.ui.FlxTypedButton_flixel_text_FlxText.drawDebug","flixel/ui/FlxButton.hx",328,0xc64cf442)
 HX_LOCAL_STACK_FRAME(_hx_pos_ffa67752db428172_347_stampOnAtlas,"flixel.ui.FlxTypedButton_flixel_text_FlxText","stampOnAtlas",0x16f683d4,"flixel.ui.FlxTypedButton_flixel_text_FlxText.stampOnAtlas","flixel/ui/FlxButton.hx",347,0xc64cf442)
 HX_LOCAL_STACK_FRAME(_hx_pos_ffa67752db428172_378_updateButton,"flixel.ui.FlxTypedButton_flixel_text_FlxText","updateButton",0xc55492c6,"flixel.ui.FlxTypedButton_flixel_text_FlxText.updateButton","flixel/ui/FlxButton.hx",378,0xc64cf442)
 HX_LOCAL_STACK_FRAME(_hx_pos_ffa67752db428172_399_checkMouseOverlap,"flixel.ui.FlxTypedButton_flixel_text_FlxText","checkMouseOverlap",0xab0126ff,"flixel.ui.FlxTypedButton_flixel_text_FlxText.checkMouseOverlap","flixel/ui/FlxButton.hx",399,0xc64cf442)
@@ -326,15 +325,6 @@ HXDLIN( 316)		if (_hx_tmp) {
 HXLINE( 318)			 ::flixel::FlxSprite _hx_tmp1 = this->_spriteLabel;
 HXDLIN( 318)			_hx_tmp1->set_cameras(this->get_cameras());
 HXLINE( 319)			this->_spriteLabel->draw();
-            		}
-            	}
-
-
-void FlxTypedButton_flixel_text_FlxText_obj::drawDebug(){
-            	HX_STACKFRAME(&_hx_pos_ffa67752db428172_328_drawDebug)
-HXLINE( 329)		this->super::drawDebug();
-HXLINE( 331)		if (hx::IsNotNull( this->_spriteLabel )) {
-HXLINE( 333)			this->_spriteLabel->drawDebug();
             		}
             	}
 
@@ -848,7 +838,6 @@ hx::Val FlxTypedButton_flixel_text_FlxText_obj::__Field(const ::String &inName,h
 		if (HX_FIELD_EQ(inName,"released") ) { if (inCallProp == hx::paccAlways) return hx::Val(get_released()); }
 		break;
 	case 9:
-		if (HX_FIELD_EQ(inName,"drawDebug") ) { return hx::Val( drawDebug_dyn()); }
 		if (HX_FIELD_EQ(inName,"set_label") ) { return hx::Val( set_label_dyn()); }
 		if (HX_FIELD_EQ(inName,"set_alpha") ) { return hx::Val( set_alpha_dyn()); }
 		break;
@@ -1018,7 +1007,6 @@ static ::String FlxTypedButton_flixel_text_FlxText_obj_sMemberFields[] = {
 	HX_HCSTRING("update","\x09","\x86","\x05","\x87"),
 	HX_HCSTRING("updateStatusAnimation","\x69","\x25","\xc1","\x4d"),
 	HX_HCSTRING("draw","\x04","\x2c","\x70","\x42"),
-	HX_HCSTRING("drawDebug","\xaf","\x87","\x2a","\x9f"),
 	HX_HCSTRING("stampOnAtlas","\xe9","\xf9","\x45","\x2b"),
 	HX_HCSTRING("updateButton","\xdb","\x08","\xa4","\xd9"),
 	HX_HCSTRING("checkMouseOverlap","\xca","\x84","\x64","\x1a"),

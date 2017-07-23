@@ -73,11 +73,14 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::flixel::FlxState_obj
 		int _edge;
 		 ::flixel::group::FlxTypedGroup _bgImgGrp;
 		 ::flixel::FlxSprite _bgImg1;
+		 ::flixel::FlxSprite _bgImgNight;
 		 ::flixel::FlxSprite _bgImg2;
 		 ::flixel::FlxSprite _bgImg3;
 		 ::flixel::FlxSprite _bgImg4;
 		 ::flixel::FlxSprite _bgImg5;
 		::Array< ::String > _bgImages;
+		 ::flixel::FlxSprite _black;
+		Float _dayNightTimer;
 		 ::flixel::group::FlxTypedGroup _collisions;
 		::Array< ::Dynamic> _tiles;
 		 ::ObjectPool _pool;

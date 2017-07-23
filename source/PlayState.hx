@@ -5,7 +5,9 @@ import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.effects.particles.FlxEmitter;
 import flixel.group.FlxGroup;
+import flixel.math.FlxPoint;
 import flixel.text.FlxText;
+import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 
 class PlayState extends FlxState
@@ -13,9 +15,9 @@ class PlayState extends FlxState
 	private static inline var TILE_WIDTH:Int = 70;
 	private static inline var TILE_HEIGHT:Int = 70;
 	
-	private static inline var BASE_SPEED:Int = 250;
+	private static inline var BASE_SPEED:Int = 200;
 	
-	private static inline var xAcceleration:Int = 500;
+	private static inline var xAcceleration:Int = 50;
 	
 	private static inline var xDrag:Int = 200;
 	private static inline var yAcceleration:Int = 1400;
@@ -38,11 +40,16 @@ class PlayState extends FlxState
 	
 	private var _bgImgGrp:FlxGroup;
 	private var _bgImg1:FlxSprite;
+	private var _bgImgNight:FlxSprite;
 	private var _bgImg2:FlxSprite;
 	private var _bgImg3:FlxSprite;
 	private var _bgImg4:FlxSprite;
 	private var _bgImg5:FlxSprite;
 	private var _bgImages:Array<String>;
+	
+	private var _black:FlxSprite;
+	
+	private var _dayNightTimer:Float = 15;
 	
 	private var _collisions:FlxGroup;
 	
@@ -77,8 +84,7 @@ class PlayState extends FlxState
 		setupBG();
 		setupPlayer();
 		initPlayer();
-		setupUI();
-		initUI();
+		
 		
 		_stumps = new Stump();
 		
@@ -87,6 +93,10 @@ class PlayState extends FlxState
 		
 		initBg();
 		
+		add(_black);
+		
+		setupUI();
+		initUI();
 		
 		super.create();
 	}
@@ -94,24 +104,37 @@ class PlayState extends FlxState
 	private function setupBG():Void
 	{
 		_bgImg1 = new FlxSprite();
+		_bgImgNight = new FlxSprite();
 		_bgImg2 = new FlxSprite();
 		_bgImg3 = new FlxSprite();
 		_bgImg4 = new FlxSprite();
 		_bgImg5 = new FlxSprite();
+		
+		_black = new FlxSprite();
+		
 		_bgImg1.loadGraphic("assets/images/sky.jpg", false, 1136, 640);
+		_bgImgNight.loadGraphic("assets/images/skynight.jpg", false, 1136, 640);
 		_bgImg2.loadGraphic("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-montain-far.png", false, 272, 160);
 		_bgImg3.loadGraphic("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-mountains.png", false, 272, 160);
 		_bgImg4.loadGraphic("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-trees.png", false, 544, 160);
 		_bgImg5.loadGraphic("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-foreground-trees.png", false, 544, 160);
 		
+		_black.makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
+		
 		_bgImgGrp = new FlxGroup();
+		
+		//_bgImg1.setGraphicSize(0, FlxG.height);
+		
 		
 		this.add(_bgImgGrp);
 		_bgImgGrp.add(_bgImg1);
+		_bgImgGrp.add(_bgImgNight);
 		_bgImgGrp.add(_bgImg2);
 		_bgImgGrp.add(_bgImg3);
 		_bgImgGrp.add(_bgImg4);
 		_bgImgGrp.add(_bgImg5);
+		
+		//_bgImgGrp.add(_black);
 		
 	}
 	
@@ -140,7 +163,6 @@ class PlayState extends FlxState
 	private function setupUI():Void
 	{
 		_scoreText = new FlxText(0, 0, TILE_WIDTH * 4, "");
-		_scoreText.alignment = "right";
 		add(_scoreText);
 	}
 	
@@ -159,6 +181,8 @@ class PlayState extends FlxState
 	private inline function initBg():Void
 	{
 		_bgImg1.scrollFactor.x = 0;
+		_bgImgNight.scrollFactor.x = 0;
+		_black.scrollFactor.x = 0;
 		_bgImg2.scrollFactor.x = 0.05;
 		_bgImg3.scrollFactor.x = 0.1;
 		_bgImg3.scrollFactor.x = 0.3;
@@ -177,14 +201,20 @@ class PlayState extends FlxState
 		_bgImg3.x = FlxG.random.float(0, FlxG.width);
 		
 		_bgImg1.screenCenter();
+		_bgImgNight.screenCenter();
+		_black.screenCenter();
 		_bgImg2.screenCenter();
 		_bgImg3.screenCenter();
 		_bgImg4.screenCenter(X);
 		_bgImg5.screenCenter(X);
 		
 		_bgImg1.angle = 15;
+		_bgImgNight.angle = 15;
 		_bgImg2.angle = 15;
 		_bgImg3.angle = 15;
+		
+		_bgImgNight.alpha = 0;
+		_black.alpha = 0;
 	}
 	
 	private inline function initPlayer():Void
@@ -210,7 +240,8 @@ class PlayState extends FlxState
 	
 	private inline function initUI():Void
 	{
-		_scoreText.y = 20;
+		_scoreText.y = _player.y - 20;
+		_scoreText.scrollFactor.x = 0;
 		_score = 0;
 		positionText();
 	}
@@ -243,6 +274,23 @@ class PlayState extends FlxState
 	
 	override public function update(elapsed:Float):Void 
 	{
+		
+		_dayNightTimer -= FlxG.elapsed;
+		if (_dayNightTimer <= 0)
+		{
+			if (_black.alpha == 0)
+			{
+				FlxTween.tween(_bgImgNight, {alpha:1}, 0.5);
+				FlxTween.tween(_black, {alpha:0.25}, 0.5);
+			}
+			else
+			{
+				FlxTween.tween(_bgImgNight, {alpha:0}, 0.5);
+				FlxTween.tween(_black, {alpha:0}, 0.5);
+			}
+			
+			_dayNightTimer = 15;
+		}
 		
 		if (FlxG.keys.justPressed.R)
 		{
@@ -460,9 +508,9 @@ class PlayState extends FlxState
 			_stumps.x = _edge + FlxG.random.int(TILE_WIDTH * -wide, TILE_WIDTH);
 			_stumps.y = top - TILE_HEIGHT;
 			
-			add(_stumps);
+			//add(_stumps);
 			
-			_collisions.add(_stumps);
+			//_collisions.add(_stumps);
 		}
 		
 		_edge += Std.int(_player.x / (TILE_WIDTH * 0.9)) + ((FlxG.random.int(0, 2) + 3) * TILE_WIDTH);
@@ -483,18 +531,25 @@ class PlayState extends FlxState
 	
 	private inline function playerAnimation():Void
 	{
-		if (_player.velocity.y != 0)
+		if (_player.velocity.y < 0)
+			_player.animation.play("jump");
+		else if (_player.velocity.y > 0)
 			_player.animation.play("fall");
 		else
+		{
 			_player.animation.play("run");
+			//FlxTween.quadPath(_player, [FlxPoint.get(_player.x, _player.y), FlxPoint.get(_player.x, _player.y - 30), FlxPoint.get(_player.x, _player.y)], 0.25, true, {type:FlxTween.PINGPONG});
+			//FlxTween.angle(_player, -10, 10, 0.25, {type:FlxTween.PINGPONG});
+		}
 	}
 	
 	private inline function setAnimations():Void
 	{
 		var line:Int = FlxG.random.int(0, 5) * 6;
 		
-		_player.animation.add("run", [1, 2, 3, 4], 7);
-		_player.animation.add("fall", [2]);
+		_player.animation.add("run", [0, 1, 2, 3], 7);
+		_player.animation.add("jump", [2]);
+		_player.animation.add("fall", [3]);
 	}
 	
 	private inline function positionText():Void

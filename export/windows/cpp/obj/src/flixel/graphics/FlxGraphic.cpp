@@ -31,9 +31,6 @@
 #ifndef INCLUDED_flixel_math_FlxRect
 #include <flixel/math/FlxRect.h>
 #endif
-#ifndef INCLUDED_flixel_system_debug_log_LogStyle
-#include <flixel/system/debug/log/LogStyle.h>
-#endif
 #ifndef INCLUDED_flixel_system_frontEnds_BitmapFrontEnd
 #include <flixel/system/frontEnds/BitmapFrontEnd.h>
 #endif
@@ -363,7 +360,7 @@ HXDLIN( 566)				if (::openfl::_legacy::Assets_obj::exists(id,null())) {
 HXLINE( 566)					newBitmap = ::openfl::_legacy::Assets_obj::getBitmapData(id,false);
             				}
             				else {
-HXLINE( 566)					::flixel::FlxG_obj::log->advanced(((HX_("Could not find a BitmapData asset with ID '",5f,79,a9,21) + id) + HX_("'.",27,22,00,00)),::flixel::_hx_system::debug::log::LogStyle_obj::ERROR,true);
+HXLINE( 566)					 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
 HXDLIN( 566)					newBitmap = null();
             				}
             			}
@@ -533,7 +530,7 @@ HXDLIN(  43)			if (::openfl::_legacy::Assets_obj::exists(Source,null())) {
 HXLINE(  43)				bitmap1 = ::openfl::_legacy::Assets_obj::getBitmapData(Source,false);
             			}
             			else {
-HXLINE(  43)				::flixel::FlxG_obj::log->advanced(((HX_("Could not find a BitmapData asset with ID '",5f,79,a9,21) + Source) + HX_("'.",27,22,00,00)),::flixel::_hx_system::debug::log::LogStyle_obj::ERROR,true);
+HXLINE(  43)				 ::flixel::_hx_system::frontEnds::LogFrontEnd _this = ::flixel::FlxG_obj::log;
 HXDLIN(  43)				bitmap1 = null();
             			}
 HXDLIN(  43)			bitmap = bitmap1;
@@ -552,7 +549,7 @@ HXDLIN(  58)		if (::openfl::_legacy::Assets_obj::exists(Source,null())) {
 HXLINE(  58)			bitmap2 = ::openfl::_legacy::Assets_obj::getBitmapData(Source,false);
             		}
             		else {
-HXLINE(  58)			::flixel::FlxG_obj::log->advanced(((HX_("Could not find a BitmapData asset with ID '",5f,79,a9,21) + Source) + HX_("'.",27,22,00,00)),::flixel::_hx_system::debug::log::LogStyle_obj::ERROR,true);
+HXLINE(  58)			 ::flixel::_hx_system::frontEnds::LogFrontEnd _this1 = ::flixel::FlxG_obj::log;
 HXDLIN(  58)			bitmap2 = null();
             		}
 HXDLIN(  58)		bitmap = bitmap2;

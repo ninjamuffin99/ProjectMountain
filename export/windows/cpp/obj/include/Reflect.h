@@ -88,12 +88,6 @@ class HXCPP_CLASS_ATTRIBUTES Reflect_obj : public hx::Object
 		static bool deleteField( ::Dynamic o,::String field);
 		static ::Dynamic deleteField_dyn();
 
-		static  ::Dynamic copy( ::Dynamic o);
-		static ::Dynamic copy_dyn();
-
-		static  ::Dynamic makeVarArgs( ::Dynamic f);
-		static ::Dynamic makeVarArgs_dyn();
-
 };
 
 

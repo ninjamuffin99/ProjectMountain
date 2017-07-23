@@ -7,9 +7,6 @@
 #endif
 
 HX_DECLARE_CLASS0(Sys)
-HX_DECLARE_CLASS1(haxe,IMap)
-HX_DECLARE_CLASS2(haxe,ds,StringMap)
-HX_DECLARE_CLASS2(haxe,io,Input)
 HX_DECLARE_CLASS2(haxe,io,Output)
 
 
@@ -53,38 +50,17 @@ class HXCPP_CLASS_ATTRIBUTES Sys_obj : public hx::Object
 		bool _hx_isInstanceOf(int inClassId);
 		::String __ToString() const { return HX_HCSTRING("Sys","\xed","\x64","\x3f","\x00"); }
 
-		static void print( ::Dynamic v);
-		static ::Dynamic print_dyn();
-
 		static void println( ::Dynamic v);
 		static ::Dynamic println_dyn();
-
-		static  ::haxe::io::Input _hx_stdin();
-		static ::Dynamic _hx_stdin_dyn();
-
-		static  ::haxe::io::Output _hx_stdout();
-		static ::Dynamic _hx_stdout_dyn();
 
 		static  ::haxe::io::Output _hx_stderr();
 		static ::Dynamic _hx_stderr_dyn();
 
-		static int getChar(bool echo);
-		static ::Dynamic getChar_dyn();
-
 		static ::Array< ::String > args();
 		static ::Dynamic args_dyn();
 
-		static ::String getEnv(::String s);
-		static ::Dynamic getEnv_dyn();
-
-		static void putEnv(::String s,::String v);
-		static ::Dynamic putEnv_dyn();
-
 		static void sleep(Float seconds);
 		static ::Dynamic sleep_dyn();
-
-		static bool setTimeLocale(::String loc);
-		static ::Dynamic setTimeLocale_dyn();
 
 		static ::String getCwd();
 		static ::Dynamic getCwd_dyn();
@@ -92,29 +68,11 @@ class HXCPP_CLASS_ATTRIBUTES Sys_obj : public hx::Object
 		static void setCwd(::String s);
 		static ::Dynamic setCwd_dyn();
 
-		static ::String systemName();
-		static ::Dynamic systemName_dyn();
-
-		static int command(::String cmd,::Array< ::String > args);
-		static ::Dynamic command_dyn();
-
 		static void exit(int code);
 		static ::Dynamic exit_dyn();
 
-		static Float time();
-		static ::Dynamic time_dyn();
-
-		static Float cpuTime();
-		static ::Dynamic cpuTime_dyn();
-
 		static ::String executablePath();
 		static ::Dynamic executablePath_dyn();
-
-		static ::String programPath();
-		static ::Dynamic programPath_dyn();
-
-		static  ::haxe::ds::StringMap environment();
-		static ::Dynamic environment_dyn();
 
 };
 

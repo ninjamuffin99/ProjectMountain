@@ -18,7 +18,6 @@ HX_DECLARE_CLASS2(flixel,util,FlxAxes)
 HX_DECLARE_CLASS2(flixel,util,FlxPath)
 HX_DECLARE_CLASS2(flixel,util,IFlxDestroyable)
 HX_DECLARE_CLASS2(flixel,util,IFlxPooled)
-HX_DECLARE_CLASS3(openfl,_legacy,display,Graphics)
 
 namespace flixel{
 
@@ -121,11 +120,6 @@ class HXCPP_CLASS_ATTRIBUTES FlxObject_obj : public  ::flixel::FlxBasic_obj
 		int wasTouching;
 		int allowCollisions;
 		bool collisonXDrag;
-		 ::Dynamic debugBoundingBoxColor;
-		int debugBoundingBoxColorSolid;
-		int debugBoundingBoxColorNotSolid;
-		int debugBoundingBoxColorPartial;
-		bool ignoreDrawDebug;
 		 ::flixel::util::FlxPath path;
 		 ::flixel::math::FlxPoint _point;
 		 ::flixel::math::FlxRect _rect;
@@ -201,21 +195,6 @@ class HXCPP_CLASS_ATTRIBUTES FlxObject_obj : public  ::flixel::FlxBasic_obj
 		void setSize(Float Width,Float Height);
 		::Dynamic setSize_dyn();
 
-		virtual void drawDebug();
-		::Dynamic drawDebug_dyn();
-
-		virtual void drawDebugOnCamera( ::flixel::FlxCamera camera);
-		::Dynamic drawDebugOnCamera_dyn();
-
-		void drawDebugBoundingBox( ::openfl::_legacy::display::Graphics gfx, ::flixel::math::FlxRect rect,int allowCollisions,bool partial);
-		::Dynamic drawDebugBoundingBox_dyn();
-
-		 ::openfl::_legacy::display::Graphics beginDrawDebug( ::flixel::FlxCamera camera);
-		::Dynamic beginDrawDebug_dyn();
-
-		void endDrawDebug( ::flixel::FlxCamera camera);
-		::Dynamic endDrawDebug_dyn();
-
 		 ::flixel::math::FlxRect getBoundingBox( ::flixel::FlxCamera camera);
 		::Dynamic getBoundingBox_dyn();
 
@@ -257,17 +236,8 @@ class HXCPP_CLASS_ATTRIBUTES FlxObject_obj : public  ::flixel::FlxBasic_obj
 		virtual bool set_pixelPerfectRender(bool Value);
 		::Dynamic set_pixelPerfectRender_dyn();
 
-		virtual int set_allowCollisions(int Value);
+		int set_allowCollisions(int Value);
 		::Dynamic set_allowCollisions_dyn();
-
-		virtual int set_debugBoundingBoxColorSolid(int color);
-		::Dynamic set_debugBoundingBoxColorSolid_dyn();
-
-		virtual int set_debugBoundingBoxColorNotSolid(int color);
-		::Dynamic set_debugBoundingBoxColorNotSolid_dyn();
-
-		virtual int set_debugBoundingBoxColorPartial(int color);
-		::Dynamic set_debugBoundingBoxColorPartial_dyn();
 
 		 ::flixel::util::FlxPath set_path( ::flixel::util::FlxPath path);
 		::Dynamic set_path_dyn();
