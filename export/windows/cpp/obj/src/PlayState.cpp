@@ -309,7 +309,7 @@ HXLINE( 109)		this->_bgImg3 =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,null(),
 HXLINE( 110)		this->_bgImg4 =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,null(),null(),null());
 HXLINE( 111)		this->_bgImg5 =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,null(),null(),null());
 HXLINE( 113)		this->_black =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,null(),null(),null());
-HXLINE( 115)		this->_bgImg1->loadGraphic(HX_("assets/images/sky.jpg",89,9a,76,32),false,(int)1136,(int)640,null(),null());
+HXLINE( 115)		this->_bgImg1->loadGraphic(HX_("assets/images/skyday.jpg",79,8e,43,96),false,(int)1136,(int)640,null(),null());
 HXLINE( 116)		this->_bgImgNight->loadGraphic(HX_("assets/images/skynight.jpg",75,7e,b5,3a),false,(int)1136,(int)640,null(),null());
 HXLINE( 117)		this->_bgImg2->loadGraphic(HX_("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-montain-far.png",77,0a,00,29),false,(int)272,(int)160,null(),null());
 HXLINE( 118)		this->_bgImg3->loadGraphic(HX_("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-mountains.png",d5,d6,66,6f),false,(int)272,(int)160,null(),null());

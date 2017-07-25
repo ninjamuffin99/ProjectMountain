@@ -112,7 +112,7 @@ class PlayState extends FlxState
 		
 		_black = new FlxSprite();
 		
-		_bgImg1.loadGraphic("assets/images/sky.jpg", false, 1136, 640);
+		_bgImg1.loadGraphic("assets/images/skyday.jpg", false, 1136, 640);
 		_bgImgNight.loadGraphic("assets/images/skynight.jpg", false, 1136, 640);
 		_bgImg2.loadGraphic("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-montain-far.png", false, 272, 160);
 		_bgImg3.loadGraphic("assets/images/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-mountains.png", false, 272, 160);
